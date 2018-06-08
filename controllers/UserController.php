@@ -7,7 +7,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**
- * MenuController implements the CRUD actions for Menu model.
+ * UserController implements the CRUD actions for Menu model.
  *
  * @author hahastein <146119@qq.com>
  * @since 1.0
