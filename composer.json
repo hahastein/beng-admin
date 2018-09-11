@@ -17,7 +17,8 @@
   "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2": "~2.0.6",
-    "yiisoft/yii2-bootstrap": "~2.0.0"
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "bengbengsoft/beng-framework": "^2.0@dev"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "~2.0"
