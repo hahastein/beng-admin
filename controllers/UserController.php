@@ -2,6 +2,7 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\framework\controllers\base\FactoryController;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -12,23 +13,8 @@ use yii\web\NotFoundHttpException;
  * @author hahastein <146119@qq.com>
  * @since 1.0
  */
-class UserController extends Controller
+class UserController extends FactoryController
 {
-
-    /**
-     * @inheritdoc
-     */
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all Menu models.
@@ -39,19 +25,10 @@ class UserController extends Controller
         return $this->render('index');
     }
 
-    /**
-     * Finds the Menu model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param  integer $id
-     * @return Menu the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-//    protected function findModel($id)
-//    {
-//        if (($model = Menu::findOne($id)) !== null) {
-//            return $model;
-//        } else {
-//            throw new NotFoundHttpException('The requested page does not exist.');
-//        }
-//    }
+    public function behaviors()
+    {
+        return self::setActions([
+            'index'
+        ]);
+    }
 }
