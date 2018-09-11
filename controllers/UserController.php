@@ -4,8 +4,6 @@ namespace bengbeng\admin\controllers;
 
 use bengbeng\framework\controllers\base\FactoryController;
 use Yii;
-use yii\web\Controller;
-use yii\web\NotFoundHttpException;
 
 /**
  * UserController implements the CRUD actions for Menu model.
