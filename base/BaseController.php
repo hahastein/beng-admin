@@ -13,5 +13,5 @@ use bengbeng\framework\controllers\base\FactoryController;
 
 class BaseController extends FactoryController
 {
-    public $layout = 'main';
+    public $layout = '@bengbeng/admin/views/layouts/main';
 }
