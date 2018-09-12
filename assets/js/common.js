@@ -119,10 +119,10 @@
                 $.each(this[0].attributes, function () {
                     if(this.name.indexOf('param-')>-1){
                         //获取参数名并拼接到传入参数里
-                        param = this.name.split("-");
+                        var param = this.name.split("-");
                         if(param.length>1){
-                            param_name = this.name.split("-")[1];
-                            param_value = this.value;
+                            var param_name = this.name.split("-")[1];
+                            var param_value = this.value;
                             params[param_name]=param_value;
                         }
                     }
