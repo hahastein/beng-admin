@@ -6,7 +6,7 @@
  * Time: 17:13
  */
 
-namespace bengbeng\admin\assets;
+namespace bengbeng\admin;
 
 use yii\web\AssetBundle;
 
