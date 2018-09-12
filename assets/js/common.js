@@ -61,30 +61,32 @@
                 if (r != null) return unescape(r[2]); return null;
             }
         },
-        alert: function(title, text, url='', type = 'warning'){
-            if($('#alertbox')){
-                $('#alertbox').click(function () {
-                    if(typeof(eval(swal))=="function") {
-                        swal({
-                            title: title,
-                            text: text,
-                            type: type,
-                            showCancelButton: true,
-                            confirmButtonColor: "#DD6B55",
-                            confirmButtonText: "确定!",
-                            cancelButtonText:"在想想",
-                            closeOnConfirm: false
-                        }, function () {
-                            window.location.href = url;
-                        });
-                    }else{
-                        if(confirm(title)){
-                            window.location.href = url;
+        tools:{
+            alert: function(title, text, url='', type = 'warning'){
+                if($('#alertbox')){
+                    $('#alertbox').click(function () {
+                        if(typeof(eval(swal))=="function") {
+                            swal({
+                                title: title,
+                                text: text,
+                                type: type,
+                                showCancelButton: true,
+                                confirmButtonColor: "#DD6B55",
+                                confirmButtonText: "确定!",
+                                cancelButtonText:"在想想",
+                                closeOnConfirm: false
+                            }, function () {
+                                window.location.href = url;
+                            });
+                        }else{
+                            if(confirm(title)){
+                                window.location.href = url;
+                            }
                         }
-                    }
-                });
-            }else{
-                console.log('对象不存在');
+                    });
+                }else{
+                    console.log('对象不存在');
+                }
             }
         },
         tip: function (title, msg, type) {
