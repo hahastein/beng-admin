@@ -10,6 +10,11 @@ namespace bengbeng\admin;
 
 use yii\web\AssetBundle;
 
+/**
+ * 弹出框引入文件
+ * Class SweetAlertAsset
+ * @package bengbeng\admin
+ */
 class SweetAlertAsset extends AssetBundle
 {
     public $css = [
