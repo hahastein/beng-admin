@@ -6,16 +6,16 @@
  * Time: 17:13
  */
 
-namespace bengbeng\admin;
+namespace bengbeng\admin\components\assets;
 
-use yii\web\AssetBundle;
+use bengbeng\admin\base\BaseAssetBundle;
 
 /**
  * 弹出框引入文件
  * Class SweetAlertAsset
  * @package bengbeng\admin
  */
-class SweetAlertAsset extends AssetBundle
+class SweetAlertAsset extends BaseAssetBundle
 {
     public $css = [
         'css/plugins/sweetalert/sweetalert.css',
@@ -25,13 +25,5 @@ class SweetAlertAsset extends AssetBundle
         'js/plugins/sweetalert/sweetalert.min.js',
     ];
 
-    //依赖关系
-    public $depends = [
-        'yii\web\JqueryAsset',
-    ];
 
-    public function init()
-    {
-        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR.'/assets/';
-    }
 }
