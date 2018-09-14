@@ -23,7 +23,7 @@ class TemplateAsset extends AssetBundle
         'framework.js',
         'pace.min.js',
         'jquery.metisMenu.js',
-        'jquery.slimscroll.min.js',
+        'min/jquery.slimscroll.min.js',
     ];
 
     //依赖关系
