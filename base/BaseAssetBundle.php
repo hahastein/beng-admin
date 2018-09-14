@@ -15,7 +15,7 @@ class BaseAssetBundle extends AssetBundle
 {
     //依赖关系
     public $depends = [
-        'yii\web\JqueryAsset',
+        'bengbeng\admin\TemplateAsset'
     ];
 
     public function init()

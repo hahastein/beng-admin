@@ -8,7 +8,6 @@
 
 namespace bengbeng\admin;
 
-
 use yii\web\AssetBundle;
 
 class TemplateAsset extends AssetBundle
@@ -36,6 +35,6 @@ class TemplateAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath .= 'common' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = dirname(__FILE__) . 'common' . DIRECTORY_SEPARATOR;
     }
 }
