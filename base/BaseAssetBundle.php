@@ -20,6 +20,6 @@ class BaseAssetBundle extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'assets/' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = dirname(__DIR__) . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR;
     }
 }

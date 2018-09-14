@@ -35,6 +35,6 @@ class TemplateAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = dirname(__FILE__) . 'common' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'common' . DIRECTORY_SEPARATOR;
     }
 }
