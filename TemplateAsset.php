@@ -29,7 +29,7 @@ class TemplateAsset extends AssetBundle
     //依赖关系
     public $depends = [
         'yii\web\JqueryAsset',
-        'yii\bootstrap\BootstrapAsset',
+        'bengbeng\admin\BootstrapAsset',
         'bengbeng\admin\FontAwesomeAsset'
     ];
 
