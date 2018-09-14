@@ -18,12 +18,17 @@ use bengbeng\admin\base\BaseAssetBundle;
 class SweetAlertAsset extends BaseAssetBundle
 {
     public $css = [
-        'css/plugins/sweetalert/sweetalert.css',
+        'sweetalert.css',
     ];
 
     public $js = [
-        'js/plugins/sweetalert/sweetalert.min.js',
+        'sweetalert.min.js',
     ];
 
+    public function init()
+    {
+        parent::init();
+        $this->sourcePath .= "plugins/sweetalert" . DIRECTORY_SEPARATOR;
+    }
 
 }

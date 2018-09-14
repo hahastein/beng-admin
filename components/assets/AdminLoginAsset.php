@@ -19,6 +19,6 @@ class AdminLoginAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "login";
+        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR;
     }
 }

@@ -19,6 +19,6 @@ class FontAwesomeAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "font-awesome";
+        $this->sourcePath .= "font-awesome" . DIRECTORY_SEPARATOR;
     }
 }
