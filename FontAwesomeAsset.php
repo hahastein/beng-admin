@@ -8,9 +8,9 @@
 
 namespace bengbeng\admin\components\assets;
 
-use bengbeng\admin\base\BaseAssetBundle;
+use yii\web\AssetBundle;
 
-class FontAwesomeAsset extends BaseAssetBundle
+class FontAwesomeAsset extends AssetBundle
 {
     public $css = [
         'css/font-awesome.css',
@@ -19,6 +19,7 @@ class FontAwesomeAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "font-awesome" . DIRECTORY_SEPARATOR;
+
+        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/font-awesome' . DIRECTORY_SEPARATOR;
     }
 }

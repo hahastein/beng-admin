@@ -30,7 +30,7 @@ class TemplateAsset extends AssetBundle
     public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
-        'bengbeng\admin\components\assets\FontAwesomeAsset'
+        'bengbeng\admin\FontAwesomeAsset'
     ];
 
     public function init()
