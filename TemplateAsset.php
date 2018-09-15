@@ -9,14 +9,13 @@
 namespace bengbeng\admin;
 
 use yii\web\AssetBundle;
-use yii\web\View;
 
 class TemplateAsset extends AssetBundle
 {
 
     public $css = [
         'animate.css',
-        ['style.css', 'position' => View::POS_END]
+        'style.css'
     ];
 
     public $js = [
