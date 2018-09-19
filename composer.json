@@ -14,7 +14,6 @@
       "email": "146119@qq.com"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "yiisoft/yii2-bootstrap": "~2.0.0",
@@ -33,7 +32,6 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-1.0.master": "1.0.x-dev",
       "dev-master": "2.x-dev"
     },
     "asset-installer-paths": {
