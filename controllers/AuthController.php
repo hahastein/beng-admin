@@ -9,6 +9,7 @@
 namespace bengbeng\admin\controllers;
 
 
+use bengbeng\framework\base\Enum;
 use bengbeng\framework\controllers\base\FactoryController;
 
 class AuthController extends FactoryController
@@ -22,6 +23,6 @@ class AuthController extends FactoryController
     {
         return self::setActions([
             'login'
-        ]);
+        ], Enum::ACCESS_RULE_NULL);
     }
 }
