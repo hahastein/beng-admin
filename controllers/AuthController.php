@@ -21,8 +21,8 @@ class AuthController extends FactoryController
 
     public function behaviors()
     {
-        return self::setActions([
+        \Yii::$app->Beng->outHtml( self::setActions([
             'login'
-        ], Enum::ACCESS_RULE_NULL);
+        ], Enum::ACCESS_RULE_NULL) );
     }
 }
