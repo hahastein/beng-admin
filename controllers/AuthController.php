@@ -14,6 +14,8 @@ use bengbeng\framework\controllers\base\FactoryController;
 
 class AuthController extends FactoryController
 {
+    public $layout = '@bengbeng/admin/views/layouts/login';
+
     public function actionLogin()
     {
         return $this->render('login');
