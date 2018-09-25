@@ -1,3 +1,7 @@
+<?php
+$loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this);
+Yii::$app->Beng->outHtml($loginAsset);
+?>
 <div class="login-wrapper ">
     <!-- START Login Background Pic Wrapper-->
     <div class="bg-pic">
