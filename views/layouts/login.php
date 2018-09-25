@@ -2,11 +2,12 @@
 use yii\helpers\Html;
 
 \bengbeng\admin\components\assets\AdminLoginAsset::register($this);
+\bengbeng\admin\components\assets\PaceAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 
     <!DOCTYPE html>
-    <html lang="en">
+    <html>
     <head>
         <meta charset="<?= Yii::$app->language ?>">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,7 @@ use yii\helpers\Html;
         <?= $this->head(); ?>
     </head>
 
-    <body>
+    <body class="fixed-header ">
 <?php $this->beginBody() ?>
         <?= $content ?>
 <?php $this->endBody() ?>
