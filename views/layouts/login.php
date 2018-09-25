@@ -2,6 +2,7 @@
 use yii\helpers\Html;
 
 \bengbeng\admin\components\assets\AdminLoginAsset::register($this);
+\bengbeng\admin\components\assets\PaceAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 
