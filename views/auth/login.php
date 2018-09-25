@@ -1,12 +1,11 @@
 <?php
 $loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this);
-Yii::$app->Beng->outHtml($loginAsset);
 ?>
 <div class="login-wrapper ">
     <!-- START Login Background Pic Wrapper-->
     <div class="bg-pic">
         <!-- START Background Pic-->
-        <img src="" data-src="" data-src-retina="<?= Yii::getAlias('@bengbeng/')?>" alt="" class="lazy">
+        <img src="" data-src="" data-src-retina="<?= $loginAsset->baseUrl . '/login/bg/new-york-wallpaper.jpg'?>" alt="" class="lazy">
         <!-- END Background Pic-->
         <!-- START Background Caption-->
         <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">
