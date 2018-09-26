@@ -5,7 +5,7 @@ $loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this)
     <!-- START Login Background Pic Wrapper-->
     <div class="bg-pic">
         <!-- START Background Pic-->
-        <img src="<?= $loginAsset->baseUrl . '/bg/new-york-wallpaper.jpg'?>" data-src="<?= $loginAsset->baseUrl . '/bg/new-york-wallpaper.jpg'?>" data-src-retina="<?= $loginAsset->baseUrl . '/bg/new-york-wallpaper.jpg'?>" alt="" class="lazy">
+        <img src="<?= $loginAsset->baseUrl . '/wallpaper.jpg'?>" data-src="<?= $loginAsset->baseUrl . '/wallpaper.jpg'?>" data-src-retina="<?= $loginAsset->baseUrl . '/wallpaper.jpg'?>" alt="" class="lazy">
         <!-- END Background Pic-->
         <!-- START Background Caption-->
         <div class="bg-caption pull-bottom sm-pull-bottom text-white p-l-20 m-b-20">

@@ -13,12 +13,15 @@ use bengbeng\admin\base\BaseAssetBundle;
 class AdminLoginAsset extends BaseAssetBundle
 {
     public $css = [
-        'css/form-elements.css',
+        'pages.css'
+    ];
+    public $js = [
+        'pages.js'
     ];
 
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . 'new-york' . DIRECTORY_SEPARATOR;
     }
 }
