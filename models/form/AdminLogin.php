@@ -14,8 +14,8 @@ use yii\base\Model;
 
 class AdminLogin extends Model
 {
-    public $username;
-    public $password;
+    public $admin_name;
+    public $admin_pwd;
     public $rememberMe = true;
 
     private $_user = false;
@@ -46,7 +46,7 @@ class AdminLogin extends Model
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-            if (!$user || !$user->validatePassword($this->password)) {
+            if (!$user || !$user->validatePassword($this->admin_pwd)) {
                 $this->addError($attribute, 'Incorrect username or password.');
             }
         }
@@ -74,7 +74,7 @@ class AdminLogin extends Model
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = AdminARModel::findByUsername($this->username);
+            $this->_user = AdminARModel::findByUsername($this->admin_name);
         }
 
         return $this->_user;
