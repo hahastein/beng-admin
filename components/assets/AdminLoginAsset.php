@@ -20,6 +20,8 @@ class AdminLoginAsset extends BaseAssetBundle
         'pages.js'
     ];
 
+    public $depends = [];
+
     public function init()
     {
         parent::init();
