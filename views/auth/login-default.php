@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="form-bottom">
-                        <?php $form = ActiveForm::begin(['id' => 'login-form','action' => ['site/login'],'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
+                        <?php $form = \yii\widgets\ActiveForm::begin(['id' => 'login-form','action' => ['site/login'],'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
                         <div class="form-group">
                             <?= $form->field($model, 'admin_name')->label('用户名')->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-username form-control']) ?>
                         </div>
@@ -33,8 +33,8 @@
                             <?= $form->field($model, 'admin_pwd')->label('密码')->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-password form-control']) ?>
                         </div>
                         <label class="control-label" ><br/>忘记密码?</label>
-                        <?= Html::submitButton('登录系统', ['class'=>'btn','name' =>'submit-button']) ?>
-                        <?php ActiveForm::end(); ?>
+                        <?= \yii\helpers\Html::submitButton('登录系统', ['class'=>'btn','name' =>'submit-button']) ?>
+                        <?php \yii\widgets\ActiveForm::end(); ?>
                     </div>
                 </div>
             </div>
