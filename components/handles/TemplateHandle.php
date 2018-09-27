@@ -18,7 +18,7 @@ class TemplateHandle
      */
     public static function getTheme($name = ''){
         if(empty($name)){
-            $loginTheme = \Yii::$app->params['login_theme'];
+            $loginTheme = \Yii::$app->params['theme'];
         }else{
             $loginTheme = $name;
         }
