@@ -8,12 +8,12 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\admin\base\BaseController;
 use Yii;
 use bengbeng\admin\models\form\AdminLogin;
 use bengbeng\framework\base\Enum;
-use bengbeng\framework\controllers\base\FactoryController;
 
-class AuthController extends FactoryController
+class AuthController extends BaseController
 {
     public $layout = '@bengbeng/admin/views/layouts/login';
 

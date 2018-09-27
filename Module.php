@@ -12,11 +12,6 @@ class Module extends \yii\base\Module
         parent::init();
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
-        Yii::$app->view->theme = new \yii\base\Theme([
-            'pathMap' => [
-                '@app/views' => '@app/views/'.$themeName
-            ]
-        ]);
     }
 
     public function beforeAction($action)
