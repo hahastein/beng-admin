@@ -21,7 +21,6 @@ class TemplateAsset extends AssetBundle
     public $js = [
         'common.js',
         'framework.js',
-        'pace.min.js',
         'jquery.metisMenu.js',
         'min/jquery.slimscroll.min.js',
     ];
@@ -30,7 +29,8 @@ class TemplateAsset extends AssetBundle
     public $depends = [
         'yii\web\JqueryAsset',
         'bengbeng\admin\BootstrapAsset',
-        'bengbeng\admin\FontAwesomeAsset'
+        'bengbeng\admin\FontAwesomeAsset',
+        'bengbeng\admin\components\assets\PaceAsset'
     ];
 
     public function init()
