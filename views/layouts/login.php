@@ -5,7 +5,6 @@ use yii\helpers\Html;
 \bengbeng\admin\components\assets\PaceAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
-
     <!DOCTYPE html>
     <html>
     <head>

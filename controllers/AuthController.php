@@ -18,7 +18,9 @@ class AuthController extends FactoryController
 
     public function actionLogin()
     {
-        return $this->render('login');
+        $loginTheme = \Yii::$app->params['login_theme'];
+        $loginTheme = empty($loginTheme)?'default':$loginTheme;
+        return $this->render('login-'.$loginTheme);
     }
 
     public function behaviors()

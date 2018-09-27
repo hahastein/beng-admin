@@ -22,6 +22,9 @@ class AdminLoginAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . 'new-york' . DIRECTORY_SEPARATOR;
+        $loginTheme = \Yii::$app->params['login_theme'];
+        $loginTheme = empty($loginTheme)?'default':$loginTheme;
+
+        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . $loginTheme . DIRECTORY_SEPARATOR;
     }
 }
