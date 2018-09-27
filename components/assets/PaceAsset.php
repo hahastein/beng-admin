@@ -20,6 +20,8 @@ class PaceAsset extends BaseAssetBundle
         'pace.min.js',
     ];
 
+    public $depends = [];
+
     public function init()
     {
         parent::init();
