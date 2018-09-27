@@ -1,15 +1,19 @@
 <?php
 namespace bengbeng\admin;
 
+use bengbeng\admin\components\handles\TemplateHandle;
 use Yii;
 
 class Module extends \yii\base\Module
 {
 
-    public $layout = 'main';
-
     public function init()
     {
+        $themeName = TemplateHandle::getTheme();
+        $this->layout = 'main-' . $themeName;
+        Yii::$app->view->theme->pathMap = [
+            '@bengbeng/views' => '@bengbeng/views/'.$themeName
+        ];
         parent::init();
     }
 

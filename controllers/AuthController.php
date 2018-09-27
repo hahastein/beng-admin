@@ -27,9 +27,7 @@ class AuthController extends FactoryController
         if ($model->load(Yii::$app->getRequest()->post()) && $model->login()) {
             return $this->goBack();
         } else {
-            $loginTheme = \Yii::$app->params['login_theme'];
-            $loginTheme = empty($loginTheme)?'default':$loginTheme;
-            return $this->render('login-'.$loginTheme, ['model' => $model]);
+            return $this->render('/login', ['model' => $model]);
         }
     }
 
