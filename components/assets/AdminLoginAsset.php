@@ -9,6 +9,7 @@
 namespace bengbeng\admin\components\assets;
 
 use bengbeng\admin\base\BaseAssetBundle;
+use bengbeng\admin\components\handles\TemplateHandle;
 
 class AdminLoginAsset extends BaseAssetBundle
 {
@@ -22,9 +23,6 @@ class AdminLoginAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $loginTheme = \Yii::$app->params['login_theme'];
-        $loginTheme = empty($loginTheme)?'default':$loginTheme;
-
-        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . $loginTheme . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
 }
