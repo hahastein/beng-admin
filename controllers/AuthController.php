@@ -8,7 +8,8 @@
 
 namespace bengbeng\admin\controllers;
 
-
+use Yii;
+use bengbeng\admin\models\form\AdminLogin;
 use bengbeng\framework\base\Enum;
 use bengbeng\framework\controllers\base\FactoryController;
 
@@ -18,9 +19,18 @@ class AuthController extends FactoryController
 
     public function actionLogin()
     {
-        $loginTheme = \Yii::$app->params['login_theme'];
-        $loginTheme = empty($loginTheme)?'default':$loginTheme;
-        return $this->render('login-'.$loginTheme);
+        if (!Yii::$app->getUser()->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new AdminLogin();
+        if ($model->load(Yii::$app->getRequest()->post()) && $model->login()) {
+            return $this->goBack();
+        } else {
+            $loginTheme = \Yii::$app->params['login_theme'];
+            $loginTheme = empty($loginTheme)?'default':$loginTheme;
+            return $this->render('login-'.$loginTheme, ['model' => $model]);
+        }
     }
 
     public function behaviors()
