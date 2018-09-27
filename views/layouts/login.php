@@ -15,9 +15,9 @@ use yii\helpers\Html;
     </head>
 
     <body class="fixed-header ">
-<?php $this->beginBody() ?>
-        <?= $content ?>
-<?php $this->endBody() ?>
+    <?php $this->beginBody() ?>
+    <?= $content ?>
+    <?php $this->endBody() ?>
     </body>
 </html>
 <?php $this->endPage() ?>

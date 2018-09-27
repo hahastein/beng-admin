@@ -168,7 +168,7 @@ img { max-width: 100%; }
 	margin-top: 25px;
 }
 
-.signwrapper {
+.fixed-header {
 	background-image: url(wallpaper.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
