@@ -20,6 +20,6 @@ class FontAwesomeAsset extends AssetBundle
     {
         parent::init();
 
-        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/font-awesome' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/plugins/font-awesome' . DIRECTORY_SEPARATOR;
     }
 }
