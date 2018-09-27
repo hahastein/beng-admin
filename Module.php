@@ -14,7 +14,7 @@ class Module extends \yii\base\Module
         $this->layout = 'main-' . $themeName;
         Yii::$app->view->theme = new \yii\base\Theme([
             'pathMap' => [
-                '@bengbeng/views' => '@bengbeng/views/'.$themeName
+                '@app/views' => '@app/views/'.$themeName
             ]
         ]);
     }
