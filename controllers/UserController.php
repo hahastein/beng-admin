@@ -25,8 +25,9 @@ class UserController extends FactoryController
 
     public function behaviors()
     {
-        return self::setActions([
+        self::setActions([
             'index'
         ]);
+        return parent::behaviors();
     }
 }
