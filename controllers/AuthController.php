@@ -47,8 +47,11 @@ class AuthController extends BaseController
     public function behaviors()
     {
         self::setActions([
-            'login', 'logout'
+            'login'
         ], Enum::ACCESS_RULE_NULL);
+        self::setActions([
+            'logout'
+        ], Enum::ACCESS_RULE_AUTHENTICATED);
         return parent::behaviors();
     }
 
