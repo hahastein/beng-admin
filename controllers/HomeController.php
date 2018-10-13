@@ -22,7 +22,7 @@ class HomeController extends BaseController
     {
         self::setActions([
             'main'
-        ], Enum::ACCESS_RULE_NULL);
+        ], Enum::ACCESS_RULE_AUTHENTICATED);
         return parent::behaviors();
     }
 }
