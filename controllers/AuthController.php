@@ -40,6 +40,12 @@ class AuthController extends BaseController
         }
     }
 
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+        return $this->goHome();
+    }
+
     public function behaviors()
     {
         self::setActions([
