@@ -10,7 +10,6 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-        Yii::$app->setHomeUrl(Yii::$app->controller->module->id.'/home/main');
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
         $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$themeName);
@@ -18,6 +17,7 @@ class Module extends \yii\base\Module
 
     public function beforeAction($action)
     {
+        Yii::$app->setHomeUrl(Yii::$app->controller->module->id.'/home/main');
         if (parent::beforeAction($action)) {
             /* @var $action \yii\base\Action */
 //            $view = $action->controller->getView();
