@@ -23,6 +23,6 @@ class HomeController extends BaseController
         self::setActions([
             'main'
         ]);
-        return parent::behaviors();
+        \Yii::$app->Beng->outHtml( parent::behaviors() );
     }
 }

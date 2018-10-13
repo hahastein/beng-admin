@@ -28,6 +28,8 @@ class UserController extends FactoryController
         self::setActions([
             'index'
         ]);
-        return parent::behaviors();
+//        return parent::behaviors();
+        \Yii::$app->Beng->outHtml( parent::behaviors() );
+
     }
 }
