@@ -46,8 +46,8 @@ class AdminLogin extends Model
     {
         if (!$this->hasErrors()) {
             $user = $this->getUser();
-            if (!$user || !$user->validatePassword($this->admin_pwd)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+            if (!$user || !Yii::$app->security->validatePassword($this->admin_pwd, $user->password_hash)) {
+                $this->addError($attribute, '账号密码错误.');
             }
         }
     }
