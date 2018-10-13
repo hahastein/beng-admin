@@ -29,12 +29,6 @@ class UserController extends FactoryController
         self::setActions([
             'index'
         ]);
-        self::setActions([
-            'a'
-        ], Enum::ACCESS_RULE_GUEST);
-        self::setActions([
-            'b'
-        ], Enum::ACCESS_RULE_NULL);
         return parent::behaviors();
     }
 }

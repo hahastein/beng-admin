@@ -10,6 +10,7 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
+        //重新设置view层的路径，增加主题功能
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
         $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$themeName);
@@ -17,6 +18,7 @@ class Module extends \yii\base\Module
 
     public function beforeAction($action)
     {
+        //重新设置默认主页面
         Yii::$app->setHomeUrl(DIRECTORY_SEPARATOR.Yii::$app->controller->module->id.DIRECTORY_SEPARATOR.'home/main');
         if (parent::beforeAction($action)) {
             /* @var $action \yii\base\Action */
