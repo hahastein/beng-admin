@@ -2,6 +2,7 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\framework\base\Enum;
 use bengbeng\framework\controllers\base\FactoryController;
 use Yii;
 
@@ -28,6 +29,12 @@ class UserController extends FactoryController
         self::setActions([
             'index'
         ]);
+        self::setActions([
+            'a'
+        ], Enum::ACCESS_RULE_GUEST);
+        self::setActions([
+            'b'
+        , Enum::ACCESS_RULE_NULL);
 //        return parent::behaviors();
         \Yii::$app->Beng->outHtml( parent::behaviors() );
 
