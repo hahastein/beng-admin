@@ -26,11 +26,15 @@ class AuthController extends BaseController
         }
 
         $model = new AdminLogin();
-        if ($model->load(Yii::$app->getRequest()->post()) && $model->login()) {
-            $errors = current($model->getFirstErrors());
-            Yii::$app->Beng->outHtml($errors);
-
-            return $this->goBack();
+        if ($model->load(Yii::$app->getRequest()->post())) {
+            if($model->login()){
+                return $this->goHome();
+            }else{
+//                $errors = current($model->getFirstErrors());
+                return $this->renderAjax('login', [
+                    'model' => $model,
+                ]);
+            }
         } else {
             return $this->render('login', ['model' => $model]);
         }
