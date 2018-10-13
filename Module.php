@@ -12,7 +12,7 @@ class Module extends \yii\base\Module
         parent::init();
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
-        $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$themeName);
+        $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$this->layout);
     }
 
     public function beforeAction($action)
