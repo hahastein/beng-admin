@@ -10,7 +10,7 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-        Yii::$app->setHomeUrl(Yii::$app->module->id.'/home/main');
+        Yii::$app->setHomeUrl(Yii::$app->controller->module->id.'/home/main');
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
         $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$themeName);
