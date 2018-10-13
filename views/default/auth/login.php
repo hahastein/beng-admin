@@ -28,7 +28,7 @@ $loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this)
                         </div>
                     </div>
                     <div class="form-bottom">
-                        <?php $form = \yii\widgets\ActiveForm::begin(['id' => 'login-form','action' => ['site/login'],'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
+                        <?php $form = \yii\widgets\ActiveForm::begin(['id' => 'login-form' ,'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
                         <div class="form-group">
                             <?= $form->field($model, 'admin_name')->label('用户名')->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-username form-control']) ?>
                         </div>
