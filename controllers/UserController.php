@@ -34,7 +34,7 @@ class UserController extends FactoryController
         ], Enum::ACCESS_RULE_GUEST);
         self::setActions([
             'b'
-        , Enum::ACCESS_RULE_NULL);
+        ], Enum::ACCESS_RULE_NULL);
 //        return parent::behaviors();
         \Yii::$app->Beng->outHtml( parent::behaviors() );
 
