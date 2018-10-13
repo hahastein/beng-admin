@@ -51,7 +51,7 @@ class AuthController extends BaseController
         ], Enum::ACCESS_RULE_NULL);
         self::setActions([
             'logout'
-        ], Enum::ACCESS_RULE_AUTHENTICATED);
+        ]);
         return parent::behaviors();
     }
 
