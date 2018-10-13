@@ -20,8 +20,6 @@ class AuthController extends BaseController
     public function actionLogin()
     {
         if (!Yii::$app->getUser()->isGuest) {
-            Yii::$app->Beng->outHtml(Yii::$app->getUser());
-
             return $this->goHome();
         }
 
