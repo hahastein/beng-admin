@@ -17,7 +17,7 @@ class Module extends \yii\base\Module
 
     public function beforeAction($action)
     {
-        Yii::$app->setHomeUrl(Yii::$app->controller->module->id.'/home/main');
+        Yii::$app->setHomeUrl(DIRECTORY_SEPARATOR.Yii::$app->controller->module->id.DIRECTORY_SEPARATOR.'home/main');
         if (parent::beforeAction($action)) {
             /* @var $action \yii\base\Action */
 //            $view = $action->controller->getView();
