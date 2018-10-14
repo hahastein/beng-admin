@@ -24,4 +24,8 @@ class TemplateHandle
         }
         return empty($loginTheme)?'default':$loginTheme;
     }
+
+    public static function isSetTheme(){
+        return isset(\Yii::$app->params['theme']);
+    }
 }
