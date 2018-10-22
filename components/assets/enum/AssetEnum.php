@@ -18,7 +18,8 @@ class AssetEnum
         switch ($plus){
             case self::PLUS_SWEET_ALERT:
                 return [
-                    ''
+                    'js' => [],
+                    'css' => []
                 ];
         }
     }
