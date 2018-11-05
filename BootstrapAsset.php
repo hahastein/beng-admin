@@ -8,9 +8,22 @@
 
 namespace bengbeng\admin;
 
-class BootstrapAsset extends \yii\bootstrap\BootstrapAsset
+use yii\web\AssetBundle;
+
+//extends \yii\bootstrap\BootstrapAsset
+class BootstrapAsset extends AssetBundle
 {
     public $js = [
-        'js/bootstrap.js',
+        'min/bootstrap.410.js',
     ];
+
+    public $css = [
+        'min/bootstrap.410.css',
+    ];
+
+    public function init()
+    {
+        parent::init();
+        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/common' . DIRECTORY_SEPARATOR;
+    }
 }
