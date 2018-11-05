@@ -8,10 +8,8 @@
 
 namespace bengbeng\admin;
 
-use yii\web\AssetBundle;
-
 //extends \yii\bootstrap\BootstrapAsset
-class BootstrapAsset extends AssetBundle
+class BootstrapAsset extends yii\web\AssetBundle
 {
     public $js = [
         'min/bootstrap.410.js',
