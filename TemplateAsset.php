@@ -8,6 +8,7 @@
 
 namespace bengbeng\admin;
 
+use bengbeng\admin\components\handles\TemplateHandle;
 use yii\web\AssetBundle;
 
 class TemplateAsset extends AssetBundle
@@ -19,10 +20,8 @@ class TemplateAsset extends AssetBundle
     ];
 
     public $js = [
-        'common.js',
         'framework.js',
         'jquery.metisMenu.js',
-        'min/jquery.slimscroll.min.js',
     ];
 
     //依赖关系
@@ -30,11 +29,12 @@ class TemplateAsset extends AssetBundle
         'yii\web\JqueryAsset',
         'bengbeng\admin\BootstrapAsset',
         'bengbeng\admin\FontAwesomeAsset',
-        'bengbeng\admin\components\assets\PaceAsset'
+        'bengbeng\admin\components\assets\PaceAsset',
+        'bengbeng\admin\CommonAsset'
     ];
 
     public function init()
     {
-        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/common' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
 }
