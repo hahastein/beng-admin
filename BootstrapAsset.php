@@ -12,6 +12,7 @@ namespace bengbeng\admin;
 class BootstrapAsset extends \yii\web\AssetBundle
 {
     public $js = [
+        'min/popper.min.js',
         'min/bootstrap.410.js',
     ];
 
