@@ -24,6 +24,6 @@ class AdminLoginAsset extends BaseAssetBundle
     {
         parent::init();
 //        \Yii::configure()
-        $this->sourcePath .= "login" . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= TemplateHandle::getTheme() . DIRECTORY_SEPARATOR . "login" . DIRECTORY_SEPARATOR;
     }
 }
