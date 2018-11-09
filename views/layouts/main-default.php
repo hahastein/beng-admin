@@ -9,7 +9,7 @@ use bengbeng\framework\components\helpers\AdminHelper;
 use bengbeng\admin\TemplateAsset;
 use bengbeng\admin\components\handles\TemplateHandle;
 
-TemplateAsset::register($this);
+//TemplateAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
