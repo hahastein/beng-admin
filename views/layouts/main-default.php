@@ -37,7 +37,7 @@ print_r($url);
                 <?php if(!Yii::$app->user->isGuest) { ?>
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                            <img class="img-circle" src="" />
+                            <img class="img-circle" src="<?=$url . 'default-avatar.png'?>" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs">
