@@ -8,10 +8,9 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\admin\base\BaseController;
 
-use bengbeng\framework\controllers\base\FactoryController;
-
-class SettingController extends FactoryController
+class SettingController extends BaseController
 {
 
     /**
