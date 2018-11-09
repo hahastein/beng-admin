@@ -24,7 +24,7 @@ class ToolTips extends Widget
 
     public function run()
     {
-        return $this->render('@bengbeng/views/'.TemplateHandle::getTheme().'/widgets/tooltips', [
+        return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/widgets/tooltips', [
             'msg' => $this->msg_open,
             'alert' => $this->alert_open
         ]);
