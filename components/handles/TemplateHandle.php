@@ -30,7 +30,7 @@ class TemplateHandle
     }
 
     public static function getImgToTheme($name){
-        list(,$url) = \Yii::$app->assetManager->publish('@bengbeng/admin/assets/' . self::getTheme() . '/');
-        return $url . $name;
+        list(,$url) = \Yii::$app->assetManager->publish('@bengbeng/admin/assets/' . self::getTheme());
+        return $url . DIRECTORY_SEPARATOR . $name;
     }
 }
