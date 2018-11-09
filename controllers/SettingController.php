@@ -11,22 +11,22 @@ namespace bengbeng\admin\controllers;
 
 use bengbeng\framework\controllers\base\FactoryController;
 
-class SystemController extends FactoryController
+class SettingController extends FactoryController
 {
 
     /**
      * 系统基础设置
      * @return string
      */
-    public function actionBaseSetting(){
+    public function actionSysBase(){
 
-        return $this->render('base-setting');
+        return $this->render('sys-base');
     }
 
     public function behaviors()
     {
         self::setActions([
-            'base-setting'
+            'sys-base'
         ]);
         return parent::behaviors();
     }
