@@ -35,22 +35,26 @@ TemplateAsset::register($this);
             <ul class="nav metismenu" id="side-menu">
                 <?php if(!Yii::$app->user->isGuest) { ?>
                     <li class="nav-header">
-                        <div class="dropdown profile-element"> <span>
+                        <div class="dropdown profile-element">
+
                             <img class="img-circle" src="<?=TemplateHandle::getImgToTheme('default_avatar.png')?>" />
-                             </span>
+
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs">
+                                <span class="block m-t-xs">
                                     <strong class="font-bold">
                                         <?= Yii::$app->user->identity->admin_nickname?>(<?= Yii::$app->user->identity->admin_name ? Yii::$app->user->identity->admin_name : '' ?>)
                                     </strong>
-                             </span> <span class="text-muted text-xs block">
+                                </span>
+                                <span class="text-muted text-xs block">
                                     <?= AdminHelper::getAdminType(true); ?>
-                                    <b class="caret"></b></span> </span> </a>
+                                    <b class="caret"></b>
+                                </span>
+                            </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="<?= Url::to(['user/info']) ?>">个人资料</a></li>
-                                <li><a href="<?= Url::to(['user/message']) ?>">消息管理</a></li>
-                                <li class="divider"></li>
-                                <li><a href="<?= Url::to(['site/logout']) ?>">退出系统</a></li>
+                                <li><a class="dropdown-item" href="<?= Url::to(['user/info']) ?>">个人资料</a></li>
+                                <li><a class="dropdown-item" href="<?= Url::to(['user/message']) ?>">消息管理</a></li>
+                                <li class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="<?= Url::to(['site/logout']) ?>">退出系统</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
