@@ -37,13 +37,11 @@ TemplateAsset::register($this);
                     <li class="nav-header">
                         <div class="dropdown profile-element">
 
-                            <img class="img-circle" src="<?=TemplateHandle::getImgToTheme('default_avatar.png')?>" />
+                            <img alt="管理员头像" class="rounded-circle" src="<?=TemplateHandle::getImgToTheme('default_avatar.png')?>" />
 
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="block m-t-xs">
-                                    <strong class="font-bold">
-                                        <?= Yii::$app->user->identity->admin_nickname?>(<?= Yii::$app->user->identity->admin_name ? Yii::$app->user->identity->admin_name : '' ?>)
-                                    </strong>
+                                <span class="block m-t-xs font-bold">
+                                    <?= Yii::$app->user->identity->admin_nickname?>(<?= Yii::$app->user->identity->admin_name ? Yii::$app->user->identity->admin_name : '' ?>)
                                 </span>
                                 <span class="text-muted text-xs block">
                                     <?= AdminHelper::getAdminType(true); ?>
@@ -82,7 +80,7 @@ TemplateAsset::register($this);
                     </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
-                    <li>
+                    <li style="padding: 20px">
                         <span class="m-r-sm text-muted welcome-message">欢迎来到<?= Html::encode(Yii::$app->name) ?></span>
                     </li>
 
