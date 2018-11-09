@@ -9,7 +9,7 @@ use bengbeng\framework\components\helpers\AdminHelper;
 use bengbeng\admin\TemplateAsset;
 use bengbeng\admin\components\handles\TemplateHandle;
 
-//TemplateAsset::register($this);
+TemplateAsset::register($this);
 
 ?>
 <?php $this->beginPage() ?>
@@ -142,7 +142,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                             <div class="sidebar-message">
                                 <a href="#">
                                     <div class="pull-left text-center">
-                                        <img alt="image" class="img-circle message-avatar" src="/resource/img/default_avatar.png">
+                                        <img alt="image" class="img-circle message-avatar" src="<?=TemplateHandle::getImgToTheme('default_avatar.png')?>">
                                         <!---->
                                         <!--                                        <div class="m-t-xs">-->
                                         <!--                                            <i class="fa fa-star text-warning"></i>-->
