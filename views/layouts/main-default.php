@@ -141,7 +141,7 @@ TemplateAsset::register($this);
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
                             <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
                         </a>
-                        <ul class="dropdown-menu dropdown-alerts">
+                        <ul class="dropdown-menu dropdown-alerts dropdown-menu-right">
                             <li>
                                 <a href="mailbox.html" class="dropdown-item">
                                     <div>
