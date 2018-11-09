@@ -35,7 +35,7 @@ TemplateAsset::register($this);
                 <?php if(!Yii::$app->user->isGuest) { ?>
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                            <img class="img-circle" src="<?=Yii::getAlias('@web/resource/img/default_avatar.png')?>" />
+                            <img class="img-circle" src="<?=Yii::getAlias('@bengbeng/default_avatar.png')?>" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs">
