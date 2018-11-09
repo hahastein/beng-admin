@@ -7,11 +7,10 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use bengbeng\framework\components\helpers\AdminHelper;
 use bengbeng\admin\TemplateAsset;
+use bengbeng\admin\components\handles\TemplateHandle;
 
 TemplateAsset::register($this);
 
-list(,$url) = Yii::$app->assetManager->publish('@bengbeng/admin/assets');
-print_r($url);
 ?>
 <?php $this->beginPage() ?>
 
@@ -37,7 +36,7 @@ print_r($url);
                 <?php if(!Yii::$app->user->isGuest) { ?>
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                            <img class="img-circle" src="<?=$url . 'default-avatar.png'?>" />
+                            <img class="img-circle" src="<?=TemplateHandle::getImgToTheme('default-avatar.png')?>" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs">

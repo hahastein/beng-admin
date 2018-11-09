@@ -28,4 +28,9 @@ class TemplateHandle
     public static function isSetTheme(){
         return isset(\Yii::$app->params['theme']);
     }
+
+    public static function getImgToTheme($name){
+        list(,$url) = \Yii::$app->assetManager->publish('@bengbeng/admin/assets');
+        return $url . '/' . $name;
+    }
 }
