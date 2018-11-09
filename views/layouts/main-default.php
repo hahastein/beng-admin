@@ -10,7 +10,7 @@ use bengbeng\admin\TemplateAsset;
 
 TemplateAsset::register($this);
 
-list(,$url) = Yii::$app->assetManager->publish('@bengbeng/assets');
+list(,$url) = Yii::$app->assetManager->publish('@bengbeng/admin/assets');
 print_r($url);
 ?>
 <?php $this->beginPage() ?>
