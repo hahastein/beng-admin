@@ -26,7 +26,7 @@ class SystemController extends FactoryController
     public function behaviors()
     {
         self::setActions([
-            'base'
+            'base-setting'
         ]);
         return parent::behaviors();
     }
