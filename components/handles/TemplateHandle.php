@@ -31,6 +31,6 @@ class TemplateHandle
 
     public static function getImgToTheme($name){
         list(,$url) = \Yii::$app->assetManager->publish('@bengbeng/admin/assets');
-        return $url . '/' . $name;
+        return $url . '/' . self::getTheme() . '/' . $name;
     }
 }
