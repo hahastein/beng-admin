@@ -15,14 +15,14 @@
 <div class="row white-bg m-t-sm">
     <div class="col-lg-12">
         <div class="panel blank-panel">
-            <div class="panel-heading">
-                <div class="panel-options">
-                    <ul class="nav nav-tabs">
-                        <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Users messages</a></li>
-                        <li><a class="nav-link" href="#tab-2" data-toggle="tab">Last activity</a></li>
-                    </ul>
-                </div>
+
+            <div class="panel-options">
+                <ul class="nav nav-tabs">
+                    <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Users messages</a></li>
+                    <li><a class="nav-link" href="#tab-2" data-toggle="tab">Last activity</a></li>
+                </ul>
             </div>
+
 
             <div class="panel-body">
 
