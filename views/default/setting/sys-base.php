@@ -1,5 +1,5 @@
 <div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-6" style="background-color: #000">
+    <div class="col-lg-10">
         <h2>基本设置</h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -12,7 +12,7 @@
     </div>
 </div>
 
-<div class="row m-t-sm">
+<div class="row white-bg m-t-sm">
     <div class="col-lg-12">
         <div class="panel blank-panel">
             <div class="panel-heading">
