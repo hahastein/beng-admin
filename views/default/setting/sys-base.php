@@ -10,13 +10,13 @@
             </li>
         </ol>
     </div>
-    <div class="col-lg-6">
-        <ul class="nav nav-tabs">
-            <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Product info</a></li>
-            <li><a class="nav-link" data-toggle="tab" href="#tab-2"> Data</a></li>
-            <li><a class="nav-link" data-toggle="tab" href="#tab-3"> Discount</a></li>
-            <li><a class="nav-link" data-toggle="tab" href="#tab-4"> Images</a></li>
-        </ul>
+    <div class="col-lg-6 panel-heading">
+        <div class="panel-options">
+            <ul class="nav nav-tabs">
+                <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Users messages</a></li>
+                <li><a class="nav-link" href="#tab-2" data-toggle="tab">Last activity</a></li>
+            </ul>
+        </div>
     </div>
 </div>
 
