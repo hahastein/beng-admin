@@ -1,5 +1,5 @@
 <div class="row wrapper border-bottom white-bg page-heading">
-    <div class="col-lg-10" style="background-color: #000">
+    <div class="col-lg-6" style="background-color: #000">
         <h2>基本设置</h2>
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -9,6 +9,14 @@
                 <strong>基本设置</strong>
             </li>
         </ol>
+    </div>
+    <div class="col-lg-6">
+        <ul class="nav nav-tabs">
+            <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Product info</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#tab-2"> Data</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#tab-3"> Discount</a></li>
+            <li><a class="nav-link" data-toggle="tab" href="#tab-4"> Images</a></li>
+        </ul>
     </div>
 </div>
 
