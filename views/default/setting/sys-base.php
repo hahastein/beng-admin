@@ -10,476 +10,302 @@
             </li>
         </ol>
     </div>
-    <div class="col-lg-6 panel-heading">
-        <div class="panel-options">
-            <ul class="nav nav-tabs">
-                <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Users messages</a></li>
-                <li><a class="nav-link" href="#tab-2" data-toggle="tab">Last activity</a></li>
-            </ul>
-        </div>
-    </div>
 </div>
 
-<div class="wrapper wrapper-content animated fadeInRight ecommerce">
-
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="tabs-container">
-                <ul class="nav nav-tabs">
-                    <li><a class="nav-link active" data-toggle="tab" href="#tab-1"> Product info</a></li>
-                    <li><a class="nav-link" data-toggle="tab" href="#tab-2"> Data</a></li>
-                    <li><a class="nav-link" data-toggle="tab" href="#tab-3"> Discount</a></li>
-                    <li><a class="nav-link" data-toggle="tab" href="#tab-4"> Images</a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane active">
-                        <div class="panel-body">
-
-                            <fieldset>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Name:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Product name"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Price:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="$160.00"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Description:</label>
-                                    <div class="col-sm-10">
-                                        <div class="summernote">
-                                            <h3>Lorem Ipsum is simply</h3>
-                                            dummy text of the printing and typesetting industry. <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                                            <br/>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Meta Tag Title:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Meta Tag Description:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Sheets containing Lorem"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Meta Tag Keywords:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Lorem, Ipsum, has, been"></div>
-                                </div>
-                            </fieldset>
-
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane">
-                        <div class="panel-body">
-
-                            <fieldset>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">ID:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="543"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Model:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="..."></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Location:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="location"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Tax Class:</label>
-                                    <div class="col-sm-10">
-                                        <select class="form-control" >
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Quantity:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="Quantity"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Minimum quantity:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="2"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Sort order:</label>
-                                    <div class="col-sm-10"><input type="text" class="form-control" placeholder="0"></div>
-                                </div>
-                                <div class="form-group row"><label class="col-sm-2 col-form-label">Status:</label>
-                                    <div class="col-sm-10">
-                                        <select class="form-control" >
-                                            <option>option 1</option>
-                                            <option>option 2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </fieldset>
-
-
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-pane">
-                        <div class="panel-body">
-
-                            <div class="table-responsive">
-                                <table class="table table-stripped table-bordered">
-
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                            Group
-                                        </th>
-                                        <th>
-                                            Quantity
-                                        </th>
-                                        <th>
-                                            Discount
-                                        </th>
-                                        <th style="width: 20%">
-                                            Date start
-                                        </th>
-                                        <th style="width: 20%">
-                                            Date end
-                                        </th>
-                                        <th>
-                                            Actions
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <select class="form-control" >
-                                                <option selected>Group 1</option>
-                                                <option>Group 2</option>
-                                                <option>Group 3</option>
-                                                <option>Group 4</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="10">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" placeholder="$10.00">
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div class="input-group date">
-                                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span><input type="text" class="form-control" value="07/01/2014">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-
-                                    </tbody>
-
-                                </table>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div id="tab-4" class="tab-pane">
-                        <div class="panel-body">
-
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-stripped">
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                            Image preview
-                                        </th>
-                                        <th>
-                                            Image url
-                                        </th>
-                                        <th>
-                                            Sort order
-                                        </th>
-                                        <th>
-                                            Actions
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/2s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image1.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="1">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/1s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image2.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="2">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/3s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image3.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="3">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/4s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image4.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="4">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/5s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image5.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="5">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/6s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image6.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="6">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <img src="img/gallery/7s.jpg">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" disabled value="http://mydomain.com/images/image7.png">
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control" value="7">
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-white"><i class="fa fa-trash"></i> </button>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-                    </div>
+<div class="row m-t-sm">
+    <div class="col-lg-12">
+        <div class="panel blank-panel">
+            <div class="panel-heading">
+                <div class="panel-options">
+                    <ul class="nav nav-tabs">
+                        <li><a class="nav-link active" href="#tab-1" data-toggle="tab">Users messages</a></li>
+                        <li><a class="nav-link" href="#tab-2" data-toggle="tab">Last activity</a></li>
+                    </ul>
                 </div>
             </div>
+
+            <div class="panel-body">
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab-1">
+                        <div class="feed-activity-list">
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/a2.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">2h ago</small>
+                                    <strong>Mark Johnson</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                    <small class="text-muted">Today 2:10 pm - 12.06.2014</small>
+                                    <div class="well">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/a3.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">2h ago</small>
+                                    <strong>Janet Rosowski</strong> add 1 photo on <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 8:30am</small>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right text-navy">5h ago</small>
+                                    <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                    <div class="actions">
+                                        <a href=""  class="btn btn-xs btn-white"><i class="fa fa-thumbs-up"></i> Like </a>
+                                        <a href=""  class="btn btn-xs btn-white"><i class="fa fa-heart"></i> Love</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/a5.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">2h ago</small>
+                                    <strong>Kim Smith</strong> posted message on <strong>Monica Smith</strong> site. <br>
+                                    <small class="text-muted">Yesterday 5:20 pm - 12.06.2014</small>
+                                    <div class="well">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                        Over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">23h ago</small>
+                                    <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                    <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                </div>
+                            </div>
+                            <div class="feed-element">
+                                <a href="#" class="float-left">
+                                    <img alt="image" class="rounded-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="float-right">46h ago</small>
+                                    <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                    <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane" id="tab-2">
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Title</th>
+                                <th>Start Time</th>
+                                <th>End Time</th>
+                                <th>Comments</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Completed</span>
+                                </td>
+                                <td>
+                                    Create project in webapp
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Accepted</span>
+                                </td>
+                                <td>
+                                    Various versions
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Sent</span>
+                                </td>
+                                <td>
+                                    There are many variations
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Reported</span>
+                                </td>
+                                <td>
+                                    Latin words
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        Latin words, combined with a handful of model sentence structures
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Accepted</span>
+                                </td>
+                                <td>
+                                    The generated Lorem
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Sent</span>
+                                </td>
+                                <td>
+                                    The first line
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Reported</span>
+                                </td>
+                                <td>
+                                    The standard chunk
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Completed</span>
+                                </td>
+                                <td>
+                                    Lorem Ipsum is that
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable.
+                                    </p>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="label label-primary"><i class="fa fa-check"></i> Sent</span>
+                                </td>
+                                <td>
+                                    Contrary to popular
+                                </td>
+                                <td>
+                                    12.07.2014 10:10:1
+                                </td>
+                                <td>
+                                    14.07.2014 10:16:36
+                                </td>
+                                <td>
+                                    <p class="small">
+                                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+                                    </p>
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
-
 </div>
