@@ -23,6 +23,6 @@ class BootstrapAsset extends \yii\web\AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'assets/common' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = '@bengbeng/admin/assets/common' . DIRECTORY_SEPARATOR;
     }
 }
