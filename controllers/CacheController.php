@@ -8,10 +8,9 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\admin\base\BaseController;
 
-use bengbeng\framework\controllers\base\FactoryController;
-
-class CacheController extends FactoryController
+class CacheController extends BaseController
 {
 
     public function actionAll(){
