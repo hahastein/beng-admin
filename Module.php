@@ -13,7 +13,7 @@ class Module extends \yii\base\Module
         //重新设置view层的路径，增加主题功能
         $themeName = TemplateHandle::getTheme();
         $this->layout = 'main-' . $themeName;
-        $this->setViewPath($this->getViewPath().DIRECTORY_SEPARATOR.$themeName);
+        $this->setViewPath('@bengbeng/admin/views'.DIRECTORY_SEPARATOR.$themeName);
     }
 
     public function beforeAction($action)
