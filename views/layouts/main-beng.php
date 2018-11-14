@@ -29,9 +29,9 @@ TemplateAsset::register($this);
 <body class="fixed-header menu-pin">
 <?php $this->beginBody() ?>
 
-<!-- BEGIN SIDEBPANEL-->
+<!-- BEGIN NAV-->
 <nav class="page-sidebar" data-pages="sidebar">
-    <!-- BEGIN SIDEBAR MENU TOP TRAY CONTENT-->
+    <!-- BEGIN LEFT MENU TOP TRAY CONTENT-->
     <div class="sidebar-overlay-slide from-top" id="appMenu">
         <div class="row">
             <div class="col-xs-6 no-padding">
@@ -54,7 +54,7 @@ TemplateAsset::register($this);
             </div>
         </div>
     </div>
-    <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
+    <!-- END LEFT MENU TOP TRAY CONTENT-->
     <!-- BEGIN LEFT MENU HEADER-->
     <div class="sidebar-header">
         <span class="brand"><a class="h4 text-white">Beng</a></span>
@@ -74,8 +74,8 @@ TemplateAsset::register($this);
     ])?>
     <!-- END SIDEBAR MENU -->
 </nav>
-<!-- END SIDEBAR -->
-<!-- END SIDEBPANEL-->
+
+<?= $content ?>
 
 <?php $this->endBody() ?>
 </body>
