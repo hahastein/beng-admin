@@ -23,7 +23,7 @@ use yii\helpers\Url;
                             <li <?= $controllerID==$parent['controller'] && $actionID==$parent['action']?'class="active"':'' ?>>
                                 <a href="<?= Url::to(['/'.$moduleID.'/'.$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a>
                                 <span class="icon-thumbnail">
-                                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                                    <?= empty($parent['menu_icon'])?$parent['initials']:"<i class=\"{$parent['menu_icon']}\"></i>" ?>
                                 </span>
                             </li>
 
