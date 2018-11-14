@@ -26,7 +26,7 @@ TemplateAsset::register($this);
     <title><?= Html::encode(Yii::$app->name .'-' . $this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="fixed-header dashboard">
+<body class="fixed-header menu-pin">
 <?php $this->beginBody() ?>
 
 <!-- BEGIN SIDEBPANEL-->
