@@ -13,7 +13,6 @@ class CommonAsset extends \yii\web\AssetBundle
 
     public $js = [
         'common.js',
-        'min/jquery.slimscroll.min.js',
     ];
 
     public function init()

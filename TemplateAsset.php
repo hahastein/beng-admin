@@ -21,7 +21,6 @@ class TemplateAsset extends AssetBundle
 
     public $js = [
         'framework.js',
-        'jquery.metisMenu.js',
     ];
 
     //依赖关系
@@ -30,14 +29,13 @@ class TemplateAsset extends AssetBundle
         'bengbeng\admin\BootstrapAsset',
         'bengbeng\admin\FontAwesomeAsset',
         'bengbeng\admin\components\assets\PaceAsset',
-        'bengbeng\admin\CommonAsset'
     ];
 
     public function init()
     {
         //按模板引入模板公共文件
-        if(class_exists('bengbeng\\admin\\components\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset')) {
-            $this->depends[] = 'bengbeng\\admin\\components\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset';
+        if(class_exists('bengbeng\\admin\\components\\assets\\template\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset')) {
+            $this->depends[] = 'bengbeng\\admin\\components\\assets\\template\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset';
         }
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
