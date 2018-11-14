@@ -8,9 +8,9 @@
             $("body").removeClass('boxed-layout').addClass('fixed-nav fixed-nav-basic').addClass('fixed-sidebar');
             $(".footer").addClass('fixed');
 
-            $("img").on("error", function () {
-                $(this).attr('src',"/resource/img/img_error.png");
-            });
+            // $("img").on("error", function () {
+            //     $(this).attr('src',"/resource/img/img_error.png");
+            // });
         },
         complete: {
             upload: function(data) {
