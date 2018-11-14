@@ -11,12 +11,12 @@ use yii\helpers\Url;
 
             <li>
                 <a class="detailed" href="">
-                    <span class="title">Dashboard</span>
+                    <span class="title">$menu['menu_name']</span>
                     <span class="details">12 New Updates</span>
-                    <span class="icon-thumbnail">
-                        <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
-                    </span>
                 </a>
+                <span class="icon-thumbnail">
+                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                </span>
             </li>
 
         <?php } ?>
