@@ -20,6 +20,6 @@ class JQueryAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = '@bengbeng/admin/assets/plugins' . DIRECTORY_SEPARATOR;
+        $this->sourcePath = '@bengbeng/admin/assets/plugins/jquery' . DIRECTORY_SEPARATOR;
     }
 }
