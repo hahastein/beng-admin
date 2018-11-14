@@ -69,7 +69,7 @@ TemplateAsset::register($this);
 
     <!-- START SIDEBAR MENU -->
     <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
-        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_CUSTOM,
+        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
         'layout' => '@bengbeng/admin/views/beng/widgets/menu-left'
     ])?>
     <!-- END SIDEBAR MENU -->
