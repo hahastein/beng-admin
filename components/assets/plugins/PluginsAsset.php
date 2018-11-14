@@ -2,16 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: hahastein
- * Date: 2018/11/14
- * Time: 19:02
+ * Date: 2018/10/16
+ * Time: 23:49
  */
 
-namespace bengbeng\admin\components\assets\jquery;
-
+namespace bengbeng\admin\components\assets\plugins;
 
 use yii\web\AssetBundle;
 
-class JQueryAsset extends AssetBundle
+class PluginsAsset extends AssetBundle
 {
 
     public $depends = [
@@ -20,6 +19,7 @@ class JQueryAsset extends AssetBundle
 
     public function init()
     {
-        $this->sourcePath = '@bengbeng/admin/assets/jquery/';
+        $this->sourcePath = '@bengbeng/admin/assets/plugins/';
     }
+
 }
