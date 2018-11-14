@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Url;
+print_r($menus);die;
 ?>
 
 <div class="sidebar-menu">
