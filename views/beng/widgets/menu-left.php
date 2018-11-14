@@ -7,14 +7,14 @@ use yii\helpers\Url;
     <ul class="menu-items">
         <li class="m-t-30"></li>
 
-        <?php foreach ($menus as $menu){ ?>
+        <?php foreach ($menus as $key => $menu){ ?>
             <?php if(!empty($menu['parent'])) { ?>
             <li <?= in_array($controllerID, $menu['child'])?'class="open active"':'' ?>>
                 <a href="javascript:;">
                     <span class="title"><?=$menu['menu_name']?></span>
                     <span class="arrow<?= in_array($controllerID, $menu['child'])?' open active':'' ?>"></span>
                 </a>
-                <span class="icon-thumbnail">
+                <span class="<?=$key===0?'bg-success ':''?>icon-thumbnail">
                     <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
                 </span>
                 <ul class="sub-menu">
@@ -35,7 +35,7 @@ use yii\helpers\Url;
                     <span class="title"><?=$menu['menu_name']?></span>
                     <span class="details">8 新消息</span>
                 </a>
-                <span class="icon-thumbnail">
+                <span class="<?=$key===0?'bg-success ':''?>icon-thumbnail">
                     <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
                 </span>
             </li>
