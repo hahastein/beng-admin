@@ -1,6 +1,6 @@
 <?php
 use yii\helpers\Url;
-print_r($menus);die;
+Yii::$app->Beng->outHtml($menus);die;
 ?>
 
 <div class="sidebar-menu">
