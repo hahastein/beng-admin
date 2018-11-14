@@ -12,7 +12,7 @@ use yii\helpers\Url;
             <li <?= in_array($controllerID, $menu['child'])?'class="open active"':'' ?>>
                 <a href="javascript:;">
                     <span class="title"><?=$menu['menu_name']?></span>
-                    <span class="arrow<?= in_array($controllerID, $menu['child'])?'class=" open active"':'' ?>"></span>
+                    <span class="arrow<?= in_array($controllerID, $menu['child'])?' open active':'' ?>"></span>
                 </a>
                 <span class="icon-thumbnail">
                     <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
