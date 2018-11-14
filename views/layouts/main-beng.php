@@ -74,14 +74,15 @@ TemplateAsset::register($this);
     ])?>
     <!-- END SIDEBAR MENU -->
 </nav>
+<!-- END NAV-->
 
-<div class="page-container ">
-    <div class="header ">
+<div class="page-container">
+    <div class="header">
         <!-- START MOBILE SIDEBAR TOGGLE -->
         <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar">
         </a>
         <!-- END MOBILE SIDEBAR TOGGLE -->
-        <div class="">
+        <div>
             <div class="brand inline">
             </div>
             <!-- START NOTIFICATION LIST -->
