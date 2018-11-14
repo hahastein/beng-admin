@@ -14,15 +14,9 @@ use yii\web\AssetBundle;
 class BengAsset extends AssetBundle
 {
 
-    public $css = [
-
-    ];
-    public $js = [
-
-    ];
-
     public $depends = [
-        'bengbeng\admin\components\assets\jquery\JQueryScrollbarAsset'
+        'bengbeng\admin\components\assets\jquery\JQueryScrollbarAsset',
+        'bengbeng\admin\components\assets\plugins\Select2Asset'
     ];
 
     public function init()
