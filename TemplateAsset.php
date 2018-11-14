@@ -35,6 +35,10 @@ class TemplateAsset extends AssetBundle
 
     public function init()
     {
+        //按模板引入模板公共文件
+        if(class_exists('bengbeng\\admin\\components\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset')) {
+            $this->depends[] = 'bengbeng\\admin\\components\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset';
+        }
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
 }
