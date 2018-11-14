@@ -85,7 +85,7 @@ TemplateAsset::register($this);
                 <div class="brand inline">
                 </div>
                 <!-- START NOTIFICATION LIST -->
-                <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
+                <ul class="d-none d-lg-block notification-list no-margin d-none d-md-block b-grey b-l b-r no-style p-l-30 p-r-20">
                     <li class="p-r-10 inline">
                         <div class="dropdown">
                             <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
@@ -210,14 +210,14 @@ TemplateAsset::register($this);
                     </li>
                 </ul>
                 <!-- END NOTIFICATIONS LIST -->
-                <a href="#" class="search-link hidden-md-down" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
+                <a href="#" class="search-link d-none d-lg-block" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
             </div>
             <div class="d-flex align-items-center">
                 <!-- START User Info-->
-                <div class="pull-left p-r-10 fs-14 font-heading d-md-none">
+                <div class="pull-left p-r-10 fs-14 font-heading d-none d-lg-block">
                     <span class="semi-bold">David</span> <span class="text-master">Nest</span>
                 </div>
-                <div class="dropdown pull-right d-md-none">
+                <div class="dropdown pull-right d-none d-lg-block">
                     <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="thumbnail-wrapper d32 circular inline">
                             <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
