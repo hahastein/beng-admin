@@ -1,6 +1,31 @@
+<?php
+use yii\helpers\Url;
+?>
+
 <div class="sidebar-menu">
     <!-- BEGIN SIDEBAR MENU ITEMS-->
     <ul class="menu-items">
+
+
+        <?php foreach ($menus as $menu){ ?>
+
+            <li>
+                <a class="detailed" href="">
+                    <span class="title">Dashboard</span>
+                    <span class="details">12 New Updates</span>
+                    <span class="icon-thumbnail">
+                        <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                    </span>
+                </a>
+            </li>
+
+        <?php } ?>
+
+
+
+
+
+
         <li class="m-t-30 ">
             <a href="index.html" class="detailed">
                 <span class="title">Dashboard</span>
