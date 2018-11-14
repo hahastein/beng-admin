@@ -10,13 +10,34 @@ use yii\helpers\Url;
         <?php foreach ($menus as $menu){ ?>
 
             <li>
-                <a class="detailed" href="">
-                    <span class="title"><?=$menu['menu_name']?></span>
-                    <span class="details">12 New Updates</span>
-                </a>
-                <span class="icon-thumbnail">
-                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
-                </span>
+                <?php if(!empty($menu['parent'])) { ?>
+                    <a class="detailed" href="javascript:;">
+                        <span class="title"><?=$menu['menu_name']?></span>
+                        <span class="arrow"></span>
+                    </a>
+                    <span class="icon-thumbnail">
+                        <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                    </span>
+                    <ul class="sub-menu">
+                        <?php foreach ($menu['parent'] as $parent){ ?>
+                            <li <?= $controllerID==$parent['controller'] && $actionID==$parent['action']?'class="active"':'' ?>>
+                                <a href="<?= Url::to([$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a>
+                                <span class="icon-thumbnail">
+                                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                                </span>
+                            </li>
+
+                        <?php } ?>
+                    </ul>
+                <?php }else{ ?>
+                    <a class="detailed" href="<?=Url::to([$menu['controller'].'/'.$menu['action']])?>">
+                        <span class="title"><?=$menu['menu_name']?></span>
+                        <span class="details">12 New Updates</span>
+                    </a>
+                    <span class="icon-thumbnail">
+                        <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
+                    </span>
+                <?php } ?>
             </li>
 
         <?php } ?>
