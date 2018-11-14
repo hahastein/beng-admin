@@ -48,7 +48,7 @@ use yii\helpers\Url;
         </li>
         <li class="">
             <a href="http://52beng.com/about" target="_blank"><span class="title">关于我们</span></a>
-            <span class="icon-thumbnail">Cl</span>
+            <span class="icon-thumbnail">AU</span>
         </li>
     </ul>
     <div class="clearfix"></div>

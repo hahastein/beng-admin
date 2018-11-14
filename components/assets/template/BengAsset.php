@@ -14,6 +14,10 @@ use yii\web\AssetBundle;
 class BengAsset extends AssetBundle
 {
 
+    public $css = [
+        'icons.css'
+    ];
+
     public $depends = [
         'bengbeng\admin\components\assets\jquery\JQueryScrollbarAsset',
         'bengbeng\admin\components\assets\plugins\ModernizrAsset',
