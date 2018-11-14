@@ -11,7 +11,7 @@ use yii\helpers\Url;
 
             <li>
                 <a class="detailed" href="">
-                    <span class="title">$menu['menu_name']</span>
+                    <span class="title"><?=$menu['menu_name']?></span>
                     <span class="details">12 New Updates</span>
                 </a>
                 <span class="icon-thumbnail">
