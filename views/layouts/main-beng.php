@@ -57,7 +57,7 @@ TemplateAsset::register($this);
     <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
     <!-- BEGIN SIDEBAR MENU HEADER-->
     <div class="sidebar-header">
-        <h2>Beng Framework 2</h2>
+        <h4>Beng Framework 2</h4>
         <div class="sidebar-header-controls float-right">
             <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20 hidden-md-down" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
             </button>
