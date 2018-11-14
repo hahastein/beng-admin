@@ -83,6 +83,7 @@ TemplateAsset::register($this);
             <!-- END MOBILE SIDEBAR TOGGLE -->
             <div>
                 <div class="brand inline">
+                    <span class="brand"><a class="h4 text-white">Beng</a></span>
                 </div>
                 <!-- START NOTIFICATION LIST -->
                 <ul class="d-none d-lg-block notification-list no-margin d-md-block b-grey b-l b-r no-style p-l-30 p-r-20">
