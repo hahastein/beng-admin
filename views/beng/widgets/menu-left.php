@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Url;
-Yii::$app->Beng->outHtml($menus);die;
 ?>
 
 <div class="sidebar-menu">
@@ -10,7 +9,7 @@ Yii::$app->Beng->outHtml($menus);die;
 
         <?php foreach ($menus as $menu){ ?>
             <?php if(!empty($menu['parent'])) { ?>
-            <li <?= $controllerID==$parent['controller']?'class="open active"':'' ?>>
+            <li <?= in_array($controllerID, $menu['child'])?'class="open active"':'' ?>>
                 <a href="javascript:;">
                     <span class="title"><?=$menu['menu_name']?></span>
                     <span class="arrow<?= $controllerID==$parent['controller']?'class=" open active"':'' ?>"></span>
