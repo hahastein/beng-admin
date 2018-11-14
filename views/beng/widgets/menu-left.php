@@ -5,7 +5,7 @@ use yii\helpers\Url;
 <div class="sidebar-menu">
     <!-- BEGIN SIDEBAR MENU ITEMS-->
     <ul class="menu-items">
-
+        <li class="m-t-30"></li>
 
         <?php foreach ($menus as $menu){ ?>
 
