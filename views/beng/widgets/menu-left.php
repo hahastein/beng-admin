@@ -21,7 +21,7 @@ use yii\helpers\Url;
                     <ul class="sub-menu">
                         <?php foreach ($menu['parent'] as $parent){ ?>
                             <li <?= $controllerID==$parent['controller'] && $actionID==$parent['action']?'class="active"':'' ?>>
-                                <a href="<?= Url::to([$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a>
+                                <a href="<?= Url::to($moduleID.'/'.[$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a>
                                 <span class="icon-thumbnail">
                                     <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
                                 </span>
@@ -30,9 +30,9 @@ use yii\helpers\Url;
                         <?php } ?>
                     </ul>
                 <?php }else{ ?>
-                    <a class="detailed" href="<?=Url::to([$menu['controller'].'/'.$menu['action']])?>">
+                    <a class="detailed" href="<?=Url::to($moduleID.'/'.[$menu['controller'].'/'.$menu['action']])?>">
                         <span class="title"><?=$menu['menu_name']?></span>
-                        <span class="details">12 New Updates</span>
+                        <span class="details">8 新消息</span>
                     </a>
                     <span class="icon-thumbnail">
                         <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
