@@ -86,7 +86,7 @@ TemplateAsset::register($this);
                     <span class="brand"><a class="h4 text-white">Beng</a></span>
                 </div>
                 <!-- START NOTIFICATION LIST -->
-                <ul class="d-none d-lg-block notification-list no-margin d-md-block b-grey b-l b-r no-style p-l-30 p-r-20">
+                <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
                     <li class="p-r-10 inline">
                         <div class="dropdown">
                             <a href="javascript:;" id="notification-center" class="header-icon pg pg-world" data-toggle="dropdown">
