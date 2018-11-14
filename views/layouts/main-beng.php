@@ -26,7 +26,7 @@ TemplateAsset::register($this);
     <title><?= Html::encode(Yii::$app->name .'-' . $this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="fixed-header menu-pin">
+<body class="fixed-header sidebar-visible menu-pin">
 <?php $this->beginBody() ?>
 
 <!-- BEGIN NAV-->
@@ -61,8 +61,7 @@ TemplateAsset::register($this);
         <div class="sidebar-header-controls float-right">
             <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20 hidden-md-down" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
             </button>
-            <button type="button" class="btn btn-link hidden-md-down" data-toggle-pin="sidebar"><i class="fa fs-12"></i>
-            </button>
+
         </div>
     </div>
     <!-- END LEFT MENU HEADER-->
