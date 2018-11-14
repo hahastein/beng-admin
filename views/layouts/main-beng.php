@@ -78,7 +78,7 @@ TemplateAsset::register($this);
     <div class="page-container">
         <div class="header">
             <!-- START MOBILE SIDEBAR TOGGLE -->
-            <a href="#" class="btn-link toggle-sidebar hidden-lg-up pg pg-menu" data-toggle="sidebar">
+            <a href="#" class="btn-link toggle-sidebar d-lg-none pg pg-menu" data-toggle="sidebar">
             </a>
             <!-- END MOBILE SIDEBAR TOGGLE -->
             <div>
