@@ -11,7 +11,7 @@ use yii\helpers\Url;
 
             <li>
                 <?php if(!empty($menu['parent'])) { ?>
-                    <a class="detailed" href="javascript:;">
+                    <a href="javascript:;">
                         <span class="title"><?=$menu['menu_name']?></span>
                         <span class="arrow"></span>
                     </a>
