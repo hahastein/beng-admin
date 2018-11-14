@@ -57,7 +57,7 @@ TemplateAsset::register($this);
     <!-- END SIDEBAR MENU TOP TRAY CONTENT-->
     <!-- BEGIN SIDEBAR MENU HEADER-->
     <div class="sidebar-header">
-        <h5 class="brand text-white">Beng</h5>
+        <span class="brand"><h4 class="clear text-white">Beng</h4></span>
         <div class="sidebar-header-controls float-right">
             <button type="button" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20 hidden-md-down" data-pages-toggle="#appMenu"><i class="fa fa-angle-down fs-16"></i>
             </button>
