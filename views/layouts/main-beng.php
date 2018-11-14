@@ -214,10 +214,10 @@ TemplateAsset::register($this);
             </div>
             <div class="d-flex align-items-center">
                 <!-- START User Info-->
-                <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
+                <div class="pull-left p-r-10 fs-14 font-heading d-md-none">
                     <span class="semi-bold">David</span> <span class="text-master">Nest</span>
                 </div>
-                <div class="dropdown pull-right hidden-md-down">
+                <div class="dropdown pull-right d-md-none">
                     <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="thumbnail-wrapper d32 circular inline">
                             <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
