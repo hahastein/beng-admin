@@ -82,8 +82,7 @@ TemplateAsset::register($this);
         </a>
         <!-- END MOBILE SIDEBAR TOGGLE -->
         <div class="">
-            <div class="brand inline   ">
-                <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="78" height="22">
+            <div class="brand inline">
             </div>
             <!-- START NOTIFICATION LIST -->
             <ul class="hidden-md-down notification-list no-margin hidden-sm-down b-grey b-l b-r no-style p-l-30 p-r-20">
