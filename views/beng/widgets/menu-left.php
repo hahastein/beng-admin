@@ -8,6 +8,7 @@ use yii\helpers\Url;
         <li class="m-t-30"></li>
 
         <?php foreach ($menus as $key => $menu){ ?>
+            <?php print_r($key) ?>
             <?php if(!empty($menu['parent'])) { ?>
             <li <?= in_array($controllerID, $menu['child'])?'class="open active"':'' ?>>
                 <a href="javascript:;">
