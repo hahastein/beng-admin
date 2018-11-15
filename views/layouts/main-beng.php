@@ -116,7 +116,7 @@ TemplateAsset::register($this);
                 <a href="#" class="header-icon pg pg-alt_menu btn-link m-l-10 sm-no-margin d-inline-block" data-toggle="quickview" data-toggle-element="#quickview"></a>
             </div>
         </div>
-
+        <?=$content?>
     </div>
     <?= \bengbeng\admin\widgets\information\RightWidget::widget()?>
 <?php $this->endBody() ?>
