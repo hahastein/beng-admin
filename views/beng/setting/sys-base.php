@@ -1,4 +1,4 @@
-<div class="page-content-wrapper content-builder active full-height" id="titleParallax">
+<div class="page-content-wrapper">
     <!-- START PAGE CONTENT -->
     <div class="content">
         <!-- START JUMBOTRON -->
