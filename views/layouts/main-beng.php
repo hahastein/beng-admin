@@ -217,7 +217,7 @@ TemplateAsset::register($this);
             <div class="d-flex align-items-center">
                 <!-- START User Info-->
                 <div class="pull-left p-r-10 fs-14 font-heading hidden-md-down">
-                    <span class="semi-bold">David</span> <span class="text-master">Nest</span>
+                    <span class="semi-bold">hahastein</span> <span class="text-master">管理员</span>
                 </div>
                 <div class="dropdown pull-right hidden-md-down">
                     <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -226,11 +226,11 @@ TemplateAsset::register($this);
                         </span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
-                        <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> Settings</a>
-                        <a href="#" class="dropdown-item"><i class="pg-outdent"></i> Feedback</a>
-                        <a href="#" class="dropdown-item"><i class="pg-signals"></i> Help</a>
+                        <a href="#" class="dropdown-item"><i class="pg-settings_small"></i> 设置</a>
+                        <a href="#" class="dropdown-item"><i class="pg-outdent"></i> 微信</a>
+                        <a href="#" class="dropdown-item"><i class="pg-signals"></i> 帮助</a>
                         <a href="#" class="clearfix bg-master-lighter dropdown-item">
-                            <span class="pull-left">Logout</span>
+                            <span class="pull-left">注销</span>
                             <span class="pull-right"><i class="pg-power"></i></span>
                         </a>
                     </div>
