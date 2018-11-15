@@ -1,6 +1,7 @@
 <?php
 use yii\helpers\Html;
 use bengbeng\admin\TemplateAsset;
+use bengbeng\admin\components\handles\TemplateHandle;
 
 TemplateAsset::register($this);
 ?>
@@ -221,7 +222,7 @@ TemplateAsset::register($this);
                 <div class="dropdown pull-right hidden-md-down">
                     <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="thumbnail-wrapper d32 circular inline">
-                            <img src="<?=Yii::getAlias('@bengbeng/admin/assets/beng/img/avatar_d.png')?>" alt="" data-src="<?=Yii::getAlias('@bengbeng/admin/assets/beng/img/avatar_d.png')?>" data-src-retina="<?=Yii::getAlias('@bengbeng/admin/assets/beng/img/avatar_d@2x.png')?>" width="32" height="32">
+                            <img src="<?=TemplateHandle::getImgToTheme('img/avatar_d.png')?>" alt="" data-src="<?=TemplateHandle::getImgToTheme('img/avatar_d.png')?>" data-src-retina="<?=TemplateHandle::getImgToTheme('img/avatar_d@2x.png')?>" width="32" height="32">
                         </span>
                     </button>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown" role="menu">
