@@ -212,7 +212,7 @@ TemplateAsset::register($this);
                     </li>
                 </ul>
                 <!-- END NOTIFICATIONS LIST -->
-                <a href="#" class="search-link hidden-md-down" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
+                <a href="#" class="search-link hidden-md-down" data-toggle="search"><i class="pg-search"></i>输入想要的内容 <span class="bold">搜搜看</span></a>
             </div>
             <div class="d-flex align-items-center">
                 <!-- START User Info-->
