@@ -1,31 +1,22 @@
 <div class="page-content-wrapper">
     <!-- START PAGE CONTENT -->
-    <div class="content">
-        <!-- START JUMBOTRON -->
-        <div class="jumbotron no-margin" data-pages="parallax">
-            <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
+    <div class="content sm-gutter">
+        <div data-pages="parallax">
+            <div class="container-fluid p-l-25 p-r-25 sm-p-l-0 sm-p-r-0">
                 <div class="inner">
                     <h3 class="">Page Title</h3>
+                    <ol class="breadcrumb sm-p-b-5">
+                        <li class="breadcrumb-item">
+                            <a href="<?=\yii\helpers\Url::home()?>">首页</a>
+                        </li>
+                        <li class="breadcrumb-item active">
+                            <a >基本设置</a>
+                        </li>
+                    </ol>
                 </div>
             </div>
-        </div><!-- END JUMBOTRON -->
-        <!-- START PAGE COVER -->
-        <div class=" container-fluid   container-fixed-lg demo-container">
-            <ul class="breadcrumb p-l-0">
-                <li class="breadcrumb-item">
-                    <a href="<?=\yii\helpers\Url::home()?>">首页</a>
-                </li>
-                <li class="breadcrumb-item active">
-                    <a >Parallax for page title</a>
-                </li>
-            </ul>
-            <!-- END BREADCRUMB -->
         </div>
-        <div class=" container-fluid   container-fixed-lg">
-            <!-- YOU CAN REMOVE .container-fixed-lg TO DISABLE THE FEATURE WHERE THE CONTENT
-                 ALIGNS TO THE CENTER WITHOUT STRECTHING UNGLY ON 1800PX(1080P & 4/5K MONITORS) UP WORDS SCREEN
-                  -->
-            <!-- CONTENT GOES HERE-->
+        <div class="container-fluid p-l-25 p-r-25 p-t-0 p-b-25 sm-padding-10">
         </div>
     </div>
 </div>
