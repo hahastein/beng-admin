@@ -7,7 +7,7 @@
                     <h3 class="">Page Title</h3>
                     <ol class="breadcrumb sm-p-b-5">
                         <li class="breadcrumb-item">
-                            <a href="<?=\yii\helpers\Url::home()?>">首页</a>
+                            <a href="<?=\yii\helpers\Url::home()?>">HOME</a>
                         </li>
                         <li class="breadcrumb-item active">
                             <a >基本设置</a>
