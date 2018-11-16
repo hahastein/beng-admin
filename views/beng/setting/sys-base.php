@@ -11,7 +11,7 @@
         </div><!-- END JUMBOTRON -->
         <!-- START PAGE COVER -->
         <div class=" container-fluid   container-fixed-lg demo-container">
-            <ul class="breadcrumb">
+            <ul class="breadcrumb p-l-0">
                 <li class="breadcrumb-item">
                     <a href="<?=\yii\helpers\Url::home()?>">首页</a>
                 </li>
