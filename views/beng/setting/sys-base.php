@@ -16,7 +16,7 @@
                     <a href="<?=\yii\helpers\Url::home()?>">首页</a>
                 </li>
                 <li class="breadcrumb-item active">
-                    Parallax for page title
+                    <a >Parallax for page title</a>
                 </li>
             </ul>
             <!-- END BREADCRUMB -->
