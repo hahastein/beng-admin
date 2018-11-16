@@ -12,11 +12,11 @@
         <!-- START PAGE COVER -->
         <div class=" container-fluid   container-fixed-lg demo-container">
             <ul class="breadcrumb">
-                <li>
-                    <p>home</p>
+                <li class="breadcrumb-item">
+                    <a href="<?=\yii\helpers\Url::home()?>">首页</a>
                 </li>
-                <li>
-                    <a class="active" href="#">Parallax for page title</a>
+                <li class="breadcrumb-item active">
+                    Parallax for page title
                 </li>
             </ul>
             <!-- END BREADCRUMB -->
