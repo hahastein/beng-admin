@@ -2,9 +2,9 @@
     <!-- START PAGE CONTENT -->
     <div class="content">
 
-        <div class="container-fluid container-fixed-lg">
+        <div class="container-fluid">
 
-            <h1 class="page-title">Page Title</h1>
+            <h3 class="page-title">Page Title</h3>
 
             <ol class="breadcrumb p-l-0">
                 <li class="breadcrumb-item">
@@ -17,7 +17,7 @@
 
         </div>
 
-        <div class="container-fluid container-fixed-lg">
+        <div class="container-fluid">
         </div>
 
     </div>
