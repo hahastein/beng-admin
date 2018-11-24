@@ -1,5 +1,7 @@
 <?php
 use yii\helpers\Html;
+use bengbeng\admin\components\handles\TemplateHandle;
+
 \bengbeng\admin\components\assets\template\BengAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -17,7 +19,7 @@ use yii\helpers\Html;
     <meta name="author" content="BengBeng Framework" />
     <?= Html::csrfMetaTags() ?>
     <!-- Favicon icon -->
-    <link rel="icon" href="<?= Yii::getAlias('@bengbeng/admin/images/favicon.ico')?>" type="image/x-icon">
+    <link rel="icon" href="<?= TemplateHandle::getImgToTheme('images/favicon.ico')?>" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <?php $this->head() ?>
