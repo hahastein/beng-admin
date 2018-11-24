@@ -17,7 +17,7 @@ use yii\helpers\Html;
     <meta name="author" content="BengBeng Framework" />
     <?= Html::csrfMetaTags() ?>
     <!-- Favicon icon -->
-    <link rel="icon" href="../files/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= Yii::getAlias('@bengbeng/admin/images/favicon.ico')?>" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <?php $this->head() ?>
