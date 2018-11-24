@@ -22,6 +22,10 @@ class BengAsset extends AssetBundle
 
     public $js = [
         'pages/waves/js/waves.min.js',
+        'plugins/jquery-slimscroll/js/jquery.slimscroll.js',
+        'js/pcoded.min.js',
+        'js/vertical/vertical-layout.min.js',
+        'js/script.js',
     ];
 
     public $depends = [
