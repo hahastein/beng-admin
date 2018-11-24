@@ -15,13 +15,13 @@ class BengAsset extends AssetBundle
 {
 
     public $css = [
-        'assets/pages/waves/css/waves.min.css',
-        'assets/icon/feather/css/feather.css',
-        'assets/css/style.css'
+        'pages/waves/css/waves.min.css',
+        'icon/feather/css/feather.css',
+        'css/style.css'
     ];
 
     public $js = [
-        'assets/pages/waves/js/waves.min.js',
+        'pages/waves/js/waves.min.js',
     ];
 
     public $depends = [
