@@ -35,6 +35,7 @@ class BengAsset extends AssetBundle
 
     public function init()
     {
+        \Yii::$app->Beng->outHtml( \Yii::$app->controller );
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
 }
