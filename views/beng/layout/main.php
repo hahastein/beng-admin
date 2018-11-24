@@ -1,5 +1,5 @@
 <?php
-
+use yii\helpers\Html;
 \bengbeng\admin\components\assets\template\BengAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title><?= Html::encode(Yii::$app->name .'-' . $this->title) ?></title>
     <!-- Meta -->
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -15,10 +15,12 @@
     <meta name="description" content="" />
     <meta name="keywords" content="bengbeng framework admin">
     <meta name="author" content="BengBeng Framework" />
+    <?= Html::csrfMetaTags() ?>
     <!-- Favicon icon -->
     <link rel="icon" href="../files/assets/images/favicon.ico" type="image/x-icon">
     <!-- Google font-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <?php $this->head() ?>
 </head>
 
 <body>
