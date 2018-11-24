@@ -19,9 +19,8 @@ class BengAsset extends AssetBundle
     ];
 
     public $depends = [
-        'bengbeng\admin\components\assets\jquery\JQueryScrollbarAsset',
-        'bengbeng\admin\components\assets\plugins\ModernizrAsset',
-        'bengbeng\admin\components\assets\plugins\Select2Asset',
+        'yii\web\JqueryAsset',
+        'bengbeng\admin\BootstrapAsset'
     ];
 
     public function init()
