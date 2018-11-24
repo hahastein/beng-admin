@@ -14,7 +14,7 @@ class Module extends \yii\base\Module
         $themeName = TemplateHandle::getTheme();
         $this->setViewPath('@bengbeng/admin/views'.DIRECTORY_SEPARATOR.$themeName);
         $this->layout = '@bengbeng/admin/views/' . $themeName . '/layout/main';
-        Yii::$app->Beng->outHtml($this->layout);
+//        Yii::$app->Beng->outHtml($this->layout);
 
     }
 
