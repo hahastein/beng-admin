@@ -21,7 +21,7 @@ class BaseController extends FactoryController
 
         //重新设定模板目录
         if(TemplateHandle::isSetTheme()){
-            $this->layout = '@bengbeng/admin/views/layouts/main-'.TemplateHandle::getTheme();
+            $this->layout = '@bengbeng/admin/views/'.TemplateHandle::getTheme().'/layout/main';
         }
     }
 }
