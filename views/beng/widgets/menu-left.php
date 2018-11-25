@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 use bengbeng\admin\components\handles\TemplateHandle;
 ?>
-<nav class="pcoded-navbar">
+<nav class="pcoded-navbar" pcoded-navbar-position="fixed" pcoded-header-position="fixed">
     <div class="pcoded-inner-navbar main-menu">
         <!--nav top avatar-->
         <div class="">
