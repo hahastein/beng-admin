@@ -323,7 +323,11 @@
                                             <tbody>
                                             <tr>
                                                 <td>测试店铺4</td>
-                                                <td>321</td>
+                                                <td>
+                                                    <h4>123</h4>
+                                                    <small>周销售：12</small>
+                                                    <small>月销售：62</small>
+                                                </td>
                                                 <td>50</td>
                                                 <td>132.01</td>
                                                 <td>测试商品5</td>
