@@ -30,9 +30,13 @@ class SettingController extends BaseController
 
     public function actionPage(){
         $resource = [
-//            'js' => [
-//                'pages/dashboard/ecommerce-dashboard.min.js'
-//            ],
+            'js' => [
+                'pages/chart/float/jquery.flot.js',
+                'pages/chart/float/jquery.flot.categories.js',
+                'pages/chart/float/curvedLines.js',
+                'pages/chart/float/jquery.flot.tooltip.min.js',
+                'pages/dashboard/ecommerce-dashboard.min.js'
+            ],
             'css' => [
                 'css/widget.css'
             ]
