@@ -1,12 +1,13 @@
 <?php
 use yii\helpers\Url;
+use bengbeng\admin\components\handles\TemplateHandle;
 ?>
 <nav class="pcoded-navbar">
     <div class="pcoded-inner-navbar main-menu">
         <!--nav top avatar-->
         <div class="">
             <div class="main-menu-header">
-                <img class="img-menu-user img-radius" src="../files/assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                <img class="img-menu-user img-radius" src="<?= TemplateHandle::getImgToTheme('images/avatar100.png')?>" alt="User-Profile-Image">
                 <div class="user-details">
                     <p id="more-details">John Doe<i class="feather icon-chevron-down m-l-10"></i></p>
                 </div>
