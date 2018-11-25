@@ -42,7 +42,9 @@ class BengAsset extends AssetBundle
         $cache = \Yii::$app->cache;
         $pageData = $cache->get($routerUrl);
         $resource_file = unserialize($pageData['resource_file']);
-        \Yii::$app->Beng->outHtml($resource_file);
+//        \Yii::$app->Beng->outHtml($resource_file);
+        $this->css = array_merge($this->css, $resource_file['css']);
+        $this->js = array_merge($this->js, $resource_file['js']);
 
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
