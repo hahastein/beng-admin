@@ -200,7 +200,7 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr style="height: 40px">
+                                            <tr style="height: 80px">
                                                 <td>John Deo</td>
                                                 <td>#81412</td>
                                                 <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
@@ -210,7 +210,7 @@
                                                 <td><label class="label label-warning">Pending</label></td>
                                                 <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
                                             </tr>
-                                            <tr style="height: 40px">
+                                            <tr style="height: 80px">
                                                 <td>Jenny William</td>
                                                 <td>#68457</td>
                                                 <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
@@ -220,7 +220,7 @@
                                                 <td><label class="label label-primary">Paid</label></td>
                                                 <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
                                             </tr>
-                                            <tr style="height: 40px">
+                                            <tr style="height: 80px">
                                                 <td>Lori Moore</td>
                                                 <td>#45457</td>
                                                 <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
