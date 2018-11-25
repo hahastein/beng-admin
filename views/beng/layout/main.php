@@ -308,6 +308,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                 ])?>
                 <!-- [ navigation menu ] end -->
             </div>
+            <?=$content?>
         </div>
 
     </div>
