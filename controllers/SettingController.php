@@ -30,21 +30,22 @@ class SettingController extends BaseController
 
     public function actionPage(){
         $resource = [
-            'js' => [
-                'pages/chart/float/jquery.flot.js',
-                'pages/chart/float/jquery.flot.categories.js',
-                'pages/chart/float/curvedLines.js',
-                'pages/chart/float/jquery.flot.tooltip.min.js',
-                'pages/dashboard/ecommerce-dashboard.min.js'
-            ],
+//            'js' => [
+//                'pages/chart/float/jquery.flot.js',
+//                'pages/chart/float/jquery.flot.categories.js',
+//                'pages/chart/float/curvedLines.js',
+//                'pages/chart/float/jquery.flot.tooltip.min.js',
+//                'pages/dashboard/ecommerce-dashboard.min.js'
+//            ],
             'css' => [
-                'css/widget.css'
+//                'css/widget.css'
+                'css/pages.css'
             ]
         ];
 
         //拼接数据
         $dataParam = [
-            'title' => '首页',
+            'title' => '基础设置',
             'template_id' => 1,
             'last_time' => time(),
             'resource_file' => serialize($resource)
@@ -54,11 +55,11 @@ class SettingController extends BaseController
         if($settingPage->dataUpdate(function (ActiveOperate $operate) use ($dataParam){
             $operate->params($dataParam);
             $operate->where([
-                'router' => 'home/main'
+                'router' => 'setting/sys-base'
             ]);
         })){
             //更新缓存
-            $cache_name = 'template_'.md5('home/main');
+            $cache_name = 'template_'.md5('setting/sys-base');
             $cache = \Yii::$app->cache;
             if($cache->exists($cache_name)){
                 $cache->set($cache_name, $dataParam);
