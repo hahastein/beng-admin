@@ -299,6 +299,17 @@ use bengbeng\admin\components\handles\TemplateHandle;
         </div>
         <!-- [ chat message ] end -->
 
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <!-- [ navigation menu ] start -->
+                <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
+                    'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
+                    'layout' => '@bengbeng/admin/views/beng/widgets/menu-left'
+                ])?>
+                <!-- [ navigation menu ] end -->
+            </div>
+        </div>
+
     </div>
 </div>
 <!-- Warning Section Starts -->

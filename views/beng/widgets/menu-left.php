@@ -1,56 +1,65 @@
 <?php
 use yii\helpers\Url;
 ?>
-
-<div class="sidebar-menu">
-    <!-- BEGIN LEFT MENU ITEMS-->
-    <ul class="menu-items">
-        <li class="m-t-30"></li>
-
-        <?php foreach ($menus as $menu){ ?>
+<nav class="pcoded-navbar">
+    <div class="pcoded-inner-navbar main-menu">
+        <!--nav top avatar-->
+        <div class="">
+            <div class="main-menu-header">
+                <img class="img-menu-user img-radius" src="../files/assets/images/avatar-4.jpg" alt="User-Profile-Image">
+                <div class="user-details">
+                    <p id="more-details">John Doe<i class="feather icon-chevron-down m-l-10"></i></p>
+                </div>
+            </div>
+            <div class="main-menu-content">
+                <ul>
+                    <li class="more-details">
+                        <a href="user-profile.html">
+                            <i class="feather icon-user"></i>View Profile
+                        </a>
+                        <a href="#!">
+                            <i class="feather icon-settings"></i>Settings
+                        </a>
+                        <a href="auth-normal-sign-in.html">
+                            <i class="feather icon-log-out"></i>Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pcoded-navigation-label">Navigation</div>
+        <ul class="pcoded-item pcoded-left-item">
+            <?php foreach ($menus as $menu){ ?>
             <?php if(!empty($menu['parent'])) { ?>
-            <li <?= in_array($controllerID, $menu['child'])?'class="open active"':'' ?>>
-                <a href="javascript:;">
-                    <span class="title"><?=$menu['menu_name']?></span>
-                    <span class="arrow<?= in_array($controllerID, $menu['child'])?' open active':'' ?>"></span>
+            <li class="pcoded-hasmenu">
+                <a href="javascript:void(0)" class="waves-effect waves-dark">
+                    <span class="pcoded-micon">
+                        <i class="feather icon-layers"></i>
+                    </span>
+                    <span class="pcoded-mtext"><?=$menu['menu_name']?></span>
+                    <span class="pcoded-badge label label-danger">100+</span>
                 </a>
-                <span class="<?=$menu['is_home']?'bg-success ':''?>icon-thumbnail">
-                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
-                </span>
-                <ul class="sub-menu">
-                    <?php foreach ($menu['parent'] as $parent){ ?>
-                        <li <?= $controllerID==$parent['controller'] && $actionID==$parent['action']?'class="active"':'' ?>>
-                            <a href="<?= Url::to(['/'.$moduleID.'/'.$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a>
-                            <span class="icon-thumbnail">
-                                <?= empty($parent['menu_icon'])?$parent['initials']:"<i class=\"{$parent['menu_icon']}\"></i>" ?>
-                            </span>
-                        </li>
-
-                    <?php } ?>
+                <ul class="pcoded-submenu">
+                <?php foreach ($menu['parent'] as $parent){ ?>
+                    <li class="">
+                        <a href="<?= Url::to(['/'.$moduleID.'/'.$parent['controller'].'/'.$parent['action']]) ?>" class="waves-effect waves-dark">
+                            <span class="pcoded-mtext"><?=$parent['menu_name']?></span>
+                        </a>
+                    </li>
+                <?php } ?>
                 </ul>
             </li>
             <?php }else{ ?>
-            <li>
-                <a class="detailed" href="<?=Url::to(['/'.$moduleID.'/'.$menu['controller'].'/'.$menu['action']])?>">
-                    <span class="title"><?=$menu['menu_name']?></span>
-                    <span class="details">8 新消息</span>
+            <li class="">
+                <a href="navbar-light.html" class="waves-effect waves-dark">
+                    <span class="pcoded-micon">
+                        <i class="feather icon-menu"></i>
+                    </span>
+                    <span class="pcoded-mtext"><?=$menu['menu_name']?></span>
                 </a>
-                <span class="<?=$menu['is_home']?'bg-success ':''?>icon-thumbnail">
-                    <?= empty($menu['menu_icon'])?$menu['initials']:"<i class=\"{$menu['menu_icon']}\"></i>" ?>
-                </span>
             </li>
             <?php } ?>
-        <?php } ?>
-
-        <li class="">
-            <a href="http://52beng.com/docs/" target="_blank"><span class="title">文档</span></a>
-            <span class="icon-thumbnail"><i class="pg-note"></i></span>
-        </li>
-        <li class="">
-            <a href="http://52beng.com/about" target="_blank"><span class="title">关于我们</span></a>
-            <span class="icon-thumbnail">AU</span>
-        </li>
-    </ul>
-    <div class="clearfix"></div>
-    <!-- END LEFT MENU ITEMS-->
-</div>
+            <?php } ?>
+        </ul>
+    </div>
+</nav>
