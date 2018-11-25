@@ -27,7 +27,20 @@ class SettingController extends BaseController
     }
 
     public function actionPage(){
+        $resource = [
+            'js' => [
+                'aaa'
+            ],
+            'css' => [
+                'bbb'
+            ]
+        ];
 
+        $serialize_str = serialize($resource);
+
+        \Yii::$app->Beng->outHtml($serialize_str);
+
+        return $this->render('page');
     }
 
     public function behaviors()
