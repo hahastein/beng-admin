@@ -295,7 +295,7 @@
                         <div class="col-md-12">
                             <div class="card table-card latest-activity-card">
                                 <div class="card-header">
-                                    <h5>Latest Order</h5>
+                                    <h5>TOP10 店铺销售分析</h5>
                                     <div class="card-header-right">
                                         <ul class="list-unstyled card-option">
                                             <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
@@ -312,56 +312,22 @@
                                         <table class="table table-hover table-borderless">
                                             <thead>
                                             <tr>
-                                                <th>Customer</th>
-                                                <th>Order ID</th>
-                                                <th>Photo</th>
-                                                <th>Product</th>
-                                                <th>Quantity</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>店铺名称</th>
+                                                <th>订单总量</th>
+                                                <th>商品总数</th>
+                                                <th>销售总额</th>
+                                                <th>销售最好的商品</th>
+                                                <th>最后下单时间</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                <td>John Deo</td>
-                                                <td>#81412314</td>
-                                                <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
-                                                <td>Moto G5</td>
-                                                <td>10</td>
-                                                <td>17-2-2017</td>
-                                                <td><label class="label label-warning">Pending</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jenny William</td>
-                                                <td>#68457898</td>
-                                                <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
-                                                <td>iPhone 8</td>
-                                                <td>16</td>
-                                                <td>20-2-2017</td>
-                                                <td><label class="label label-primary">Paid</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Lori Moore</td>
-                                                <td>#45457898</td>
-                                                <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
-                                                <td>Redmi 4</td>
-                                                <td>20</td>
-                                                <td>17-2-2017</td>
-                                                <td><label class="label label-success">Success</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Austin Pena</td>
-                                                <td>#62446232</td>
-                                                <td><img src="../files/assets/images/widget/PHONE4.jpg" alt="" class="img-fluid"></td>
-                                                <td>Jio</td>
-                                                <td>15</td>
-                                                <td>25-4-2017</td>
-                                                <td><label class="label label-danger">Failed</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                                <td>测试店铺4</td>
+                                                <td>321</td>
+                                                <td>50</td>
+                                                <td>132.01</td>
+                                                <td>测试商品5</td>
+                                                <td>2018-5-12</td>
                                             </tr>
 
                                             </tbody>
