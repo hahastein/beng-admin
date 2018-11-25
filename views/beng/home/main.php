@@ -199,35 +199,24 @@
                                             </tr>
                                             </thead>
                                             <tbody>
+                                            <?php foreach ($order as $item) { ?>
                                             <tr>
-                                                <td>
-                                                    <div style="height: 40px">hahastein</div>
-                                                </td>
-                                                <td>#81412</td>
+                                                <td><?=$item['user_name']?></td>
+                                                <td>#<?=$item['order_sn']?></td>
                                                 <td>Moto G5</td>
                                                 <td>10</td>
-                                                <td>17-2-2017</td>
+                                                <td><?=date('m-d',$item['create_time'])?></td>
                                                 <td><label class="label label-warning">Pending</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                                <td>
+                                                    <a href="#!">
+                                                        <i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i>
+                                                    </a>
+                                                    <a href="#!">
+                                                        <i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i>
+                                                    </a>
+                                                </td>
                                             </tr>
-                                            <tr>
-                                                <td><div style="height: 40px">hahastein</div></td>
-                                                <td>#68457</td>
-                                                <td>iPhone 8</td>
-                                                <td>16</td>
-                                                <td>20-2-2017</td>
-                                                <td><label class="label label-primary">Paid</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><div style="height: 40px">hahastein</div></td>
-                                                <td>#45457</td>
-                                                <td>Redmi 4</td>
-                                                <td>20</td>
-                                                <td>17-2-2017</td>
-                                                <td><label class="label label-success">Success</label></td>
-                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
-                                            </tr>
+                                            <?php } ?>
                                             </tbody>
                                         </table>
                                     </div>
