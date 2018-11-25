@@ -38,24 +38,31 @@ class SettingController extends BaseController
             ]
         ];
 
-        $serialize_str = serialize($resource);
-        $title = '首页';
-        $template_id = 1;
-        $last_time = time();
+        //拼接数据
+        $dataParam = [
+            'title' => '首页',
+            'template_id' => 1,
+            'last_time' => time(),
+            'resource_file' => serialize($resource)
+        ];
 
         $settingPage = new ARSettingPage();
-        if($settingPage->dataUpdate(function (ActiveOperate $operate) use ($title, $template_id, $last_time, $serialize_str){
-            $operate->params([
-                'title' => $title,
-                'template_id' => $template_id,
-                'last_time' => $last_time,
-                'resource_file' => $serialize_str
-            ]);
+        if($settingPage->dataUpdate(function (ActiveOperate $operate) use ($dataParam){
+            $operate->params($dataParam);
             $operate->where([
                 'router' => 'home/main'
             ]);
         })){
-            \Yii::$app->Beng->outHtml('更新成功');
+            //更新缓存
+            $cache_name = 'template_'.md5('home/main');
+            $cache = \Yii::$app->cache;
+            if($cache->exists($cache_name)){
+                $cache->set($cache_name, $dataParam);
+            }else{
+                $cache->add($cache_name, $dataParam);
+            }
+
+            \Yii::$app->Beng->outHtml($cache->get($cache_name));
 
         }else{
             \Yii::$app->Beng->outHtml('更新失败');
