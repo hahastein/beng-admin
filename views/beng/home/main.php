@@ -290,6 +290,91 @@
                         </div>
                         <!-- statustic end -->
                     </div>
+                    <div class="row">
+                        <!-- Latest Order start -->
+                        <div class="col-md-12">
+                            <div class="card table-card latest-activity-card">
+                                <div class="card-header">
+                                    <h5>Latest Order</h5>
+                                    <div class="card-header-right">
+                                        <ul class="list-unstyled card-option">
+                                            <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
+                                            <li><i class="feather icon-maximize full-card"></i></li>
+                                            <li><i class="feather icon-minus minimize-card"></i></li>
+                                            <li><i class="feather icon-refresh-cw reload-card"></i></li>
+                                            <li><i class="feather icon-trash close-card"></i></li>
+                                            <li><i class="feather icon-chevron-left open-card-option"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-borderless">
+                                            <thead>
+                                            <tr>
+                                                <th>Customer</th>
+                                                <th>Order ID</th>
+                                                <th>Photo</th>
+                                                <th>Product</th>
+                                                <th>Quantity</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>John Deo</td>
+                                                <td>#81412314</td>
+                                                <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
+                                                <td>Moto G5</td>
+                                                <td>10</td>
+                                                <td>17-2-2017</td>
+                                                <td><label class="label label-warning">Pending</label></td>
+                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jenny William</td>
+                                                <td>#68457898</td>
+                                                <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
+                                                <td>iPhone 8</td>
+                                                <td>16</td>
+                                                <td>20-2-2017</td>
+                                                <td><label class="label label-primary">Paid</label></td>
+                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lori Moore</td>
+                                                <td>#45457898</td>
+                                                <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
+                                                <td>Redmi 4</td>
+                                                <td>20</td>
+                                                <td>17-2-2017</td>
+                                                <td><label class="label label-success">Success</label></td>
+                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Austin Pena</td>
+                                                <td>#62446232</td>
+                                                <td><img src="../files/assets/images/widget/PHONE4.jpg" alt="" class="img-fluid"></td>
+                                                <td>Jio</td>
+                                                <td>15</td>
+                                                <td>25-4-2017</td>
+                                                <td><label class="label label-danger">Failed</label></td>
+                                                <td><a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i></a><a href="#!"><i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i></a></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-right  m-r-20">
+                                        <a href="#!" class="b-b-primary text-primary">View all Orders</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Latest Order end -->
+                    </div>
                 </div>
             </div>
         </div>
