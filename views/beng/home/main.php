@@ -218,6 +218,78 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <!-- statustic start -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card statustic-card">
+                                <div class="card-header borderless">
+                                    <h5>Articles</h5>
+                                </div>
+                                <div class="card-block text-center">
+                                    <span class="d-block text-c-blue f-36">56</span>
+                                    <p class="m-b-0">Total</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-c-blue" style="width:56%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-c-blue">
+                                    <h6 class="text-white m-b-0">Draft: 22</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card statustic-card">
+                                <div class="card-header borderless">
+                                    <h5>Categories</h5>
+                                </div>
+                                <div class="card-block text-center">
+                                    <span class="d-block text-c-green f-36">14</span>
+                                    <p class="m-b-0">Total</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-c-green" style="width:14%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-c-green">
+                                    <h6 class="text-white m-b-0">Used: 14</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card statustic-card">
+                                <div class="card-header borderless">
+                                    <h5>Tickets</h5>
+                                </div>
+                                <div class="card-block text-center">
+                                    <span class="d-block text-c-red f-36">85</span>
+                                    <p class="m-b-0">Total</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-c-red" style="width:85%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-c-red">
+                                    <h6 class="text-white m-b-0">Closed Today: 85</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card statustic-card">
+                                <div class="card-header borderless">
+                                    <h5>Forums</h5>
+                                </div>
+                                <div class="card-block text-center">
+                                    <span class="d-block text-c-yellow f-36">42</span>
+                                    <p class="m-b-0">Total</p>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-c-yellow" style="width:42%"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-c-yellow">
+                                    <h6 class="text-white m-b-0">Unanswered: 42</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- statustic end -->
+                    </div>
                 </div>
             </div>
         </div>
