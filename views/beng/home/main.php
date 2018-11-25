@@ -61,7 +61,7 @@
                                             <h6 class="text-muted m-b-0">新增订单</h6>
                                         </div>
                                         <div class="col-4 text-right">
-                                            <i class="feather icon-file-text f-28"></i>
+                                            <i class="feather icon-list f-28"></i>
                                         </div>
                                     </div>
                                 </div>
