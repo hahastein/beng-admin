@@ -203,7 +203,7 @@
                                             <tr>
                                                 <td>John Deo</td>
                                                 <td>#81412</td>
-                                                <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
+                                                <td height="40px"><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
                                                 <td>Moto G5</td>
                                                 <td>10</td>
                                                 <td>17-2-2017</td>
@@ -213,7 +213,7 @@
                                             <tr>
                                                 <td>Jenny William</td>
                                                 <td>#68457</td>
-                                                <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
+                                                <td height="40px"><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
                                                 <td>iPhone 8</td>
                                                 <td>16</td>
                                                 <td>20-2-2017</td>
@@ -223,7 +223,7 @@
                                             <tr>
                                                 <td>Lori Moore</td>
                                                 <td>#45457</td>
-                                                <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
+                                                <td height="40px"><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
                                                 <td>Redmi 4</td>
                                                 <td>20</td>
                                                 <td>17-2-2017</td>
