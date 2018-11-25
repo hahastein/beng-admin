@@ -8,7 +8,7 @@
                     </div>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="index.html">
+                            <a href="<?= \yii\helpers\Url::home()?>">
                                 <i class="feather icon-home"></i>
                             </a>
                         </li>
