@@ -43,8 +43,9 @@ class BengAsset extends AssetBundle
 
         if($cache->exists($cache_name)) {
             $pageData = $cache->get($cache_name);
-            \Yii::$app->Beng->outHtml($pageData);
+
             $resource_file = unserialize($pageData['resource_file']);
+            \Yii::$app->Beng->outHtml($resource_file);
             //合并模板所使用的资源文件
             if (empty($resource_file['css'])) {
                 $this->css = array_merge($this->css, $resource_file['css']);
