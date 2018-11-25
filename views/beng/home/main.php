@@ -325,11 +325,13 @@
                                                 <td>测试店铺4</td>
                                                 <td>
                                                     <h4>123</h4>
-                                                    <span>周：12</span>
-                                                    <small>月：62</small>
                                                 </td>
                                                 <td>50</td>
-                                                <td>132.01</td>
+                                                <td>
+                                                    <h4>1235.01</h4>
+                                                    <small>周：12.00</small>
+                                                    <small>月：62.21</small>
+                                                </td>
                                                 <td>测试商品5</td>
                                                 <td>2018-5-12</td>
                                             </tr>
