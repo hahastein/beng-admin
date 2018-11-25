@@ -203,8 +203,8 @@
                                             <tr>
                                                 <td><?=$item['user_name']?></td>
                                                 <td>#<?=$item['order_sn']?></td>
-                                                <td>Moto G5</td>
-                                                <td>10</td>
+                                                <td><?=$item['goods_name']?></td>
+                                                <td><?=$item['total_price']?></td>
                                                 <td><?=date('m-d',$item['create_time'])?></td>
                                                 <td><label class="label label-warning">Pending</label></td>
                                                 <td>
