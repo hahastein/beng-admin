@@ -344,7 +344,7 @@
                                         </table>
                                     </div>
                                     <div class="text-right  m-r-20">
-                                        <a href="#!" class="b-b-primary text-primary">View all Orders</a>
+                                        <a href="#!" class="b-b-primary text-primary">查看所有店铺 >>> </a>
                                     </div>
                                 </div>
                             </div>
