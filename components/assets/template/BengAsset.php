@@ -21,7 +21,7 @@ class BengAsset extends AssetBundle
     ];
 
     public $js = [
-        'jquery-ui/js/jquery-ui.min.js',
+        'plugins/jquery-ui/js/jquery-ui.min.js',
         'pages/waves/js/waves.min.js',
         'plugins/jquery-slimscroll/js/jquery.slimscroll.js',
         'js/pcoded.min.js',
