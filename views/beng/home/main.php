@@ -65,7 +65,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-c-green">
+                                <div class="card-footer bg-c-blue">
                                     <div class="row align-items-center">
                                         <div class="col-9">
                                             <p class="text-white m-b-0">% change</p>
