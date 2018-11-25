@@ -31,10 +31,10 @@ class SettingController extends BaseController
     public function actionPage(){
         $resource = [
             'js' => [
-                'aaa'
+                'pages/dashboard/ecommerce-dashboard.min.js'
             ],
             'css' => [
-                'bbb'
+                'css/widget.css'
             ]
         ];
 
