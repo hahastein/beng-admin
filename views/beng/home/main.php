@@ -324,13 +324,15 @@
                                             <tr>
                                                 <td>测试店铺4</td>
                                                 <td>
-                                                    <span class="h4">123</span><small>个</small>
+                                                    <span class="h4">123</span><small>单</small>
                                                 </td>
-                                                <td>50</td>
+                                                <td>
+                                                    <span class="h4">50</span><small>个</small>
+                                                </td>
                                                 <td>
                                                     <h4>1235.01</h4>
-                                                    <small>周：12.00</small>
-                                                    <small>月：62.21</small>
+                                                    <span>123/</span><small>周</small>
+                                                    <span>123/</span><small>月</small>
                                                 </td>
                                                 <td>测试商品5</td>
                                                 <td>2018-5-12</td>
