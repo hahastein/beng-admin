@@ -28,8 +28,6 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="card">
-                                <!-- <h6 class="sub-title">Tab With Icon</h6> -->
-                                <div class="sub-title">Tab With Icon</div>
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs md-tabs " role="tablist">
                                     <li class="nav-item">
