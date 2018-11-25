@@ -43,6 +43,15 @@ class HomeController extends BaseController
             'create_time' => time(),
             'order_state' => 1
         ];
+        $orderData[] = [
+            'order_id' => 1,
+            'user_name' => 'hahastein',
+            'order_sn' => '20181125001321510',
+            'goods_name' => '测试商品1',
+            'total_price' => '12.00',
+            'create_time' => time(),
+            'order_state' => 1
+        ];
         return $this->render('main', ['order' => $orderData]);
     }
 
