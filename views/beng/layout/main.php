@@ -126,7 +126,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                         <li class="user-profile header-notification">
                             <div class="dropdown-primary dropdown">
                                 <div class="dropdown-toggle" data-toggle="dropdown">
-                                    <img src="<?=TemplateHandle::getImgToTheme('images/avatar100.png')?>" class="img-radius" alt="User-Profile-Image">
+                                    <img src="<?=TemplateHandle::getImgToTheme('images/avatar100.png')?>" class="img-radius" alt="用户头像">
                                     <span>John Doe</span>
                                     <i class="feather icon-chevron-down"></i>
                                 </div>
