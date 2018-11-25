@@ -195,7 +195,6 @@
                                                 <th>订单金额</th>
                                                 <th>下单时间</th>
                                                 <th>订单状态</th>
-                                                <th>操作</th>
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -206,15 +205,7 @@
                                                 <td><?=$item['goods_name']?></td>
                                                 <td><?=$item['total_price']?></td>
                                                 <td><?=date('m-d',$item['create_time'])?></td>
-                                                <td><label class="label label-warning">Pending</label></td>
-                                                <td>
-                                                    <a href="#!">
-                                                        <i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i>
-                                                    </a>
-                                                    <a href="#!">
-                                                        <i class="feather icon-trash-2 f-w-600 f-16 text-c-red"></i>
-                                                    </a>
-                                                </td>
+                                                <td><label class="label label-success">待发货</label></td>
                                             </tr>
                                             <?php } ?>
                                             </tbody>
