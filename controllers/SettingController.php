@@ -22,6 +22,14 @@ class SettingController extends BaseController
         return $this->render('sys-base');
     }
 
+    public function actionTemplate(){
+
+    }
+
+    public function actionPage(){
+
+    }
+
     public function behaviors()
     {
         self::setActions([

@@ -15,7 +15,8 @@ class HomeController extends BaseController
 {
 
     public function actionMain(){
-        \Yii::$app->Beng->outHtml('main');
+//        \Yii::$app->Beng->outHtml('main');
+        return $this->render('main');
     }
 
     public function behaviors()
