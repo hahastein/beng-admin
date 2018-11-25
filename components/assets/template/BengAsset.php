@@ -38,7 +38,7 @@ class BengAsset extends AssetBundle
     {
         //拼接当前的controller和action
         $routerUrl = \Yii::$app->controller->id . '/' . \Yii::$app->controller->action->id;
-
+        $routerUrl = 'template_' . md5($routerUrl);
         $cache = \Yii::$app->cache;
         $pageData = $cache->get($routerUrl);
         \Yii::$app->Beng->outHtml($routerUrl);
