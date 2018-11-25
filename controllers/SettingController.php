@@ -46,7 +46,7 @@ class SettingController extends BaseController
     public function behaviors()
     {
         self::setActions([
-            'sys-base'
+            'sys-base', 'page'
         ]);
         return parent::behaviors();
     }
