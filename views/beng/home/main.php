@@ -150,7 +150,7 @@
                                     </div>
                                 </div>
                                 <div class="card-footer">
-                                    <h4>$2654.00</h4>
+                                    <h2>$2654.00</h2>
                                     <p class="text-muted">Sales in Nov.</p>
                                     <div class="row">
                                         <div class="col">
