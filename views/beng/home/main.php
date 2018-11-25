@@ -32,8 +32,8 @@
                                 <div class="card-block">
                                     <div class="row align-items-center">
                                         <div class="col-8">
-                                            <h4 class="text-c-yellow">$30200</h4>
-                                            <h6 class="text-muted m-b-0">All Earnings</h6>
+                                            <h4 class="text-c-yellow">312</h4>
+                                            <h6 class="text-muted m-b-0">新增用户</h6>
                                         </div>
                                         <div class="col-4 text-right">
                                             <i class="feather icon-bar-chart-2 f-28"></i>
@@ -46,7 +46,7 @@
                                             <p class="text-white m-b-0">% change</p>
                                         </div>
                                         <div class="col-3 text-right">
-                                            <i class="feather icon-trending-up text-white f-16"></i>
+                                            <i class="feather icon-user text-white f-16"></i>
                                         </div>
                                     </div>
                                 </div>
