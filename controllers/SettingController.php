@@ -52,7 +52,7 @@ class SettingController extends BaseController
                 'resource_file' => $serialize_str
             ]);
             $operate->where([
-                'router' => 'home/page'
+                'router' => 'home/main'
             ]);
         })){
             \Yii::$app->Beng->outHtml('更新成功');
