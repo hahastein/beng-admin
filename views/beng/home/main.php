@@ -324,7 +324,7 @@
                                             <tr>
                                                 <td>测试店铺4</td>
                                                 <td>
-                                                    <h4>123<small>个</small></h4>
+                                                    <span>123<small>个</small></span>
                                                 </td>
                                                 <td>50</td>
                                                 <td>
