@@ -62,7 +62,6 @@ class SettingController extends BaseController
                 $cache->add($cache_name, $dataParam);
             }
 
-            \Yii::$app->Beng->outHtml($cache->get($cache_name));
 
         }else{
             \Yii::$app->Beng->outHtml('更新失败');
