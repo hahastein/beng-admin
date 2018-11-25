@@ -336,7 +336,7 @@
                                                 </td>
                                                 <td>测试商品5</td>
                                                 <td>
-                                                    <i class="feather icon-clock"></i>2018-5-12
+                                                    <i class="feather icon-clock"></i> 2018-5-12
                                                 </td>
                                             </tr>
 
