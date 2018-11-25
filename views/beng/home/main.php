@@ -191,7 +191,6 @@
                                             <tr>
                                                 <th>下单人</th>
                                                 <th>订单号</th>
-                                                <th>Photo</th>
                                                 <th>商品</th>
                                                 <th>订单金额</th>
                                                 <th>下单时间</th>
@@ -201,9 +200,10 @@
                                             </thead>
                                             <tbody>
                                             <tr style="height: 80px">
-                                                <td>John Deo</td>
+                                                <td>
+                                                    <div style="height: 40px">John Deo</div>
+                                                </td>
                                                 <td>#81412</td>
-                                                <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
                                                 <td>Moto G5</td>
                                                 <td>10</td>
                                                 <td>17-2-2017</td>
@@ -213,7 +213,6 @@
                                             <tr style="height: 80px">
                                                 <td>Jenny William</td>
                                                 <td>#68457</td>
-                                                <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
                                                 <td>iPhone 8</td>
                                                 <td>16</td>
                                                 <td>20-2-2017</td>
@@ -223,7 +222,6 @@
                                             <tr style="height: 80px">
                                                 <td>Lori Moore</td>
                                                 <td>#45457</td>
-                                                <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
                                                 <td>Redmi 4</td>
                                                 <td>20</td>
                                                 <td>17-2-2017</td>
