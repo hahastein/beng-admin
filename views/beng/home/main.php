@@ -335,7 +335,9 @@
                                                     <span>123/</span><small>月</small>
                                                 </td>
                                                 <td>测试商品5</td>
-                                                <td><i class="fa fa-clock-o"></i>2018-5-12</td>
+                                                <td>
+                                                    <i class="feather icon-clock"></i>2018-5-12
+                                                </td>
                                             </tr>
 
                                             </tbody>
