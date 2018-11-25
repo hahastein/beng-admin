@@ -9,20 +9,20 @@ use bengbeng\admin\components\handles\TemplateHandle;
             <div class="main-menu-header">
                 <img class="img-menu-user img-radius" src="<?= TemplateHandle::getImgToTheme('images/avatar100.png')?>" alt="User-Profile-Image">
                 <div class="user-details">
-                    <p id="more-details">John Doe<i class="feather icon-chevron-down m-l-10"></i></p>
+                    <p id="more-details">hahastein<i class="feather icon-chevron-down m-l-10"></i></p>
                 </div>
             </div>
             <div class="main-menu-content">
                 <ul>
                     <li class="more-details">
-                        <a href="user-profile.html">
-                            <i class="feather icon-user"></i>View Profile
+                        <a href="<?= Url::to(['user/profile']) ?>">
+                            <i class="feather icon-user"></i>管理员信息
                         </a>
                         <a href="#!">
-                            <i class="feather icon-settings"></i>Settings
+                            <i class="feather icon-settings"></i>系统设置
                         </a>
-                        <a href="auth-normal-sign-in.html">
-                            <i class="feather icon-log-out"></i>Logout
+                        <a href="<?= Url::to(['user/logout']) ?>">
+                            <i class="feather icon-log-out"></i>退出系统
                         </a>
                     </li>
                 </ul>
