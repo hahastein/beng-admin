@@ -22,6 +22,8 @@
     </div>
 
     <div class="pcoded-inner-content">
-asdasd
+        <div class="main-body">
+            asdasd
+        </div>
     </div>
 </div>
