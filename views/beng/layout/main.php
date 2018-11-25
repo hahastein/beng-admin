@@ -127,33 +127,33 @@ use bengbeng\admin\components\handles\TemplateHandle;
                             <div class="dropdown-primary dropdown">
                                 <div class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="<?=TemplateHandle::getImgToTheme('images/avatar100.png')?>" class="img-radius" alt="用户头像">
-                                    <span>John Doe</span>
+                                    <span>hahastein</span>
                                     <i class="feather icon-chevron-down"></i>
                                 </div>
                                 <ul class="show-notification profile-notification dropdown-menu" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                                     <li>
                                         <a href="#!">
-                                            <i class="feather icon-settings"></i> Settings
+                                            <i class="feather icon-settings"></i> 系统设置
                                         </a>
                                     </li>
                                     <li>
                                         <a href="user-profile.html">
-                                            <i class="feather icon-user"></i> Profile
+                                            <i class="feather icon-user"></i> 用户信息
                                         </a>
                                     </li>
                                     <li>
                                         <a href="email-inbox.html">
-                                            <i class="feather icon-mail"></i> My Messages
+                                            <i class="feather icon-mail"></i> 消息
                                         </a>
                                     </li>
                                     <li>
                                         <a href="auth-lock-screen.html">
-                                            <i class="feather icon-lock"></i> Lock Screen
+                                            <i class="feather icon-lock"></i> 锁屏
                                         </a>
                                     </li>
                                     <li>
                                         <a href="auth-normal-sign-in.html">
-                                            <i class="feather icon-log-out"></i> Logout
+                                            <i class="feather icon-log-out"></i> 退出系统
                                         </a>
                                     </li>
                                 </ul>
