@@ -42,7 +42,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                     <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
                         <i class="feather icon-toggle-right"></i>
                     </a>
-                    <a href="index.html">
+                    <a href="<?= \yii\helpers\Url::home()?>">
                         <img class="img-fluid" src="../files/assets/images/logo.png" alt="Theme-Logo" />
                     </a>
                     <a class="mobile-options waves-effect waves-light">
@@ -325,13 +325,13 @@ use bengbeng\admin\components\handles\TemplateHandle;
         <ul class="iew-download">
             <li>
                 <a href="http://www.google.com/chrome/">
-                    <img src="../files/assets/images/browser/chrome.png" alt="Chrome">
+                    <img src="<?= TemplateHandle::getImgToTheme('images/browser/chrome.png')?>" alt="Chrome">
                     <div>Chrome</div>
                 </a>
             </li>
             <li>
                 <a href="https://www.mozilla.org/en-US/firefox/new/">
-                    <img src="../files/assets/images/browser/firefox.png" alt="Firefox">
+                    <img src="<?= TemplateHandle::getImgToTheme('images/browser/firefox.png')?>" alt="Firefox">
                     <div>Firefox</div>
                 </a>
             </li>
