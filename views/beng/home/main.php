@@ -22,9 +22,13 @@
     </div>
 
     <div class="pcoded-inner-content">
-        <div class="main-body page-wrapper page-body">
-            <div class="row">
-                asdasd
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="page-body">
+                    <div class="row">
+                        asdasd
+                    </div>
+                </div>
             </div>
         </div>
     </div>
