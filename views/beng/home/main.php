@@ -172,7 +172,7 @@
                         <div class="col-lg-8 col-md-12">
                             <div class="card table-card latest-activity-card">
                                 <div class="card-header borderless">
-                                    <h5>Latest Order</h5>
+                                    <h5>最新订单</h5>
                                     <div class="card-header-right">
                                         <ul class="list-unstyled card-option">
                                             <li class="first-opt"><i class="feather icon-chevron-left open-card-option"></i></li>
@@ -189,21 +189,21 @@
                                         <table class="table table-hover table-borderless">
                                             <thead>
                                             <tr>
-                                                <th>Customer</th>
-                                                <th>Order ID</th>
+                                                <th>下单人</th>
+                                                <th>订单号</th>
                                                 <th>Photo</th>
-                                                <th>Product</th>
-                                                <th>Quantity</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>商品</th>
+                                                <th>订单金额</th>
+                                                <th>下单时间</th>
+                                                <th>订单状态</th>
+                                                <th>操作</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr>
+                                            <tr style="height: 40px">
                                                 <td>John Deo</td>
                                                 <td>#81412</td>
-                                                <td height="40px"><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
+                                                <td><img src="../files/assets/images/widget/PHONE1.jpg" alt="" class="img-fluid"></td>
                                                 <td>Moto G5</td>
                                                 <td>10</td>
                                                 <td>17-2-2017</td>
@@ -213,7 +213,7 @@
                                             <tr>
                                                 <td>Jenny William</td>
                                                 <td>#68457</td>
-                                                <td height="40px"><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
+                                                <td><img src="../files/assets/images/widget/PHONE2.jpg" alt="" class="img-fluid"></td>
                                                 <td>iPhone 8</td>
                                                 <td>16</td>
                                                 <td>20-2-2017</td>
@@ -223,7 +223,7 @@
                                             <tr>
                                                 <td>Lori Moore</td>
                                                 <td>#45457</td>
-                                                <td height="40px"><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
+                                                <td><img src="../files/assets/images/widget/PHONE3.jpg" alt="" class="img-fluid"></td>
                                                 <td>Redmi 4</td>
                                                 <td>20</td>
                                                 <td>17-2-2017</td>
