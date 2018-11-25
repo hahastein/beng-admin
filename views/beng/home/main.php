@@ -32,7 +32,7 @@
                                 <div class="card-block">
                                     <div class="row align-items-center">
                                         <div class="col-8">
-                                            <h4 class="text-c-yellow">312</h4>
+                                            <h4 class="text-c-green">312</h4>
                                             <h6 class="text-muted m-b-0">新增用户</h6>
                                         </div>
                                         <div class="col-4 text-right">
@@ -40,7 +40,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-footer bg-c-yellow">
+                                <div class="card-footer bg-c-green">
                                     <div class="row align-items-center">
                                         <div class="col-9">
                                             <p class="text-white m-b-0">% change</p>
