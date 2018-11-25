@@ -105,9 +105,25 @@
                         <div class="col-xl-3 col-md-6">
                             <div class="card">
                                 <div class="card-block">
-                                    <h3>59600</h3>
-                                    <p class="text-muted">Total Stock</p>
-                                    <div id="seo-anlytics4" style="height:50px"></div>
+                                    <div class="row align-items-center">
+                                        <div class="col-8">
+                                            <h4 class="text-c-yellow">100+</h4>
+                                            <h6 class="text-muted m-b-0">新增订单</h6>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <i class="feather icon-list f-28"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-c-yellow">
+                                    <div class="row align-items-center">
+                                        <div class="col-9">
+                                            <p class="text-white m-b-0">% change</p>
+                                        </div>
+                                        <div class="col-3 text-right">
+                                            <i class="feather icon-trending-down text-white f-16"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
