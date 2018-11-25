@@ -325,8 +325,8 @@
                                                 <td>测试店铺4</td>
                                                 <td>
                                                     <h4>123</h4>
-                                                    <small>周销售：12</small>
-                                                    <small>月销售：62</small>
+                                                    <span>周：12</span>
+                                                    <small>月：62</small>
                                                 </td>
                                                 <td>50</td>
                                                 <td>132.01</td>
