@@ -129,6 +129,47 @@
                         </div>
                         <!-- seo analytics end -->
                     </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="card o-hidden">
+                                <div class="card-block bg-c-green p-b-0">
+                                    <div class="row text-white m-b-20">
+                                        <div class="col-auto">
+                                            <h4 class="m-b-5">$654</h4>
+                                            <h6>+1.65(2.56%)</h6>
+                                        </div>
+                                        <div class="col text-right">
+                                            <h6>Friday</h6>
+                                        </div>
+                                    </div>
+                                    <div id="sec-ecommerce-chart-line" style="height:60px"></div>
+                                    <div class="row justify-content-center m-t-20">
+                                        <div class="col-8">
+                                            <div id="sec-ecommerce-chart-bar" style="height:100px"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h4>$2654.00</h4>
+                                    <p class="text-muted">Sales in Nov.</p>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p class="text-muted m-b-5">From Market</p>
+                                            <h6>$1860.00</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-muted m-b-5">Referral</p>
+                                            <h6>$500.00</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p class="text-muted m-b-5">Affiliate</p>
+                                            <h6>$294.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
