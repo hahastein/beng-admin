@@ -44,7 +44,7 @@ class SettingController extends BaseController
         $last_time = time();
 
         $settingPage = new ARSettingPage();
-        $settingPage->dataUpdate(function (ActiveOperate $operate) use ($title, $template_id, $last_time, $serialize_str){
+        if($settingPage->dataUpdate(function (ActiveOperate $operate) use ($title, $template_id, $last_time, $serialize_str){
             $operate->params([
                 'title' => $title,
                 'template_id' => $template_id,
@@ -54,10 +54,15 @@ class SettingController extends BaseController
             $operate->where([
                 'router' => 'home/page'
             ]);
-        });
+        })){
+            \Yii::$app->Beng->outHtml('更新成功');
+
+        }else{
+            \Yii::$app->Beng->outHtml('更新失败');
+
+        }
 
 
-        \Yii::$app->Beng->outHtml($serialize_str);
 
         return $this->render('page');
     }
