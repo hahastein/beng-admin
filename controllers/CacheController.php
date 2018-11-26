@@ -22,6 +22,7 @@ class CacheController extends BaseController
             $query->orderBy([
                 'page_id' => SORT_DESC
             ]);
+            $query->asArray();
         });
 
         $cache = \Yii::$app->cache;
