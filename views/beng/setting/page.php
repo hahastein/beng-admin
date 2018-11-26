@@ -45,11 +45,11 @@ use \yii\helpers\Url;
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <?php foreach ($page as $item) { ?>
+                                    <?php foreach ($data as $item) { ?>
                                     <tr>
-                                        <th scope="row"><?=$page->page_id?></th>
-                                        <td><?=$page->title?></td>
-                                        <td><?=$page->router?></td>
+                                        <th scope="row"><?=$item->page_id?></th>
+                                        <td><?=$item->title?></td>
+                                        <td><?=$item->router?></td>
                                         <td>@mdo</td>
                                     </tr>
                                     <?php } ?>
