@@ -47,9 +47,9 @@ use \yii\helpers\Url;
                                     <tbody>
                                     <?php foreach ($data as $item) { ?>
                                     <tr>
-                                        <th scope="row"><?=$item->page_id?></th>
-                                        <td><?=$item->title?></td>
-                                        <td><?=$item->router?></td>
+                                        <th scope="row"><?=$item['page_id']?></th>
+                                        <td><?=$item['title']?></td>
+                                        <td><?=$item['router']?></td>
                                         <td>@mdo</td>
                                     </tr>
                                     <?php } ?>
