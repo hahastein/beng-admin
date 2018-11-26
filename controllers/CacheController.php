@@ -16,7 +16,7 @@ class CacheController extends BaseController
     public function actionAll(){
 
         $cache = \Yii::$app->cache;
-        $cache->flush();
+        \Yii::$app->Beng->outHtml($cache);
 
         return $this->render('all');
     }
