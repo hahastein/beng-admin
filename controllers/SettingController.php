@@ -26,7 +26,7 @@ class SettingController extends BaseController
     }
 
     public function actionTemplate(){
-
+//        \Yii::$app->r
     }
 
     public function actionPage(){

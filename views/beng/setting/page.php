@@ -50,7 +50,7 @@ use \yii\helpers\Url;
                                         <th scope="row"><?=$item['page_id']?></th>
                                         <td><?=$item['title']?></td>
                                         <td><?=$item['router']?></td>
-                                        <td>@mdo</td>
+                                        <td><?=$item['isCacheStr']?></td>
                                     </tr>
                                     <?php } ?>
                                     </tbody>
