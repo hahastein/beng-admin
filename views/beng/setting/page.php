@@ -50,7 +50,9 @@ use \yii\helpers\Url;
                                         <th scope="row"><?=$item['page_id']?></th>
                                         <td><?=$item['title']?></td>
                                         <td><?=$item['router']?></td>
-                                        <td><?=$item['isCacheStr']?></td>
+                                        <td>
+                                            <label class="badge <?=$item['isCache']?'badge-primary':'badge-default'?>"><?=$item['isCacheStr']?></label>
+                                        </td>
                                     </tr>
                                     <?php } ?>
                                     </tbody>
