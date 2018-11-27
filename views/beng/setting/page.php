@@ -39,9 +39,10 @@ use \yii\helpers\Url;
                                     <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
+                                        <th>页面名称</th>
+                                        <th>Url</th>
+                                        <th>缓存</th>
+                                        <th>操作</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -52,6 +53,9 @@ use \yii\helpers\Url;
                                         <td><?=$item['router']?></td>
                                         <td>
                                             <label class="badge <?=$item['isCache']?'badge-primary':'badge-default'?>"><?=$item['isCacheStr']?></label>
+                                        </td>
+                                        <td>
+                                            <a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i> 修改</a>
                                         </td>
                                     </tr>
                                     <?php } ?>
