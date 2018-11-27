@@ -55,7 +55,15 @@ use \yii\helpers\Url;
                                             <label class="badge <?=$item['isCache']?'badge-primary':'badge-default'?>"><?=$item['isCacheStr']?></label>
                                         </td>
                                         <td>
-                                            <a href="#!"><i class="icon feather icon-edit f-w-600 f-16 m-r-15 text-c-green"></i> 修改</a>
+                                            <div class="dropdown-primary dropdown open">
+                                                <button class="btn btn-primary dropdown-toggle waves-effect waves-light " type="button" id="dropdown-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">删除</button>
+                                                <div class="dropdown-menu" aria-labelledby="dropdown-2" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">删除此页面</a>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">删除缓存</a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item waves-light waves-effect" href="#">更新缓存</a>
+                                                </div>
+                                            </div>
                                         </td>
                                     </tr>
                                     <?php } ?>
