@@ -14,14 +14,14 @@ use yii\web\AssetBundle;
 class TemplateAsset extends AssetBundle
 {
 
-    public $css = [
-        'animate.css',
-        'style.css'
-    ];
-
-    public $js = [
-        'framework.js',
-    ];
+//    public $css = [
+//        'animate.css',
+//        'style.css'
+//    ];
+//
+//    public $js = [
+//        'framework.js',
+//    ];
 
     //依赖关系
     public $depends = [
@@ -39,6 +39,16 @@ class TemplateAsset extends AssetBundle
                 $this->depends[] = 'bengbeng\\admin\\components\\assets\\template\\' . ucfirst(TemplateHandle::getTheme()) . 'Asset';
             }
             $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
+
+            //设定公共调用资源文件
+            $this->css = [
+                'animate.css',
+                'style.css'
+            ];
+
+            $this->js = [
+                'framework.js',
+            ];
         }
     }
 }
