@@ -8,9 +8,9 @@
 
 namespace bengbeng\admin\components\assets;
 
-use bengbeng\admin\base\BaseAssetBundle;
+use yii\web\AssetBundle;
 
-class ChosenAsset extends BaseAssetBundle
+class ChosenAsset extends AssetBundle
 {
     public $css = [
         'bootstrap-chosen.css',

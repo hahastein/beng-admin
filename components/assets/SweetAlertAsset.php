@@ -8,14 +8,14 @@
 
 namespace bengbeng\admin\components\assets;
 
-use bengbeng\admin\base\BaseAssetBundle;
+use yii\web\AssetBundle;
 
 /**
  * 弹出框引入文件
  * Class SweetAlertAsset
  * @package bengbeng\admin
  */
-class SweetAlertAsset extends BaseAssetBundle
+class SweetAlertAsset extends AssetBundle
 {
     public $css = [
         'sweetalert.css',

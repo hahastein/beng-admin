@@ -9,9 +9,9 @@
 namespace bengbeng\admin\components\assets;
 
 
-use bengbeng\admin\base\BaseAssetBundle;
+use yii\web\AssetBundle;
 
-class ICheckAsset extends BaseAssetBundle
+class ICheckAsset extends AssetBundle
 {
     public $css = [
         'custom.css',
