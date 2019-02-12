@@ -28,7 +28,7 @@ class SweetAlertAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "plugins/sweetalert" . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= '@bengbeng/admin/assets/plugins/sweetalert/';
     }
 
 }
