@@ -23,6 +23,6 @@ class BlueimpAsset extends BaseAssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "plugins/blueimp" . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= '@bengbeng/admin/assets/plugins/blueimp/';
     }
 }

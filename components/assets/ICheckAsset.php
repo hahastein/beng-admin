@@ -24,6 +24,6 @@ class ICheckAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "plugins/icheck" . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= '@bengbeng/admin/assets/plugins/icheck/';
     }
 }

@@ -23,6 +23,6 @@ class ChosenAsset extends AssetBundle
     public function init()
     {
         parent::init();
-        $this->sourcePath .= "plugins/chosen" . DIRECTORY_SEPARATOR;
+        $this->sourcePath .= '@bengbeng/admin/assets/plugins/chosen/';
     }
 }
