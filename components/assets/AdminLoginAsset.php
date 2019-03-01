@@ -14,10 +14,10 @@ use bengbeng\admin\components\handles\TemplateHandle;
 class AdminLoginAsset extends BaseAssetBundle
 {
     public $css = [
-        'login/login.css'
+        'login.css'
     ];
     public $js = [
-        'login/login.js'
+        'login.js'
     ];
 
     public function init()
