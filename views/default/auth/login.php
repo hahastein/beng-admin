@@ -7,11 +7,11 @@ $loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this)
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 text">
-                    <h1><strong>竹迹</strong>后台管理系统</h1>
+                    <h1><strong>52Beng</strong>后台管理系统</h1>
                     <div class="description">
                         <p>
                             系统可根据您的账号权限进入不同的管理层级.
-                            如需申请更多权限，请联系我们 <a href="http://boxmanage.bengboom.com"><strong>BENGBENG</strong></a>
+                            如需申请更多权限，请联系我们 <a href="http://www.52beng.com"><strong>BENGBENG</strong></a>
                         </p>
                     </div>
                 </div>
@@ -20,7 +20,7 @@ $loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this)
                 <div class="col-sm-6 col-sm-offset-3 form-box">
                     <div class="form-top">
                         <div class="form-top-left">
-                            <h3>登录竹迹后台</h3>
+                            <h3>登录52Beng后台</h3>
                             <p>输入您的账号密码来登录系统:</p>
                         </div>
                         <div class="form-top-right">
