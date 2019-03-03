@@ -1,23 +1,21 @@
 <?php
 \bengbeng\admin\TemplateAsset::register($this);
 ?>
-<!-- ============================================================== -->
-<!-- Preloader - style you can find in spinners.css -->
-<!-- ============================================================== -->
 <div class="preloader">
     <div class="loader">
         <div class="loader__figure"></div>
-        <p class="loader__label">Elite admin</p>
+        <p class="loader__label">52Beng Loading</p>
     </div>
 </div>
-<!-- ============================================================== -->
-<!-- Main wrapper - style you can find in pages.scss -->
-<!-- ============================================================== -->
 <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
     <div class="login-box card">
         <div class="card-body">
             <form class="form-horizontal form-material text-center" id="loginform" action="index.html">
-                <a href="javascript:void(0)" class="db"><img src="../assets/images/logo-icon.png" alt="Home" /><br/><img src="../assets/images/logo-text.png" alt="Home" /></a>
+                <a href="javascript:void(0)" class="db">
+                    <img src="../assets/images/logo-icon.png" alt="Home" />
+                    <br/>
+                    <h1>BengBeng Framework</h1>
+                </a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
                         <input class="form-control" type="text" required="" placeholder="Username">
