@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 class FontAwesomeAsset extends AssetBundle
 {
     public $css = [
-        'css/font-awesome.css',
+        'css/fontawesome-all.min.css',
     ];
 
     public function init()

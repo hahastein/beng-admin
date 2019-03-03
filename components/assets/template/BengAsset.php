@@ -15,23 +15,18 @@ class BengAsset extends AssetBundle
 {
 
     public $css = [
-        'pages/waves/css/waves.min.css',
-        'icon/feather/css/feather.css',
-        'css/style.css'
+        'style.css'
     ];
 
     public $js = [
-        'plugins/jquery-ui/js/jquery-ui.min.js',
-        'pages/waves/js/waves.min.js',
-        'plugins/jquery-slimscroll/js/jquery.slimscroll.js',
-        'js/pcoded.min.js',
-        'js/vertical/vertical-layout.min.js',
-        'js/script.js',
+        'plugins/popper.min.js',
+        'plugins/bootstrap.min.js',
     ];
 
     public $depends = [
-        'yii\web\JqueryAsset',
-        'bengbeng\admin\BootstrapAsset'
+//        'yii\web\JqueryAsset',
+//        'bengbeng\admin\BootstrapAsset'
+        'bengbeng\admin\FontAwesomeAsset'
     ];
 
     public function init()

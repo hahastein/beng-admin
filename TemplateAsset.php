@@ -26,9 +26,9 @@ class TemplateAsset extends AssetBundle
     //依赖关系
     public $depends = [
         'yii\web\JqueryAsset',
-        'bengbeng\admin\BootstrapAsset',
-        'bengbeng\admin\FontAwesomeAsset',
-        'bengbeng\admin\components\assets\PaceAsset',
+//        'bengbeng\admin\BootstrapAsset',
+//        'bengbeng\admin\FontAwesomeAsset',
+//        'bengbeng\admin\components\assets\PaceAsset',
     ];
 
     public function init()
@@ -41,14 +41,14 @@ class TemplateAsset extends AssetBundle
             $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
 
             //设定公共调用资源文件
-            $this->css = [
-                'animate.css',
-                'style.css'
-            ];
-
-            $this->js = [
-                'framework.js',
-            ];
+//            $this->css = [
+//                'animate.css',
+//                'style.css'
+//            ];
+//
+//            $this->js = [
+//                'framework.js',
+//            ];
         }
     }
 }

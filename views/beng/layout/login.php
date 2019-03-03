@@ -1,7 +1,30 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hahastein
- * Date: 2018/11/24
- * Time: 13:09
- */
+use yii\helpers\Html;
+?>
+<?php $this->beginPage() ?>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="<?= Yii::$app->language ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <?= Html::csrfMetaTags() ?>
+    <title>登录<?= Html::encode(Yii::$app->name) ?></title>
+    <?= $this->head(); ?>
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<?php $this->beginBody() ?>
+<?= $content ?>
+<?php $this->endBody() ?>
+</body>
+</html>
+<?php $this->endPage() ?>
+

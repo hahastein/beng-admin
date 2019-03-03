@@ -13,16 +13,16 @@ use bengbeng\admin\components\handles\TemplateHandle;
 
 class AdminLoginAsset extends BaseAssetBundle
 {
-    public $css = [
-        'login.css'
-    ];
+//    public $css = [
+//        'login.css'
+//    ];
     public $js = [
-        'login.js'
+        'pages/login.js'
     ];
 
     public function init()
     {
         parent::init();
-        $this->sourcePath .= TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
+        $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
     }
 }

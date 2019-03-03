@@ -1,5 +1,5 @@
 <?php
-$loginAsset = \bengbeng\admin\components\assets\AdminLoginAsset::register($this);
+$loginAsset = \bengbeng\admin\components\assets\template\BengAsset::register($this);
 ?>
 <!-- Top content -->
 <div class="top-content">
