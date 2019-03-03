@@ -1,5 +1,6 @@
-
-
+<?php
+\bengbeng\admin\TemplateAsset::register($this);
+?>
 <!-- ============================================================== -->
 <!-- Preloader - style you can find in spinners.css -->
 <!-- ============================================================== -->
