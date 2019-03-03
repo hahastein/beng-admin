@@ -14,7 +14,7 @@
                 <a href="javascript:void(0)" class="db">
                     <img src="../assets/images/logo-icon.png" alt="Home" />
                     <br/>
-                    <h1>BengBeng Framework</h1>
+                    <h4>BengBeng</h4> <h4>Framework</h4>
                 </a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
