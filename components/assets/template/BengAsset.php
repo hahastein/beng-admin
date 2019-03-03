@@ -15,7 +15,7 @@ class BengAsset extends AssetBundle
 {
 
     public $css = [
-        'style.css'
+        'style.min.css'
     ];
 
     public $js = [
