@@ -28,12 +28,12 @@
                 </a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
-                        <input class="form-control" type="text" required="" placeholder="Username">
+                        <?= $form->field($model, 'admin_name')->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-control']) ?>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <input class="form-control" type="password" required="" placeholder="Password">
+                        <?= $form->field($model, 'admin_pwd')->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-control']) ?>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="form-group text-center m-t-20">
                     <div class="col-xs-12">
-                        <button class="btn btn-info btn-lg btn-block text-uppercase btn-rounded" type="submit">Log In</button>
+                        <?= \yii\helpers\Html::submitButton('登录系统', ['class'=>'btn btn-info btn-lg btn-block text-uppercase btn-rounded','name' =>'submit-button']) ?>
                     </div>
                 </div>
                 <div class="row">
