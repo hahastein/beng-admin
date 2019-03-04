@@ -16,6 +16,9 @@
                 'enableClientValidation'=> true,
                 'options' => [
                         'class' => 'form-horizontal form-material text-center'
+                ],
+                'fieldConfig' => [
+                        'options' => ['class' => 'col-xs-12']
                 ]
             ]) ?>
                 <a href="javascript:void(0)" class="db">
@@ -27,10 +30,10 @@
                     </h4>
                 </a>
                 <div class="form-group m-t-40">
-                    <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'col-xs-12']) ?>
+                    <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-group']) ?>
                 </div>
                 <div class="form-group">
-                    <?= $form->field($model, 'admin_pwd')->label(false)->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'col-xs-12']) ?>
+                    <?= $form->field($model, 'admin_pwd')->label(false)->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-group']) ?>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-12">
