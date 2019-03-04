@@ -10,7 +10,7 @@
 <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
     <div class="login-box card">
         <div class="card-body">
-            <form class="form-horizontal form-material text-center" id="loginform" action="index.html">
+            <?php $form = \yii\widgets\ActiveForm::begin(['id' => 'login_form', 'css' => 'form-horizontal form-material text-center' ,'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
                 <a href="javascript:void(0)" class="db">
                     <img src="../assets/images/logo-icon.png" alt="Home" />
                     <br/>
@@ -60,7 +60,7 @@
                         Don't have an account? <a href="pages-register2.html" class="text-primary m-l-5"><b>Sign Up</b></a>
                     </div>
                 </div>
-            </form>
+            <?php \yii\widgets\ActiveForm::end(); ?>
             <form class="form-horizontal" id="recoverform" action="index.html">
                 <div class="form-group ">
                     <div class="col-xs-12">
