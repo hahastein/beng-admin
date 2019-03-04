@@ -41,8 +41,15 @@ class BengAsset extends AssetBundle
             $resource_file = unserialize($pageData['resource_file']);
             //合并模板所使用的资源文件
             if (!empty($resource_file['css'])) {
-                $this->css = array_merge($this->css, $resource_file['css']);
 
+                switch ($pageData['css_order']){
+                    case 1:
+                        array_unshift($this->css, $resource_file['css']);
+                        break;
+                    default:
+                        $this->css = array_merge($this->css, $resource_file['css']);
+                        break;
+                }
             }
             if (!empty($resource_file['js'])) {
                 $this->js = array_merge($this->js, $resource_file['js']);
