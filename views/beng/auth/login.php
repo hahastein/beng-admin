@@ -21,7 +21,7 @@
                         'options' => ['class' => 'col-xs-12']
                 ]
             ]) ?>
-                <a href="javascript:void(0)" class="db block m-auto">
+                <a href="javascript:void(0)" class="db block text-center" style="width: 100%">
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
                     <br/>
                     <h4>
