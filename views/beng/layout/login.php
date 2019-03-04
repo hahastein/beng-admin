@@ -3,7 +3,7 @@ use yii\helpers\Html;
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="<?= Yii::$app->language ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
