@@ -27,14 +27,10 @@
                     </h4>
                 </a>
                 <div class="form-group m-t-40">
-                    <div class="col-xs-12">
-                        <input class="form-control" type="text" required="" placeholder="Username">
-                    </div>
+                    <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'col-xs-12']) ?>
                 </div>
                 <div class="form-group">
-                    <div class="col-xs-12">
-                        <?= $form->field($model, 'admin_pwd')->label(false)->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-control']) ?>
-                    </div>
+                    <?= $form->field($model, 'admin_pwd')->label(false)->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'col-xs-12']) ?>
                 </div>
                 <div class="form-group row">
                     <div class="col-md-12">
