@@ -7,7 +7,7 @@
         <p class="loader__label">52Beng Loading</p>
     </div>
 </div>
-<section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
+<section id="wrapper" class="login-register login-sidebar" style="background-image:url(<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/login_bg.jpg") ?>);">
     <div class="login-box card">
         <div class="card-body">
             <?php $form = \yii\widgets\ActiveForm::begin([
