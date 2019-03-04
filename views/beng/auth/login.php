@@ -40,10 +40,10 @@
                         <div class="d-flex no-block align-items-center">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                <label class="custom-control-label" for="customCheck1">10天免登录</label>
                             </div>
                             <div class="ml-auto">
-                                <a href="javascript:void(0)" id="to-recover" class="text-muted"><i class="fas fa-lock m-r-5"></i> Forgot pwd?</a>
+                                <a href="javascript:void(0)" id="to-recover" class="text-muted"><i class="fas fa-lock m-r-5"></i> 忘记密码?</a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="form-group m-b-0">
                     <div class="col-sm-12 text-center">
-                        Don't have an account? <a href="pages-register2.html" class="text-primary m-l-5"><b>Sign Up</b></a>
+                        还不是管理员? <a class="text-primary m-l-5"><b>请联系您的管理员开通</b></a>
                     </div>
                 </div>
             <?php \yii\widgets\ActiveForm::end(); ?>
