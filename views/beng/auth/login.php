@@ -10,7 +10,7 @@
 <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
     <div class="login-box card">
         <div class="card-body">
-            <a href="javascript:void(0)" class="db text-center">
+            <a href="javascript:void(0)" class="db form-horizontal text-center">
                 <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
                 <br/>
                 <h4>
