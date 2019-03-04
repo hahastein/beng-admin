@@ -11,7 +11,7 @@
     <div class="login-box card">
         <div class="card-body">
             <a href="javascript:void(0)" class="db text-center">
-                <img src="../assets/images/logo-icon.png" alt="Home" />
+                <img src="<?= Yii::getAlias("@bengbeng/admin/assets/".\bengbeng\admin\components\handles\TemplateHandle::getTheme()."/images/icon-50.png") ?>" alt="Home" />
                 <br/>
                 <h4>
                     <strong>52Beng</strong>
@@ -56,8 +56,9 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
                         <div class="social">
-                            <button class="btn  btn-facebook" data-toggle="tooltip" title="Login with Facebook"> <i aria-hidden="true" class="fab fa-facebook-f"></i> </button>
-                            <button class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google"> <i aria-hidden="true" class="fab fa-google-plus-g"></i> </button>
+                            <button class="btn btn-googleplus" data-toggle="tooltip" title="Login with Google">
+                                <i aria-hidden="true" class="fab fa-google-plus-g"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
