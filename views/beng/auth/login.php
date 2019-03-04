@@ -21,10 +21,10 @@
                         'options' => ['class' => 'col-xs-12']
                 ]
             ]) ?>
-                <a href="javascript:void(0)" class="db text-center">
-                    <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
+                <a href="javascript:void(0)" class="db">
+                    <img class="m-auto" src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
                     <br/>
-                    <h4>
+                    <h4 class="text-center">
                         <strong>52Beng</strong>
                         <small>Framework</small>
                     </h4>
