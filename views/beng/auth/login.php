@@ -10,7 +10,14 @@
 <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
     <div class="login-box card">
         <div class="card-body">
-            <?php $form = \yii\widgets\ActiveForm::begin(['id' => 'login_form', 'enableAjaxValidation' => false,'enableClientValidation'=> true]) ?>
+            <?php $form = \yii\widgets\ActiveForm::begin([
+                    'id' => 'login_form',
+                'enableAjaxValidation' => false,
+                'enableClientValidation'=> true,
+                'options' => [
+                        'class' => 'form-horizontal form-material text-center'
+                ]
+            ]) ?>
                 <a href="javascript:void(0)" class="db">
                     <img src="../assets/images/logo-icon.png" alt="Home" />
                     <br/>
