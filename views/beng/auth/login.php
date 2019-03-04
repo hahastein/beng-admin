@@ -10,14 +10,6 @@
 <section id="wrapper" class="login-register login-sidebar" style="background-image:url(../assets/images/background/login-register.jpg);">
     <div class="login-box card">
         <div class="card-body">
-            <a href="javascript:void(0)" class="db form-horizontal text-center">
-                <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
-                <br/>
-                <h4>
-                    <strong>52Beng</strong>
-                    <small>Framework</small>
-                </h4>
-            </a>
             <?php $form = \yii\widgets\ActiveForm::begin([
                     'id' => 'login_form',
                 'enableAjaxValidation' => false,
@@ -29,6 +21,14 @@
                         'options' => ['class' => 'col-xs-12']
                 ]
             ]) ?>
+                <a href="javascript:void(0)" class="db text-center">
+                    <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
+                    <br/>
+                    <h4>
+                        <strong>52Beng</strong>
+                        <small>Framework</small>
+                    </h4>
+                </a>
                 <div class="form-group m-t-40">
                     <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-control']) ?>
                 </div>
