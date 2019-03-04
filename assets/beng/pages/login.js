@@ -8,6 +8,6 @@ $(function() {
 // Login and Recover Password
 // ==============================================================
 $('#to-recover').on("click", function() {
-    $("#loginform").slideUp();
+    $("#login_form").slideUp();
     $("#recoverform").fadeIn();
 });
