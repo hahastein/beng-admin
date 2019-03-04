@@ -28,7 +28,7 @@
                 </a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
-                        <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-control']) ?>
+                        <input class="form-control" type="text" required="" placeholder="Username">
                     </div>
                 </div>
                 <div class="form-group">
