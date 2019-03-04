@@ -11,7 +11,7 @@
     <div class="login-box card">
         <div class="card-body">
             <a href="javascript:void(0)" class="db text-center">
-                <img src="<?= Yii::getAlias("@bengbeng/admin/assets/".\bengbeng\admin\components\handles\TemplateHandle::getTheme()."/images/icon-50.png") ?>" alt="Home" />
+                <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
                 <br/>
                 <h4>
                     <strong>52Beng</strong>
