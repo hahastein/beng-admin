@@ -28,6 +28,48 @@ class AuthController extends BaseController
     public function actionLogin()
     {
 
+
+        $resource = [
+            'js' => [
+                'pages/login.js',
+            ],
+            'css' => [
+                'pages/login-register-lock.css'
+            ],
+        ];
+
+        //拼接数据
+        $dataParam = [
+            'title' => '登录页面资源',
+            'template_id' => 1,
+            'last_time' => time(),
+            'resource_file' => serialize($resource),
+            'css_order' => 1
+        ];
+
+        $settingPage = new ARSettingPage();
+        if($settingPage->dataUpdate(function (ActiveOperate $operate) use ($dataParam){
+            $operate->params($dataParam);
+            $operate->where([
+                'router' => 'auth/login'
+            ]);
+        })){
+            //更新缓存
+            $cache_name = 'template_'.md5('auth/login');
+            $cache = \Yii::$app->cache;
+            if($cache->exists($cache_name)){
+                $cache->set($cache_name, $dataParam);
+            }else{
+                $cache->add($cache_name, $dataParam);
+            }
+
+
+        }else{
+            \Yii::$app->Beng->outHtml('更新失败');
+
+        }
+
+
         if (!Yii::$app->getUser()->isGuest) {
             return $this->goHome();
         }
