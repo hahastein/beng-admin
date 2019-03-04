@@ -28,12 +28,12 @@
                 </a>
                 <div class="form-group m-t-40">
                     <div class="col-xs-12">
-                        <?= $form->field($model, 'admin_name')->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-control']) ?>
+                        <?= $form->field($model, 'admin_name')->label(false)->textInput(['maxlength' => 100,'placeholder'=>'请输入用户名','class' => 'form-control']) ?>
                     </div>
                 </div>
                 <div class="form-group">
                     <div class="col-xs-12">
-                        <?= $form->field($model, 'admin_pwd')->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-control']) ?>
+                        <?= $form->field($model, 'admin_pwd')->label(false)->passwordInput(['maxlength' => 100,'placeholder'=>'请输入您的密码','class'=>'form-control']) ?>
                     </div>
                 </div>
                 <div class="form-group row">
