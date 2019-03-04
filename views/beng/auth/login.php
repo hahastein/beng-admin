@@ -22,7 +22,7 @@
                 ]
             ]) ?>
                 <a href="javascript:void(0)" class="db block text-center">
-                    <img class="m-auto" src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
+                    <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" />
                     <br/>
                     <h4>
                         <strong>52Beng</strong>
