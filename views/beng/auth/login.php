@@ -15,7 +15,7 @@
                 'enableAjaxValidation' => false,
                 'enableClientValidation'=> true,
                 'options' => [
-                        'class' => 'form-horizontal form-material text-center'
+                        'class' => 'form-horizontal form-material'
                 ],
                 'fieldConfig' => [
                         'options' => ['class' => 'col-xs-12']
