@@ -44,18 +44,14 @@ use yii\helpers\Html;
                         <!-- Dark Logo icon -->
                         <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                         <!-- Light Logo icon -->
-                        <h4>
-                            <strong>52Beng</strong>
-                            <small>Framework</small>
-                        </h4>
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
                     <span>
-                         <!-- dark Logo text -->
-                         <img src="../assets/images/logo-text.png" alt="homepage" class="dark-logo" />
-                         <!-- Light Logo text -->
-                         <img src="../assets/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                         <h4>
+                            <strong>52Beng</strong>
+                        </h4>
                     </span>
                 </a>
             </div>
