@@ -38,20 +38,12 @@ use yii\helpers\Html;
         <nav class="navbar top-navbar navbar-expand-md navbar-dark">
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>">
-                    <!-- Logo icon -->
+                    <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
+                    <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
 
-                        <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                        <!-- Dark Logo icon -->
-                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
-                        <!-- Light Logo icon -->
-                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
-
-                    <!--End Logo icon -->
-                    <!-- Logo text -->
-                    <span>
-                         <h4>
-                            <strong>52Beng</strong>
-                        </h4>
+                    <span class="font-18">
+                        <strong>52Beng</strong>
+                        <small> Admin</small>
                     </span>
                 </a>
             </div>
