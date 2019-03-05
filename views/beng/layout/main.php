@@ -1,5 +1,7 @@
 <?php
 use yii\helpers\Html;
+
+\bengbeng\admin\TemplateAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
