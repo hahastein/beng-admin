@@ -50,15 +50,21 @@ use yii\helpers\Html;
 
             <div class="navbar-collapse">
                 <ul class="navbar-nav mr-auto">
-                    <!-- This is  -->
-                    <li class="nav-item"> <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
-                    <li class="nav-item"> <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)"><i class="icon-menu"></i></a> </li>
-                    <!-- ============================================================== -->
-                    <!-- Search -->
-                    <!-- ============================================================== -->
+                    <!-- 菜单ICON  -->
+                    <li class="nav-item">
+                        <a class="nav-link nav-toggler d-block d-md-none waves-effect waves-dark" href="javascript:void(0)">
+                            <i class="ti-menu"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-effect waves-dark" href="javascript:void(0)">
+                            <i class="icon-menu"></i>
+                        </a>
+                    </li>
+                    <!-- 搜索 -->
                     <li class="nav-item">
                         <form class="app-search d-none d-md-block d-lg-block">
-                            <input type="text" class="form-control" placeholder="Search & enter">
+                            <input type="text" class="form-control" placeholder="输入内容并按下回车进行搜索">
                         </form>
                     </li>
                 </ul>
