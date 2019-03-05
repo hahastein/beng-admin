@@ -12,7 +12,7 @@
         <div class="card-body">
             <?php $form = \yii\widgets\ActiveForm::begin([
                     'id' => 'login_form',
-                'enableAjaxValidation' => false,
+                'enableAjaxValidation' => true,
                 'enableClientValidation'=> true,
                 'options' => [
                         'class' => 'form-horizontal form-material'
