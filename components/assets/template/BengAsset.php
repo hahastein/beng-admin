@@ -21,6 +21,7 @@ class BengAsset extends AssetBundle
     public $js = [
         'plugins/popper.min.js',
         'plugins/bootstrap.min.js',
+        'pages/common.js'
     ];
 
     public $depends = [
