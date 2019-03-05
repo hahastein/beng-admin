@@ -27,7 +27,7 @@ use yii\helpers\Html;
 <div class="preloader">
     <div class="loader">
         <div class="loader__figure"></div>
-        <p class="loader__label">Elite admin</p>
+        <p class="loader__label">52Beng Loading</p>
     </div>
 </div>
 
@@ -37,14 +37,17 @@ use yii\helpers\Html;
 
         <nav class="navbar top-navbar navbar-expand-md navbar-dark">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>">
                     <!-- Logo icon -->
                     <b>
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
-                        <img src="../assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                         <!-- Light Logo icon -->
-                        <img src="../assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        <h4>
+                            <strong>52Beng</strong>
+                            <small>Framework</small>
+                        </h4>
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text -->
