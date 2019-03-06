@@ -80,7 +80,9 @@ use yii\helpers\Html;
             <!-- 用户资料 -->
             <div class="user-profile">
                 <div class="user-pro-body">
-                    <div><img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle"></div>
+                    <div>
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle">
+                    </div>
                     <div class="dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave Gection <span class="caret"></span></a>
                         <div class="dropdown-menu animated flipInY">
@@ -103,33 +105,33 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
+
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+
+                    <!--left menu bottom-->
+                    <li class="nav-small-cap">--- SUPPORT</li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="../documentation/documentation.html" aria-expanded="false">
+                            <i class="far fa-circle text-danger"></i>
+                            <span class="hide-menu">Documentation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="pages-login.html" aria-expanded="false">
+                            <i class="far fa-circle text-success"></i>
+                            <span class="hide-menu">Log Out</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="pages-faq.html" aria-expanded="false">
+                            <i class="far fa-circle text-info"></i>
+                            <span class="hide-menu">FAQs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <nav class="sidebar-nav">
-            <ul id="sidebarnav">
-
-                <!--left menu bottom-->
-                <li class="nav-small-cap">--- SUPPORT</li>
-                <li>
-                    <a class="waves-effect waves-dark" href="../documentation/documentation.html" aria-expanded="false">
-                        <i class="far fa-circle text-danger"></i>
-                        <span class="hide-menu">Documentation</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="waves-effect waves-dark" href="pages-login.html" aria-expanded="false">
-                        <i class="far fa-circle text-success"></i>
-                        <span class="hide-menu">Log Out</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="waves-effect waves-dark" href="pages-faq.html" aria-expanded="false">
-                        <i class="far fa-circle text-info"></i>
-                        <span class="hide-menu">FAQs</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
     </aside>
 
