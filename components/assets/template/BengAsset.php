@@ -65,6 +65,8 @@ class BengAsset extends AssetBundle
                 'pages/sidebarmenu.js',
                 'pages/perfect-scrollbar.jquery.min.js'
             ];
+
+            $this->js = array_merge($this->js, $includeJs);
         }
     }
 }
