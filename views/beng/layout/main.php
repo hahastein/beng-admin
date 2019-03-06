@@ -80,7 +80,7 @@ use yii\helpers\Html;
             <!-- 用户资料 -->
             <div class="user-profile">
                 <div class="user-pro-body">
-                    <div><img src="../assets/images/users/2.jpg" alt="user-img" class="img-circle"></div>
+                    <div><img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle"></div>
                     <div class="dropdown">
                         <a href="javascript:void(0)" class="dropdown-toggle u-dropdown link hide-menu" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Steave Gection <span class="caret"></span></a>
                         <div class="dropdown-menu animated flipInY">
