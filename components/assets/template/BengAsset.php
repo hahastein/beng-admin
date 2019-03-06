@@ -61,7 +61,10 @@ class BengAsset extends AssetBundle
 
         //非登录页面加载公共内容
         if($routerUrl != 'auth/login'){
-            $this->js[] = 'pages/sidebarmenu.js';
+            $includeJs = [
+                'pages/sidebarmenu.js',
+                'pages/perfect-scrollbar.jquery.min.js'
+            ];
         }
     }
 }

@@ -3,4 +3,6 @@ $(function () {
     $(function () {
         $(".preloader").fadeOut();
     });
+
+    $('.scroll-sidebar, .right-side-panel, .message-center, .right-sidebar').perfectScrollbar();
 });
