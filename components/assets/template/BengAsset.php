@@ -58,5 +58,10 @@ class BengAsset extends AssetBundle
         }
 
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
+
+        //非登录页面加载公共内容
+        if($routerUrl != 'auth/login'){
+            $this->js[] = 'pages/sidebarmenu.js';
+        }
     }
 }
