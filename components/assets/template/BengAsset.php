@@ -66,7 +66,7 @@ class BengAsset extends AssetBundle
                 'pages/perfect-scrollbar.jquery.min.js'
             ];
 
-            $array_index = array_search('plugins/bootstrap.min.js', $this->js);
+            $array_index = array_search('pages/common.js', $this->js);
             array_splice($this->js, $array_index, 0 , $includeJs);
         }
     }
