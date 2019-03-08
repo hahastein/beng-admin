@@ -42,10 +42,8 @@ use yii\helpers\Html;
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
                     -->
-                    <span class="font-20">
-                        <a class="font-weight-bold">52Beng</a>
-                        <small> Admin</small>
-                    </span>
+                    <span class="font-20 font-weight-bold">52Beng</span>
+                    <small> Admin</small>
                 </a>
             </div>
 
@@ -69,9 +67,6 @@ use yii\helpers\Html;
                         </form>
                     </li>
                 </ul>
-
-
-
             </div>
 
         </nav>
