@@ -13,7 +13,10 @@
                     <a href="javascript:void(0)">
                         <div class="btn btn-danger btn-circle"><i class="fa fa-link"></i></div>
                         <div class="mail-contnet">
-                            <h5>Luanch Admin</h5> <span class="mail-desc">Just see the my new admin!</span> <span class="time">9:30 AM</span> </div>
+                            <h5>Luanch Admin</h5>
+                            <span class="mail-desc">Just see the my new admin!</span>
+                            <span class="time">9:30 AM</span>
+                        </div>
                     </a>
                     <!-- Message -->
                     <a href="javascript:void(0)">

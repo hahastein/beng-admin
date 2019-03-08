@@ -13,9 +13,15 @@
                     <?php foreach ($dataSet as $item): ?>
                     <!-- Message -->
                     <a href="javascript:void(0)">
-                        <div class="user-img"> <img src="../assets/images/users/1.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="user-img">
+                            <img src="../assets/images/users/1.jpg" alt="user" class="img-circle">
+                            <span class="profile-status online pull-right"></span>
+                        </div>
                         <div class="mail-contnet">
-                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                            <h5>Pavan kumar</h5>
+                            <span class="mail-desc">Just see the my admin!</span>
+                            <span class="time">9:30 AM</span>
+                        </div>
                     </a>
                     <?php endforeach; ?>
                 </div>
@@ -25,8 +31,13 @@
             </li>
             <?php else: ?>
             <li>
-                <div class="p-10 text-center">
-                    士大夫速度
+                <div class="p-20 text-center">
+                    <a href="javascript:void(0)">
+                        <div class="btn btn-success btn-circle"><i class="fa fa-link"></i></div>
+                        <div class="mail-contnet">
+                            <h5>暂时没有新消息</h5>
+                        </div>
+                    </a>
                 </div>
             </li>
             <?php endif; ?>
