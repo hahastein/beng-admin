@@ -38,9 +38,10 @@ use yii\helpers\Html;
         <nav class="navbar top-navbar navbar-expand-md">
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>">
+                    <!--
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
-
+                    -->
                     <span class="font-18 span">
                         <strong>52Beng</strong>
                         <small> Admin</small>
