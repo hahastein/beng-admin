@@ -7,6 +7,7 @@
             <li>
                 <div class="drop-title">您有1个未读<?=$title?></div>
             </li>
+            <?php if ($dataSet): ?>
             <li>
                 <div class="message-center">
                     <?php foreach ($dataSet as $item): ?>
@@ -22,6 +23,13 @@
             <li>
                 <a class="nav-link text-center link" href="javascript:void(0);"> <strong>查看所有 <?=$title?></strong> <i class="fa fa-angle-right"></i> </a>
             </li>
+            <?php else: ?>
+            <li>
+                <div class="p-10">
+                    士大夫速度
+                </div>
+            </li>
+            <?php endif; ?>
         </ul>
     </div>
 </li>
