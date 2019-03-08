@@ -29,7 +29,7 @@ class NotificationsWidget extends Widget
         return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/widgets/' . $this->layout, [
             'title' => $this->title,
             'count' => 1,
-            'dataSet' => ['asdasd']
+            'dataSet' => ['createtime' => 1552045633]
         ]);
     }
 }
