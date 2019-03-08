@@ -5,7 +5,7 @@
     <div class="dropdown-menu dropdown-menu-right mailbox animated bounceInDown">
         <ul>
             <li>
-                <div class="drop-title">Notifications</div>
+                <div class="drop-title"><?= $title?></div>
             </li>
             <li>
                 <div class="message-center">
@@ -36,7 +36,7 @@
                 </div>
             </li>
             <li>
-                <a class="nav-link text-center link" href="javascript:void(0);"> <strong>Check all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                <a class="nav-link text-center link" href="javascript:void(0);"> <strong>查看所有<?= $title?></strong> <i class="fa fa-angle-right"></i> </a>
             </li>
         </ul>
     </div>
