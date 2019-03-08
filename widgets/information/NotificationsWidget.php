@@ -23,7 +23,7 @@ class NotificationsWidget extends Widget
 
         var_dump($this->layout);
 
-        $this->layout = $this->layout?$this->layout:'notifications';
+        $this->layout = $this->layout?:'notifications';
         $this->title = $this->title?:'消息通知';
     }
 
