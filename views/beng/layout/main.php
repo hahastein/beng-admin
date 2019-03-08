@@ -73,8 +73,8 @@ use yii\helpers\Html;
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget()?>
 
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget([
-                            'layout' => 'message',
-                            'title' => '新消息'
+                        'layout' => 'message',
+                        'title' => '新消息'
                     ])?>
 
                 </ul>
