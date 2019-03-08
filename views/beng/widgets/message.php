@@ -32,9 +32,9 @@
             <?php else: ?>
             <li>
                 <div class="p-20 text-center">
-                    <div class="btn btn-success btn-circle">
+
                         <i class="fa fa-bullseye"></i> 暂时没有新消息
-                    </div>
+
                 </div>
             </li>
             <?php endif; ?>
