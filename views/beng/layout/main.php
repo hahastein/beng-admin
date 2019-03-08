@@ -115,21 +115,21 @@ use yii\helpers\Html;
                     <!--left menu bottom-->
                     <li class="nav-small-cap">--- SUPPORT</li>
                     <li>
-                        <a class="waves-effect waves-dark" href="../documentation/documentation.html" aria-expanded="false">
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to('document/main')?>" aria-expanded="false">
                             <i class="far fa-circle text-danger"></i>
-                            <span class="hide-menu">Documentation</span>
+                            <span class="hide-menu">系统说明文档</span>
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect waves-dark" href="pages-login.html" aria-expanded="false">
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to('auth/logout')?>" aria-expanded="false">
                             <i class="far fa-circle text-success"></i>
-                            <span class="hide-menu">Log Out</span>
+                            <span class="hide-menu">退出系统</span>
                         </a>
                     </li>
                     <li>
-                        <a class="waves-effect waves-dark" href="pages-faq.html" aria-expanded="false">
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to('document/faqs')?>" aria-expanded="false">
                             <i class="far fa-circle text-info"></i>
-                            <span class="hide-menu">FAQs</span>
+                            <span class="hide-menu">常见问题</span>
                         </a>
                     </li>
                 </ul>
