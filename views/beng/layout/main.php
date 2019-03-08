@@ -49,7 +49,7 @@ use yii\helpers\Html;
                 </a>
             </div>
 
-            <div class="navbar-collapse navbar-dark">
+            <div class="block navbar-collapse navbar-dark">
                 <ul class="navbar-nav mr-auto">
                     <!-- 菜单ICON  -->
                     <li class="nav-item">
