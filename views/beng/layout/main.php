@@ -67,6 +67,12 @@ use yii\helpers\Html;
                         </form>
                     </li>
                 </ul>
+
+                <ul class="navbar-nav my-lg-0">
+
+                    <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget()?>
+
+                </ul>
             </div>
 
         </nav>
