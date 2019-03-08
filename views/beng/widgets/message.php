@@ -25,7 +25,7 @@
             </li>
             <?php else: ?>
             <li>
-                <div class="p-10">
+                <div class="p-10 text-center">
                     士大夫速度
                 </div>
             </li>
