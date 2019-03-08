@@ -33,7 +33,9 @@
             <li>
                 <div class="p-20 text-center">
                     <a href="javascript:void(0)">
-                        <div class="btn btn-success btn-circle"><i class="fa fa-link"></i></div>
+                        <div class="btn btn-success btn-circle">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
                         <div class="mail-contnet">
                             <h5>暂时没有新消息</h5>
                         </div>
