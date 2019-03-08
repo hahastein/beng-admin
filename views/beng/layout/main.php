@@ -37,7 +37,7 @@ use yii\helpers\Html;
 
         <nav class="navbar top-navbar navbar-expand-md">
             <div class="navbar-header">
-                <a class="navbar-brand text-center" href="<?= \yii\helpers\Url::home() ?>">
+                <a class="block navbar-brand text-center" href="<?= \yii\helpers\Url::home() ?>">
                     <!--
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
@@ -49,7 +49,7 @@ use yii\helpers\Html;
                 </a>
             </div>
 
-            <div class="block navbar-collapse navbar-dark">
+            <div class="navbar-collapse navbar-dark">
                 <ul class="navbar-nav mr-auto">
                     <!-- 菜单ICON  -->
                     <li class="nav-item">
