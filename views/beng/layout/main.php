@@ -35,20 +35,20 @@ use yii\helpers\Html;
 
     <header class="topbar">
 
-        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+        <nav class="navbar top-navbar navbar-expand-md">
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>">
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="light-logo" />
 
-                    <span class="font-18 font-light">
+                    <span class="font-18 span">
                         <strong>52Beng</strong>
                         <small> Admin</small>
                     </span>
                 </a>
             </div>
 
-            <div class="navbar-collapse">
+            <div class="navbar-collapse navbar-dark">
                 <ul class="navbar-nav mr-auto">
                     <!-- 菜单ICON  -->
                     <li class="nav-item">
