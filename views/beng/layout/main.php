@@ -35,7 +35,7 @@ use yii\helpers\Html;
 
     <header class="topbar">
 
-        <nav class="navbar top-navbar navbar-expand-md navbar-dark">
+        <nav class="navbar top-navbar navbar-expand-md navbar-light">
             <div class="navbar-header">
                 <a class="navbar-brand" href="<?= \yii\helpers\Url::home() ?>">
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
