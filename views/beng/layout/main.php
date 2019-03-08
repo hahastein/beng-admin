@@ -36,7 +36,7 @@ use yii\helpers\Html;
     <header class="topbar">
 
         <nav class="navbar top-navbar navbar-expand-md">
-            <div class="navbar-header">
+            <div class="navbar-header p-r-10">
                 <a class="block navbar-brand text-center" href="<?= \yii\helpers\Url::home() ?>">
                     <!--
                     <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme("/images/icon-50.png") ?>" alt="Home" class="dark-logo" />
