@@ -90,7 +90,7 @@ use yii\helpers\Html;
                         </a>
                         <div class="dropdown-menu animated flipInY">
                             <!-- text-->
-                            <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> My Profile</a>
+                            <a href="javascript:void(0)" class="dropdown-item"><i class="ti-user"></i> 用户资料</a>
                             <!-- text-->
                             <a href="javascript:void(0)" class="dropdown-item"><i class="ti-wallet"></i> My Balance</a>
                             <!-- text-->
@@ -98,11 +98,11 @@ use yii\helpers\Html;
                             <!-- text-->
                             <div class="dropdown-divider"></div>
                             <!-- text-->
-                            <a href="javascript:void(0)" class="dropdown-item"><i class="ti-settings"></i> Account Setting</a>
+                            <a href="javascript:void(0)" class="dropdown-item"><i class="ti-settings"></i> 账户设置</a>
                             <!-- text-->
                             <div class="dropdown-divider"></div>
                             <!-- text-->
-                            <a href="pages-login.html" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+                            <a href="<?= \yii\helpers\Url::to('auth/logout')?>" class="dropdown-item"><i class="fa fa-power-off"></i> 退出系统</a>
                             <!-- text-->
                         </div>
                     </div>
