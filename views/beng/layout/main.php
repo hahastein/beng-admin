@@ -131,7 +131,9 @@ use yii\helpers\Html;
             <nav class="sidebar-nav">
                 <ul id="sidebarnav">
 
-
+                    <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
+                        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT
+                    ])?>
 
                     <!--left menu bottom-->
                     <li class="nav-small-cap">--- SUPPORT</li>
