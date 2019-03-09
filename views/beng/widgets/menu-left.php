@@ -28,9 +28,11 @@ use bengbeng\admin\components\handles\TemplateHandle;
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="icon-speedometer"></i>
                     <span class="hide-menu">
-                    <?=$menu['menu_name']?>
-                    <span class="badge badge-pill badge-cyan ml-auto">4</span>
-                </span>
+                        <?=$menu['menu_name']?>
+                        <!--
+                        <span class="badge badge-pill badge-cyan ml-auto">4</span>
+                        -->
+                    </span>
                 </a>
                 <?php if(!empty($menu['parent'])): ?>
                 <ul aria-expanded="false" class="collapse">
