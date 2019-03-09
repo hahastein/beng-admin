@@ -32,6 +32,48 @@
                         <h4>you can use it with the small code</h4>
                         <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
                     </div>
+
+                    <div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Purple Table</h4>
+                                <h6 class="card-subtitle">Add class <code>.color-table .purple-table</code></h6>
+                                <div class="table-responsive">
+                                    <table class="table color-table purple-table">
+                                        <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Username</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Nigam</td>
+                                            <td>Eichmann</td>
+                                            <td>@Sonu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Deshmukh</td>
+                                            <td>Prohaska</td>
+                                            <td>@Genelia</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Roshan</td>
+                                            <td>Rogahn</td>
+                                            <td>@Hritik</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="tab-pane  p-20" id="profile2" role="tabpanel">2</div>
                 <div class="tab-pane p-20" id="messages2" role="tabpanel">3</div>
