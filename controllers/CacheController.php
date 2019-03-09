@@ -17,8 +17,6 @@ class CacheController extends BaseController
 
         $cache = \Yii::$app->cache;
 
-        var_dump($cache);die;
-
         return $this->render('all');
     }
 
