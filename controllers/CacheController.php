@@ -17,7 +17,7 @@ class CacheController extends BaseController
 
         $cache = \Yii::$app->cache;
 
-        \Yii::$app->Beng->outHtml($cache->get('system_menu_data'));
+        var_dump($cache);die;
 
         return $this->render('all');
     }
