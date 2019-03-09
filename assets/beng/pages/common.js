@@ -28,6 +28,8 @@ $(function () {
         "skin-megna-dark"
     ]
 
+    setupListener()
+
     /**
      * Replaces the old skin with the new skin
      * @param String cls the new skin class
@@ -43,6 +45,10 @@ $(function () {
     }
 
     function setupListener() {
+        jQuery(document).on('click', '.mega-dropdown', function (e) {
+            e.stopPropagation()
+        });
+
         // Add the change skin listener
         $('[data-skin]').on('click', function (e) {
             if ($(this).hasClass('knob')) return
@@ -54,7 +60,6 @@ $(function () {
             $("#themecolors li a").removeClass("working"),
                 $(this).addClass("working")
         })
-    }
-    setupListener()
 
+    }
 });
