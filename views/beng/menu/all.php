@@ -33,7 +33,7 @@
                         <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
                     </div>
 
-                    <div class="p-20">
+                    <div class="p-20 p-t-0">
                         <div class="table-responsive">
                             <table class="table color-table purple-table">
                                 <thead>
