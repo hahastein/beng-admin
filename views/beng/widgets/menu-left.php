@@ -16,7 +16,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                 </span>
             </a>
             <ul aria-expanded="false" class="collapse">
-                <li><a href="index.html">Minimal </a></li>
+                <li><a href="<?= Url::to(['home/main']) ?>">Minimal </a></li>
                 <li><a href="index2.html">Analytical</a></li>
                 <li><a href="index3.html">Demographical</a></li>
                 <li><a href="index4.html">Modern</a></li>
