@@ -24,7 +24,7 @@ class ARMenu extends MenuARModel
 
     public function findByAll($parentID, $menu_type = null){
         return $this->dataSet(function (ActiveQuery $query) use ($parentID, $menu_type){
-            $query->select(['menu_id', 'menu_name', 'menu_icon', 'module', 'controller', 'action', 'parent_id', 'order', 'initials', 'is_home']);
+            $query->select(['menu_id', 'menu_name', 'menu_icon', 'menu_type', 'module', 'controller', 'action', 'parent_id', 'order', 'initials', 'is_home']);
 
             $query->where([
                 'parent_id' => $parentID
