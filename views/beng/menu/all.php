@@ -28,9 +28,9 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home2" role="tabpanel">
                     <div class="p-20">
-                        <h3>Best Clean Tab ever</h3>
-                        <h4>you can use it with the small code</h4>
-                        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
+                        <h3>一级菜单</h3>
+                        <h4>显示所有菜单，按类型进，如前台，后台，APP等进行管理</h4>
+                        <p>1、删除菜单不会对功能进行删除</p>
                     </div>
 
                     <div class="p-20 p-t-0">
@@ -44,6 +44,7 @@
                                         <th>Icon</th>
                                         <th>类型</th>
                                         <th>控制器/方法</th>
+                                        <th>操作</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -54,6 +55,7 @@
                                         <td>@Sonu</td>
                                         <td>@Sonu</td>
                                         <td>@Sonu</td>
+                                        <td>删除</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -61,7 +63,7 @@
                     </div>
 
                 </div>
-                <div class="tab-pane  p-20" id="profile2" role="tabpanel">2</div>
+                <div class="tab-pane p-20" id="profile2" role="tabpanel">2</div>
                 <div class="tab-pane p-20" id="messages2" role="tabpanel">3</div>
             </div>
         </div>
