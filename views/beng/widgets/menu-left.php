@@ -2,65 +2,69 @@
 use yii\helpers\Url;
 use bengbeng\admin\components\handles\TemplateHandle;
 ?>
-<nav class="pcoded-navbar" pcoded-navbar-position="fixed" pcoded-header-position="fixed">
-    <div class="pcoded-inner-navbar main-menu">
-        <!--nav top avatar-->
-        <div class="">
-            <div class="main-menu-header">
-                <img class="img-menu-user img-radius" src="<?= TemplateHandle::getImgToTheme('images/avatar100.png')?>" alt="User-Profile-Image">
-                <div class="user-details">
-                    <p id="more-details">hahastein<i class="feather icon-chevron-down m-l-10"></i></p>
-                </div>
-            </div>
-            <div class="main-menu-content">
-                <ul>
-                    <li class="more-details">
-                        <a href="<?= Url::to(['user/profile']) ?>">
-                            <i class="feather icon-user"></i>管理员信息
-                        </a>
-                        <a href="#!">
-                            <i class="feather icon-settings"></i>系统设置
-                        </a>
-                        <a href="<?= Url::to(['user/logout']) ?>">
-                            <i class="feather icon-log-out"></i>退出系统
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="pcoded-navigation-label">Navigation</div>
-        <ul class="pcoded-item pcoded-left-item">
-            <?php foreach ($menus as $menu){ ?>
-            <?php if(!empty($menu['parent'])) { ?>
-            <li class="pcoded-hasmenu">
-                <a href="javascript:void(0)" class="waves-effect waves-dark">
-                    <span class="pcoded-micon">
-                        <i class="feather icon-layers"></i>
-                    </span>
-                    <span class="pcoded-mtext"><?=$menu['menu_name']?></span>
-                    <span class="pcoded-badge label label-danger">100+</span>
+
+<nav class="sidebar-nav">
+    <ul id="sidebarnav">
+
+        <li class="nav-small-cap">--- PERSONAL</li>
+        <li>
+            <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                <i class="icon-speedometer"></i>
+                <span class="hide-menu">
+                    Dashboard
+                    <span class="badge badge-pill badge-cyan ml-auto">4</span>
+                </span>
+            </a>
+            <ul aria-expanded="false" class="collapse">
+                <li><a href="index.html">Minimal </a></li>
+                <li><a href="index2.html">Analytical</a></li>
+                <li><a href="index3.html">Demographical</a></li>
+                <li><a href="index4.html">Modern</a></li>
+            </ul>
+        </li>
+
+        <?php foreach ($menus as $menu): ?>
+
+            <li>
+                <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                    <i class="icon-speedometer"></i>
+                    <span class="hide-menu">
+                    <?=$menu['menu_name']?>
+                    <span class="badge badge-pill badge-cyan ml-auto">4</span>
+                </span>
                 </a>
-                <ul class="pcoded-submenu">
-                <?php foreach ($menu['parent'] as $parent){ ?>
-                    <li class="">
-                        <a href="<?= Url::to(['/'.$moduleID.'/'.$parent['controller'].'/'.$parent['action']]) ?>" class="waves-effect waves-dark">
-                            <span class="pcoded-mtext"><?=$parent['menu_name']?></span>
-                        </a>
-                    </li>
-                <?php } ?>
+                <?php if($menu['parent']): ?>
+                <ul aria-expanded="false" class="collapse">
+                    <?php foreach ($menu['parent'] as $parent): ?>
+                    <li><a href="index.html"><?=$menu['menu_name']?> </a></li>
+                    <?php endforeach;?>
                 </ul>
+                <?php endif;?>
             </li>
-            <?php }else{ ?>
-            <li class="">
-                <a href="navbar-light.html" class="waves-effect waves-dark">
-                    <span class="pcoded-micon">
-                        <i class="feather icon-menu"></i>
-                    </span>
-                    <span class="pcoded-mtext"><?=$menu['menu_name']?></span>
-                </a>
-            </li>
-            <?php } ?>
-            <?php } ?>
-        </ul>
-    </div>
+
+        <?php endforeach;?>
+
+
+
+        <!--left menu bottom-->
+        <li class="nav-small-cap">--- SUPPORT</li>
+        <li>
+            <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['document/main'])?>" aria-expanded="false">
+                <i class="far fa-circle text-danger"></i>
+                <span class="hide-menu">系统说明文档</span>
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['auth/logout'])?>" aria-expanded="false">
+                <i class="far fa-circle text-success"></i>
+                <span class="hide-menu">退出系统</span>
+            </a>
+        </li>
+        <li>
+            <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['document/faqs'])?>" aria-expanded="false">
+                <i class="far fa-circle text-info"></i>
+                <span class="hide-menu">常见问题</span>
+            </a>
+        </li>
+    </ul>
 </nav>
