@@ -35,6 +35,15 @@
                     </div>
 
                     <div class="p-20 p-t-0">
+                        <div class="right-page-header">
+                            <div class="d-flex">
+                                <div class="align-self-center">
+                                    <h4 class="card-title m-t-10">Contacts / Employee List </h4></div>
+                                <div class="ml-auto">
+                                    更新缓存 </div>
+                            </div>
+                        </div>
+
                         <div class="table-responsive">
                             <table class="table color-table purple-table">
                                 <thead>
