@@ -63,7 +63,8 @@ class BengAsset extends AssetBundle
         if($routerUrl != 'auth/login'){
             $includeJs = [
                 'pages/sidebarmenu.js',
-                'pages/perfect-scrollbar.jquery.min.js'
+                'pages/perfect-scrollbar.jquery.min.js',
+                'plugins/waves.js'
             ];
 
             $array_index = array_search('pages/common.js', $this->js);
