@@ -72,7 +72,7 @@ use yii\helpers\Html;
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ti-notepad">内容管理</i>
+                            <i class="ti-notepad"></i> <small>内容管理</small>
 
                         </a>
                     </li>
