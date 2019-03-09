@@ -38,6 +38,39 @@
                         </span>
                     </a>
                 </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle">
+                        <span>
+                            Winter Rain
+                            <small class="text-success">
+                                Online
+                            </small>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle">
+                        <span>
+                            Winter Rain
+                            <small class="text-success">
+                                Online
+                            </small>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)">
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle">
+                        <span>
+                            Winter Rain
+                            <small class="text-success">
+                                Online
+                            </small>
+                        </span>
+                    </a>
+                </li>
 
             </ul>
         </div>
