@@ -12,6 +12,7 @@ $(function () {
     $('.scroll-sidebar, .right-side-panel, .message-center, .right-sidebar').perfectScrollbar();
 
 
+
     var mySkins = [
         "skin-default",
         "skin-green",
@@ -42,17 +43,18 @@ $(function () {
     }
 
     function setup() {
-
         // Add the change skin listener
         $('[data-skin]').on('click', function (e) {
             if ($(this).hasClass('knob')) return
             e.preventDefault()
             changeSkin($(this).data('skin'))
         })
+
+        $("#themecolors").on("click", "a", function () {
+            $("#themecolors li a").removeClass("working"),
+                $(this).addClass("working")
+        })
     }
     setup()
-    $("#themecolors").on("click", "a", function () {
-        $("#themecolors li a").removeClass("working"),
-            $(this).addClass("working")
-    })
+
 });
