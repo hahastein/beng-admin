@@ -11,6 +11,22 @@ $(function () {
 
     $('.scroll-sidebar, .right-side-panel, .message-center, .right-sidebar').perfectScrollbar();
 
+
+    var mySkins = [
+        "skin-default",
+        "skin-green",
+        "skin-red",
+        "skin-blue",
+        "skin-purple",
+        "skin-megna",
+        "skin-default-dark",
+        "skin-green-dark",
+        "skin-red-dark",
+        "skin-blue-dark",
+        "skin-purple-dark",
+        "skin-megna-dark"
+    ]
+
     /**
      * Replaces the old skin with the new skin
      * @param String cls the new skin class
