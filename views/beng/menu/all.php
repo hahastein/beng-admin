@@ -28,8 +28,8 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home2" role="tabpanel">
                     <div class="p-20">
-                        <h3>一级菜单</h3>
-                        <h4>显示所有菜单，按类型进，如前台，后台，APP等进行管理</h4>
+                        <h4>一级菜单</h4>
+                        <h5>显示所有菜单，按类型进，如前台，后台，APP等进行管理</h5>
                         <p>1、删除菜单不会对功能进行删除</p>
                     </div>
 
@@ -48,15 +48,17 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                <?php foreach ($dataSet as $item): ?>
                                     <tr>
-                                        <td>1</td>
-                                        <td>Nigam</td>
-                                        <td>Eichmann</td>
-                                        <td>@Sonu</td>
-                                        <td>@Sonu</td>
-                                        <td>@Sonu</td>
+                                        <td><?=$item['menu_id']; ?></td>
+                                        <td><?=$item['menu_name']; ?></td>
+                                        <td><?=$item['parent_id']; ?></td>
+                                        <td><i class="<?=$item['menu_icon']; ?>"></i></td>
+                                        <td><?=$item['menu_type']; ?></td>
+                                        <td><?=$item['controller']; ?>/<?=$item['action']; ?></td>
                                         <td>删除</td>
                                     </tr>
+                                <?php endforeach; ?>
                                 </tbody>
                             </table>
                         </div>

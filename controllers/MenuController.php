@@ -3,8 +3,8 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\BaseController;
+use bengbeng\admin\models\setting\ARMenu;
 use Yii;
-use yii\web\NotFoundHttpException;
 
 /**
  * MenuController implements the CRUD actions for Menu model.
@@ -17,7 +17,11 @@ class MenuController extends BaseController
 
     public function actionAll(){
 
-        return $this->render('all');
+        $arMenu = new ARMenu();
+        $dataSet = $arMenu->findByMenuType(10);
+
+        return $this->render('all', ['dataSet' => $dataSet]);
+
     }
 
     public function behaviors()
