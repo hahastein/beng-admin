@@ -25,7 +25,7 @@ class CacheController extends BaseController
     public function behaviors()
     {
         self::setActions([
-            'index'
+            'index', 'delete'
         ]);
         return parent::behaviors();
     }
