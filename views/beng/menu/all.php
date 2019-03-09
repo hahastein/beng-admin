@@ -33,37 +33,39 @@
                         <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a.</p>
                     </div>
 
-                    <div class="table-responsive">
-                        <table class="table color-table purple-table">
-                            <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Username</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Nigam</td>
-                                <td>Eichmann</td>
-                                <td>@Sonu</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Deshmukh</td>
-                                <td>Prohaska</td>
-                                <td>@Genelia</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Roshan</td>
-                                <td>Rogahn</td>
-                                <td>@Hritik</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="p-20">
+                        <div class="table-responsive">
+                            <table class="table color-table purple-table">
+                                <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>Username</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Nigam</td>
+                                    <td>Eichmann</td>
+                                    <td>@Sonu</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Deshmukh</td>
+                                    <td>Prohaska</td>
+                                    <td>@Genelia</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Roshan</td>
+                                    <td>Rogahn</td>
+                                    <td>@Hritik</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
                 </div>
