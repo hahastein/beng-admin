@@ -56,7 +56,9 @@ use yii\helpers\Html;
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a type="button" class="btn btn-rounded btn-block btn-info">Info</a>
+                        <a class="nav-link sidebartoggler d-none d-lg-block d-md-block waves-efa clasaves-dark" href="javascript:void(0)">
+                            <i class="icon-menu"></i>
+                        </a>
                     </li>
                     <!-- 搜索 -->
                     <li class="nav-item">
@@ -69,9 +71,7 @@ use yii\helpers\Html;
                 <ul class="navbar-nav my-lg-0">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ti-email"></i>
-                        </a>
+                        <a type="button" class="btn btn-rounded btn-block btn-info">Info</a>
                     </li>
 
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget()?>
