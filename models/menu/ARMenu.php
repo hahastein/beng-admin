@@ -6,7 +6,7 @@
  * Time: 14:37
  */
 
-namespace bengbeng\admin\models\setting;
+namespace bengbeng\admin\models\menu;
 
 use bengbeng\framework\models\platform\MenuARModel;
 use yii\db\ActiveQuery;
