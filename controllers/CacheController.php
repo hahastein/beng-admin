@@ -18,6 +18,10 @@ class CacheController extends BaseController
         return $this->render('all');
     }
 
+    public function actionRemove(){
+        \Yii::$app->cache->delete('system_menu_data');
+    }
+
     public function behaviors()
     {
         self::setActions([
