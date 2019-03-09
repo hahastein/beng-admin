@@ -154,7 +154,9 @@ use yii\helpers\Html;
         </div>
     </aside>
     <div class="page-wrapper">
-        <?= $content ?>
+        <div class="container-fluid">
+            <?= $content ?>
+        </div>
     </div>
     <footer class="footer">
         © 2019 BengBeng Framework by 52beng.com

@@ -2,8 +2,8 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\admin\base\BaseController;
 use Yii;
-use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**
@@ -12,46 +12,19 @@ use yii\web\NotFoundHttpException;
  * @author hahastein <146119@qq.com>
  * @since 1.0
  */
-class MenuController extends Controller
+class MenuController extends BaseController
 {
 
-    /**
-     * @inheritdoc
-     */
+    public function actionAll(){
+
+        return $this->render('all');
+    }
+
     public function behaviors()
     {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
+        self::setActions([
+            'create'
+        ]);
+        return parent::behaviors();
     }
-
-    /**
-     * Lists all Menu models.
-     * @return mixed
-     */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
-
-    /**
-     * Finds the Menu model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     * @param  integer $id
-     * @return Menu the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-//    protected function findModel($id)
-//    {
-//        if (($model = Menu::findOne($id)) !== null) {
-//            return $model;
-//        } else {
-//            throw new NotFoundHttpException('The requested page does not exist.');
-//        }
-//    }
 }
