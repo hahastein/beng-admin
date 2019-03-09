@@ -132,7 +132,8 @@ use yii\helpers\Html;
                 <ul id="sidebarnav">
 
                     <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
-                        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT
+                        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
+                        'layout' => '@bengbeng/admin/views/'.\bengbeng\admin\components\handles\TemplateHandle::getTheme().'/widgets/menu-left'
                     ])?>
 
                     <!--left menu bottom-->
