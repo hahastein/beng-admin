@@ -25,7 +25,8 @@ use bengbeng\admin\components\handles\TemplateHandle;
 
         <?php foreach ($menus as $menu): ?>
         <?php
-            var_dump($menu);die;
+            \Yii::$app->Beng->outHtml($menus);
+            die;
             ?>
 
             <li>
