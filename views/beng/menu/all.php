@@ -31,14 +31,13 @@
                         <h4>一级菜单</h4>
                         <h5>显示所有菜单，按类型进，如前台，后台，APP等进行管理</h5>
                         <p>1、删除菜单不会对功能进行删除</p>
-                        <span class="ml-auto">更新缓存</span>
                     </div>
-
                     <div class="p-20 p-t-0">
                         <div class="right-page-header">
                             <div class="d-flex">
                                 <div class="align-self-center">
-                                    <h4 class="card-title m-t-10">Contacts / Employee List </h4></div>
+                                    <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">后台菜单</button>
+                                </div>
                                 <div class="ml-auto">
                                     <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button> </div>
                             </div>
