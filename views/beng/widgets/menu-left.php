@@ -29,9 +29,9 @@ use bengbeng\admin\components\handles\TemplateHandle;
                     <i class="icon-speedometer"></i>
                     <span class="hide-menu">
                         <?=$menu['menu_name']?>
-                        <!--
-                        <span class="badge badge-pill badge-cyan ml-auto">4</span>
-                        -->
+                        <?php if(!empty($menu['badge']) && $menu['badge'] > 0): ?>
+                        <span class="badge badge-pill badge-cyan ml-auto"><?php=$menu['badge']?></span>
+                        <?php endif;?>
                     </span>
                 </a>
                 <?php if(!empty($menu['parent'])): ?>
