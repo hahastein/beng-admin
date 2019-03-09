@@ -36,7 +36,16 @@
                         <div class="right-page-header">
                             <div class="d-flex">
                                 <div class="align-self-center">
-                                    <button type="button" class="btn btn-rounded btn-success d-none d-lg-block m-l-15 waves-effect waves-light">后台菜单</button>
+
+                                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                        <div class="btn-group mr-2" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-secondary"><i class="ti-move"></i></button>
+                                            <button type="button" class="btn btn-secondary"><i class="ti-fullscreen"></i></button>
+                                            <button type="button" class="btn btn-secondary"><i class="ti-target"></i></button>
+                                            <button type="button" class="btn btn-secondary"><i class="ti-trash"></i></button>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <div class="ml-auto">
                                     <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button> </div>
