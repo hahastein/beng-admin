@@ -71,7 +71,10 @@ use yii\helpers\Html;
                 <ul class="navbar-nav my-lg-0">
 
                     <li class="nav-item dropdown">
-                        <a type="button" class="btn btn-rounded btn-block btn-info">Info</a>
+                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ti-notepad">内容管理</i>
+
+                        </a>
                     </li>
 
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget()?>
