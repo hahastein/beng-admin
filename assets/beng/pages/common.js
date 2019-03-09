@@ -38,11 +38,11 @@ $(function () {
             $('body').removeClass(mySkins[i])
         })
         $('body').addClass(cls)
-        store('skin', cls)
+        // store('skin', cls)
         return false
     }
 
-    function setup() {
+    function setupListener() {
         // Add the change skin listener
         $('[data-skin]').on('click', function (e) {
             if ($(this).hasClass('knob')) return
@@ -55,6 +55,6 @@ $(function () {
                 $(this).addClass("working")
         })
     }
-    setup()
+    setupListener()
 
 });
