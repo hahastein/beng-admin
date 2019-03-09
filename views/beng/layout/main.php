@@ -114,10 +114,43 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
-            <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
-                'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
-                'layout' => '@bengbeng/admin/views/'.\bengbeng\admin\components\handles\TemplateHandle::getTheme().'/widgets/menu-left'
-            ])?>
+            <nav class="sidebar-nav">
+                <ul id="sidebarnav">
+                    <li class="nav-small-cap">--- PERSONAL</li>
+                    <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
+                        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
+                        'layout' => '@bengbeng/admin/views/'.\bengbeng\admin\components\handles\TemplateHandle::getTheme().'/widgets/menu-left',
+                        'menuCate' => 1
+                    ])?>
+                    <li class="nav-small-cap">--- PERSONAL</li>
+                    <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
+                        'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
+                        'layout' => '@bengbeng/admin/views/'.\bengbeng\admin\components\handles\TemplateHandle::getTheme().'/widgets/menu-left',
+                        'menuCate' => 0
+                    ])?>
+                    <!--left menu bottom-->
+                    <li class="nav-small-cap">--- SUPPORT</li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['document/main'])?>" aria-expanded="false">
+                            <i class="far fa-circle text-danger"></i>
+                            <span class="hide-menu">系统说明文档</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['auth/logout'])?>" aria-expanded="false">
+                            <i class="far fa-circle text-success"></i>
+                            <span class="hide-menu">退出系统</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="waves-effect waves-dark" href="<?= \yii\helpers\Url::to(['document/faqs'])?>" aria-expanded="false">
+                            <i class="far fa-circle text-info"></i>
+                            <span class="hide-menu">常见问题</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
     </aside>
     <div class="page-wrapper">
