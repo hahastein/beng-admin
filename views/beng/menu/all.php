@@ -1,6 +1,6 @@
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h4 class="text-themecolor">菜单管理</h4>
+        <h4 class="text-themecolor">平台菜单管理</h4>
     </div>
     <div class="col-md-7 align-self-center text-right">
         <div class="d-flex justify-content-end align-items-center">
@@ -16,8 +16,8 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body p-b-0">
-                <h4 class="card-title">商品分类管理</h4>
-                <h6 class="card-subtitle">商品分类及Tag标签管理 </h6> </div>
+                <h4 class="card-title">菜单管理</h4>
+                <h6 class="card-subtitle">菜单管理及菜单分类管理 </h6> </div>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs customtab" role="tablist">
                 <li class="nav-item"> <a class="nav-link active" data-toggle="tab" href="#home2" role="tab"><span class="hidden-sm-up"><i class="ti-menu"></i></span> <span class="hidden-xs-down">菜单管理</span></a> </li>
