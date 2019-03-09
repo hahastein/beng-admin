@@ -71,9 +71,9 @@ use yii\helpers\Html;
                 <ul class="navbar-nav my-lg-0">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-dark" href="<?=\yii\helpers\Url::to(['/cms'])?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ti-notepad"></i> <small>内容管理</small>
-
+                        <a class="nav-link waves-effect waves-dark" href="<?=\yii\helpers\Url::to(['/cms'])?>" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ti-notepad"></i>
+                            <small>内容管理</small>
                         </a>
                     </li>
 
