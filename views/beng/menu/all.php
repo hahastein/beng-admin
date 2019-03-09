@@ -37,32 +37,24 @@
                         <div class="table-responsive">
                             <table class="table color-table purple-table">
                                 <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
-                                </tr>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>菜单名称</th>
+                                        <th>上级菜单</th>
+                                        <th>Icon</th>
+                                        <th>类型</th>
+                                        <th>控制器/方法</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Nigam</td>
-                                    <td>Eichmann</td>
-                                    <td>@Sonu</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Deshmukh</td>
-                                    <td>Prohaska</td>
-                                    <td>@Genelia</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Roshan</td>
-                                    <td>Rogahn</td>
-                                    <td>@Hritik</td>
-                                </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Nigam</td>
+                                        <td>Eichmann</td>
+                                        <td>@Sonu</td>
+                                        <td>@Sonu</td>
+                                        <td>@Sonu</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
