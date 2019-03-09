@@ -29,7 +29,15 @@
 
 
                 <li>
-                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                    <a href="javascript:void(0)">
+                        <img src="<?= \bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('images/default_avatar.png')?>" alt="user-img" class="img-circle">
+                        <span>
+                            Winter Rain
+                            <small class="text-success">
+                                Online
+                            </small>
+                        </span>
+                    </a>
                 </li>
 
 
