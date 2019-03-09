@@ -30,7 +30,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                     <span class="hide-menu">
                         <?=$menu['menu_name']?>
                         <?php if(!empty($menu['badge']) && $menu['badge'] > 0): ?>
-                        <span class="badge badge-pill badge-cyan ml-auto"><?php=$menu['badge']?></span>
+                        <span class="badge badge-pill badge-cyan ml-auto"><?=$menu['badge']?></span>
                         <?php endif;?>
                     </span>
                 </a>
