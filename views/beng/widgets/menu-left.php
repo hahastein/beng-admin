@@ -24,6 +24,9 @@ use bengbeng\admin\components\handles\TemplateHandle;
         </li>
 
         <?php foreach ($menus as $menu): ?>
+        <?php
+            var_dump($menu);die;
+            ?>
 
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
