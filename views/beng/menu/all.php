@@ -37,12 +37,12 @@
                             <div class="d-flex">
                                 <div class="align-self-center">
 
-                                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
-                                        <div class="btn-group mr-2" role="group" aria-label="First group">
-                                            <button type="button" class="btn btn-secondary"><i class="ti-move"></i></button>
-                                            <button type="button" class="btn btn-secondary"><i class="ti-fullscreen"></i></button>
-                                            <button type="button" class="btn btn-secondary"><i class="ti-target"></i></button>
-                                            <button type="button" class="btn btn-secondary"><i class="ti-trash"></i></button>
+                                    <div class="btn-toolbar mb-3">
+                                        <div class="btn-group mr-2">
+                                            <a class="btn btn-secondary">后台左侧菜单</a>
+                                            <a class="btn btn-secondary">前台菜单</a>
+                                            <a class="btn btn-secondary">后台上部菜单</a>
+                                            <a class="btn btn-secondary">商家后台菜单</a>
                                         </div>
                                     </div>
 
