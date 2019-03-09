@@ -63,7 +63,7 @@ use yii\helpers\Html;
                     <!-- 搜索 -->
                     <li class="nav-item">
                         <form class="app-search d-none d-md-block d-lg-block">
-                            <input type="text" class="form-control" placeholder="输入内容并按下回车进行搜索">
+                            <input type="text" class="form-control" placeholder="搜索内容 & 回车">
                         </form>
                     </li>
                 </ul>
