@@ -31,6 +31,7 @@
                         <h4>一级菜单</h4>
                         <h5>显示所有菜单，按类型进，如前台，后台，APP等进行管理</h5>
                         <p>1、删除菜单不会对功能进行删除</p>
+                        <span class="ml-auto">更新缓存</span>
                     </div>
 
                     <div class="p-20 p-t-0">
@@ -53,7 +54,7 @@
                                         <td><?=$item['menu_id']; ?></td>
                                         <td><?=$item['menu_name']; ?></td>
                                         <td><?=$item['parent_id']; ?></td>
-                                        <td><i class="<?=$item['menu_icon']; ?>"></i></td>
+                                        <td><i class="<?=$item['menu_icon']; ?>"></i> <?=$item['menu_icon']; ?></td>
                                         <td><?=$item['menu_type']; ?></td>
                                         <td><?=$item['controller']; ?>/<?=$item['action']; ?></td>
                                         <td>删除</td>
