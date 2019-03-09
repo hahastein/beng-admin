@@ -15,6 +15,10 @@ class CacheController extends BaseController
 
     public function actionAll(){
 
+        $cache = \Yii::$app->cache;
+
+        \Yii::$app->Beng->outHtml($cache->get('system_menu_data'));
+
         return $this->render('all');
     }
 
