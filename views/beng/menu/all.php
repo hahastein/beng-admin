@@ -36,7 +36,7 @@
                         <div class="right-page-header">
                             <div class="d-flex">
                                 <div class="align-self-center">
-                                    <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">后台菜单</button>
+                                    <button type="button" class="btn btn-rounded btn-success d-none d-lg-block m-l-15 waves-effect waves-light">后台菜单</button>
                                 </div>
                                 <div class="ml-auto">
                                     <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button> </div>
