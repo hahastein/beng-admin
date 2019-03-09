@@ -26,7 +26,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
         <?php foreach ($menus as $menu): ?>
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
-                    <i class="icon-speedometer"></i>
+                    <i class="<?=!empty($menu['menu_icon'])?:"icon-speedometer"?>"></i>
                     <span class="hide-menu">
                         <?=$menu['menu_name']?>
                         <?php if(!empty($menu['badge']) && $menu['badge'] > 0): ?>
