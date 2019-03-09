@@ -95,38 +95,55 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Add New Contact</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title" id="myModalLabel">Add New Contact</h4> </div>
+            </div>
             <div class="modal-body">
-                <from class="form-horizontal form-material">
-                    <div class="form-group">
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Type name"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Email"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Phone"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Designation"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Age"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Date of joining"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <input type="text" class="form-control" placeholder="Salary"> </div>
-                        <div class="col-md-12 m-b-20">
-                            <div class="fileupload btn btn-danger btn-rounded waves-effect waves-light"><span><i class="ion-upload m-r-5"></i>Upload Contact Image</span>
-                                <input type="file" class="upload"> </div>
+                <form action="#">
+                    <div class="form-body">
+                        <div class="row p-t-20">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">First Name</label>
+                                    <input type="text" id="firstName" class="form-control" placeholder="John doe">
+                                    <small class="form-control-feedback"> This is inline help </small> </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-12">
+                                <div class="form-group has-danger">
+                                    <label class="control-label">Last Name</label>
+                                    <input type="text" id="lastName" class="form-control form-control-danger" placeholder="12n">
+                                    <small class="form-control-feedback"> This field has error. </small> </div>
+                            </div>
+                            <!--/span-->
+                        </div>
+                        <!--/row-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group has-success">
+                                    <label class="control-label">Gender</label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                    </select>
+                                    <small class="form-control-feedback"> Select your gender </small> </div>
+                            </div>
+                            <!--/span-->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">Date of Birth</label>
+                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+                                </div>
+                            </div>
+                            <!--/span-->
                         </div>
                     </div>
                 </from>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Save</button>
-                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">保存</button>
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">关闭</button>
             </div>
         </div>
-        <!-- /.modal-content -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
