@@ -3,7 +3,7 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\BaseController;
-use bengbeng\admin\models\setting\ARMenu;
+use bengbeng\admin\models\menu\ARMenu;
 use Yii;
 
 /**
