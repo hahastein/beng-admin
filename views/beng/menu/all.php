@@ -95,7 +95,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Add New Contact</h4>
+                <h4 class="modal-title" id="myModalLabel">添加菜单</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
             </div>
             <div class="modal-body">
@@ -104,38 +104,28 @@
                         <div class="row p-t-20">
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label class="control-label">First Name</label>
-                                    <input type="text" id="firstName" class="form-control" placeholder="John doe">
-                                    <small class="form-control-feedback"> This is inline help </small> </div>
+                                    <label class="control-label">菜单名称</label>
+                                    <input type="text" id="firstName" class="form-control" placeholder="后台菜单(Menu)">
+                                    <small class="form-control-feedback"> 菜单名称 </small> </div>
                             </div>
-                            <!--/span-->
                             <div class="col-md-12">
                                 <div class="form-group has-danger">
                                     <label class="control-label">Last Name</label>
                                     <input type="text" id="lastName" class="form-control form-control-danger" placeholder="12n">
                                     <small class="form-control-feedback"> This field has error. </small> </div>
                             </div>
-                            <!--/span-->
                         </div>
                         <!--/row-->
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group has-success">
-                                    <label class="control-label">Gender</label>
+                                    <label class="control-label">选择上级菜单</label>
                                     <select class="form-control custom-select">
                                         <option value="">Male</option>
                                         <option value="">Female</option>
                                     </select>
                                     <small class="form-control-feedback"> Select your gender </small> </div>
                             </div>
-                            <!--/span-->
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label class="control-label">Date of Birth</label>
-                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy">
-                                </div>
-                            </div>
-                            <!--/span-->
                         </div>
                     </div>
                 </from>
