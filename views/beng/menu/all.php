@@ -40,7 +40,7 @@
                                 <div class="align-self-center">
                                     <h4 class="card-title m-t-10">Contacts / Employee List </h4></div>
                                 <div class="ml-auto">
-                                    更新缓存 </div>
+                                    <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button> </div>
                             </div>
                         </div>
 
