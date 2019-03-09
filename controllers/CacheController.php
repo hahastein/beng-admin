@@ -19,7 +19,7 @@ class CacheController extends BaseController
     }
 
     public function actionRemove(){
-        \Yii::$app->cache->delete('system_menu_data');
+        \Yii::$app->cache->flush();
     }
 
     public function behaviors()
