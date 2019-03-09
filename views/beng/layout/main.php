@@ -30,11 +30,8 @@ use yii\helpers\Html;
         <p class="loader__label">52Beng Loading</p>
     </div>
 </div>
-
 <div id="main-wrapper">
-
     <header class="topbar">
-
         <nav class="navbar top-navbar navbar-expand-md">
             <div class="navbar-header p-r-10">
                 <a class="block navbar-brand text-center" href="<?= \yii\helpers\Url::home() ?>">
@@ -46,7 +43,6 @@ use yii\helpers\Html;
                     <small> Admin</small>
                 </a>
             </div>
-
             <div class="navbar-collapse navbar-dark">
                 <ul class="navbar-nav mr-auto">
                     <!-- 菜单ICON  -->
@@ -67,34 +63,25 @@ use yii\helpers\Html;
                         </form>
                     </li>
                 </ul>
-
                 <ul class="navbar-nav my-lg-0">
-
                     <li class="nav-item">
                         <a class="nav-link waves-effect waves-dark" href="<?=\yii\helpers\Url::to(['/cms'])?>">
                             <i class="ti-notepad"></i>
                             <small>内容管理</small>
                         </a>
                     </li>
-
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget()?>
-
                     <?= \bengbeng\admin\widgets\information\NotificationsWidget::widget([
                         'layout' => 'message',
                         'title' => '新消息'
                     ])?>
-
                     <?= \bengbeng\admin\widgets\information\RightWidget::widget()?>
-
                 </ul>
             </div>
-
         </nav>
-
     </header>
 
     <aside class="left-sidebar">
-
         <div class="scroll-sidebar">
             <!-- 用户资料 -->
             <div class="user-profile">
@@ -127,24 +114,18 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
-
             <?= \bengbeng\framework\widgets\menu\StrongMenu::widget([
                 'type' => \bengbeng\framework\widgets\menu\StrongMenu::TYPE_LEFT,
                 'layout' => '@bengbeng/admin/views/'.\bengbeng\admin\components\handles\TemplateHandle::getTheme().'/widgets/menu-left'
             ])?>
-
         </div>
-
     </aside>
-
     <div class="page-wrapper">
         <?= $content ?>
     </div>
-
     <footer class="footer">
         © 2019 BengBeng Framework by 52beng.com
     </footer>
-
 </div>
 <?php $this->endBody() ?>
 </body>
