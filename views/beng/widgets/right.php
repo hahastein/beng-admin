@@ -9,13 +9,13 @@
         <div class="rpanel-title"> 系统设置 <span><i class="ti-close right-side-toggle"></i></span> </div>
         <div class="r-panel-body">
             <ul id="themecolors" class="m-t-20">
-                <li class="d-block">
+                <li class="d-block m-t-30">
                     <b>夜间模式</b>
                     <span class="ml-auto">
                         <input type="checkbox" checked class="js-switch" data-color="#009efb" />
                     </span>
                 </li>
-                <li><b>头部样式设定</b></li>
+                <li class="d-block"><b>头部样式设定</b></li>
                 <li><a href="javascript:void(0)" data-skin="skin-default" class="default-theme working">1</a></li>
                 <li><a href="javascript:void(0)" data-skin="skin-green" class="green-theme">2</a></li>
                 <li><a href="javascript:void(0)" data-skin="skin-red" class="red-theme">3</a></li>
