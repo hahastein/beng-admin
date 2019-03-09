@@ -24,11 +24,6 @@ use bengbeng\admin\components\handles\TemplateHandle;
         </li>
 
         <?php foreach ($menus as $menu): ?>
-        <?php
-            \Yii::$app->Beng->outHtml($menus);
-            die;
-            ?>
-
             <li>
                 <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                     <i class="icon-speedometer"></i>
@@ -37,7 +32,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
                     <span class="badge badge-pill badge-cyan ml-auto">4</span>
                 </span>
                 </a>
-                <?php if($menu['parent']): ?>
+                <?php if(!empty($menu['parent'])): ?>
                 <ul aria-expanded="false" class="collapse">
                     <?php foreach ($menu['parent'] as $parent): ?>
                     <li><a href="index.html"><?=$menu['menu_name']?> </a></li>
