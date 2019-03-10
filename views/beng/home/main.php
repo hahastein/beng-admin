@@ -48,7 +48,10 @@
                         <h6>Daily</h6> <b>5.40%</b></div>
                 </div>
             </div>
-            <div id="sparkline9" class="sparkchart"></div>
+            <?=\bengbeng\admin\widgets\chart\SparklineWidget::widget([
+                'clientID' => 'wm',
+                'sarkData' => [12, 14, 15, 11, 9, 18]
+            ]); ?>
         </div>
     </div>
     <!-- Column -->
@@ -56,7 +59,7 @@
     <div class="col-lg-4">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">商品销售数量</h5>
+                <h5 class="card-title">销售额</h5>
                 <div class="stats-row m-t-20 m-b-20">
                     <div class="stat-item">
                         <h6>Growth</h6> <b>80.40%</b></div>
@@ -66,7 +69,10 @@
                         <h6>Daily</h6> <b>5.40%</b></div>
                 </div>
             </div>
-            <div id="sparkline10" class="sparkchart"></div>
+            <?=\bengbeng\admin\widgets\chart\SparklineWidget::widget([
+                'clientID' => 'sc',
+                'sarkData' => [1560, 1450, 1301, 1680, 1710, 1010]
+            ]); ?>
         </div>
     </div>
     <!-- Column -->
