@@ -28,6 +28,7 @@
                 </div>
             </div>
             <?=\bengbeng\admin\widgets\chart\SparklineWidget::widget([
+                    'clientID' => 'so',
                 'sarkData' => [89, 75, 86, 78, 98, 101]
             ]); ?>
         </div>
