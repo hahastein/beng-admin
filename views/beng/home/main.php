@@ -27,9 +27,8 @@
                         <h6>当日</h6> <b>102</b><small>单</small></div>
                 </div>
             </div>
-            <div id="sparkline8" class="sparkchart"></div>
             <?=\bengbeng\admin\widgets\chart\SparklineWidget::widget([
-                'sarkData' => [23, 15, 56, 78, 98, 101]
+                'sarkData' => [89, 75, 86, 78, 98, 101]
             ]); ?>
         </div>
     </div>
