@@ -52,8 +52,8 @@ class SparklineWidget extends Widget{
     private function getExtendsParams()
     {
         $result = '';
-        foreach ($this->clientOptions as $val => $key) {
-            $result .= (empty($result) ? '' : ',') . $val . ': ' . $key;
+        foreach ($this->clientOptions as $key => $val) {
+            $result .= (empty($result) ? '' : ',') . $key . ': \'' . $val . '\'';
         }
 
         return $result;
