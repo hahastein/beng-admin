@@ -1,33 +1,72 @@
+<div class="row page-titles">
+    <div class="col-md-5 align-self-center">
+        <h4 class="text-themecolor">综合首页</h4>
+    </div>
+    <div class="col-md-7 align-self-center text-right">
+        <div class="d-flex justify-content-end align-items-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['/'])?>">首页</a></li>
+            </ol>
+
+        </div>
+    </div>
+</div>
+
 <div class="row">
     <!-- Column -->
-    <div class="col-lg-12">
+    <div class="col-lg-4">
         <div class="card">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 m-b-30 text-center"> <small>Visit</small>
-                        <h2><i class="ti-arrow-up text-success"></i> 1064</h2>
-                        <div id="sparklinedash"></div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 m-b-30 text-center"> <small>Total Page Views</small>
-                        <h2><i class="ti-arrow-up text-purple"></i> 5064</h2>
-                        <div id="sparklinedash2"></div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 m-b-30 text-center"> <small>Unique Visitor</small>
-                        <h2><i class="ti-arrow-up text-info"></i> 664</h2>
-                        <div id="sparklinedash3"></div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 m-b-30 text-center"> <small>Bounce Rate</small>
-                        <h2><i class="ti-arrow-down text-danger"></i> 50%</h2>
-                        <div id="sparklinedash4"></div>
-                    </div>
+                <h5 class="card-title">商品订单量</h5>
+                <div class="stats-row m-t-20 m-b-20">
+                    <div class="stat-item">
+                        <h6>当月</h6> <b>1230</b><small>单</small></div>
+                    <div class="stat-item">
+                        <h6>7日</h6> <b>560</b><small>单</small></div>
+                    <div class="stat-item">
+                        <h6>当日</h6> <b>102</b><small>单</small></div>
                 </div>
-                <ul class="list-inline font-12 text-center">
-                    <li><i class="fa fa-circle text-cyan"></i> Site A</li>
-                    <li><i class="fa fa-circle text-primary"></i> Site B</li>
-                    <li><i class="fa fa-circle text-purple"></i> Site C</li>
-                </ul>
-                <div id="morris-area-chart" style="height: 340px;"></div>
             </div>
+            <div id="sparkline8" class="sparkchart"></div>
+            <?=\bengbeng\admin\widgets\chart\SparklineWidget::widget([
+                'sarkData' => [23, 15, 56, 78, 98, 101]
+            ]); ?>
+        </div>
+    </div>
+    <!-- Column -->
+    <!-- Column -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">外卖订单量</h5>
+                <div class="stats-row m-t-20 m-b-20">
+                    <div class="stat-item">
+                        <h6>Growth</h6> <b>80.40%</b></div>
+                    <div class="stat-item">
+                        <h6>Montly</h6> <b>20.40%</b></div>
+                    <div class="stat-item">
+                        <h6>Daily</h6> <b>5.40%</b></div>
+                </div>
+            </div>
+            <div id="sparkline9" class="sparkchart"></div>
+        </div>
+    </div>
+    <!-- Column -->
+    <!-- Column -->
+    <div class="col-lg-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">商品销售数量</h5>
+                <div class="stats-row m-t-20 m-b-20">
+                    <div class="stat-item">
+                        <h6>Growth</h6> <b>80.40%</b></div>
+                    <div class="stat-item">
+                        <h6>Montly</h6> <b>20.40%</b></div>
+                    <div class="stat-item">
+                        <h6>Daily</h6> <b>5.40%</b></div>
+                </div>
+            </div>
+            <div id="sparkline10" class="sparkchart"></div>
         </div>
     </div>
     <!-- Column -->

@@ -128,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                </from>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">保存</button>
