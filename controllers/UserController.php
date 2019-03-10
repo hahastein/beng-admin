@@ -19,16 +19,16 @@ class UserController extends FactoryController
      * Lists all Menu models.
      * @return mixed
      */
-    public function actionIndex()
+    public function actionAll()
     {
-        return $this->render('index');
+        return $this->render('all');
     }
 
-    public function behaviors()
-    {
-        self::setActions([
-            'index'
-        ]);
-        return parent::behaviors();
-    }
+//    public function behaviors()
+//    {
+//        self::setActions([
+//            ''
+//        ]);
+//        return parent::behaviors();
+//    }
 }
