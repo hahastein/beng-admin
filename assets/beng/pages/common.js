@@ -75,4 +75,12 @@ $(function () {
 
     }
 
+    $('#tooltipmodals').on('show.bs.modal', function (event) {
+        var modelData = $(event.relatedTarget);
+        var type = modelData.data('type');
+        var content = modelData.parent().find('.hide #r_'+type).html();
+        var modal = $(this);  //get modal itself
+        modal.find('.modal-body').html(content);
+        modal.find('.modal-title').html(type+'资源文件');
+    });
 });

@@ -1,14 +1,3 @@
-<?=\bengbeng\admin\widgets\tools\BreadcrumbWidget::widget([
-        'title' => '平台菜单管理',
-        'menu' => ['菜单管理' => ''],
-        'rightButtons' => [
-                'btn' => [
-                        'title' => '创建菜单',
-                        'target' => '#add-menu1'
-                ]
-        ]
-]) ?>
-
 <div class="row">
     <div class="col-md-12">
         <div class="card">
@@ -52,15 +41,15 @@
                         <div class="table-responsive">
                             <table class="table color-table purple-table">
                                 <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>菜单名称</th>
-                                        <th>上级菜单</th>
-                                        <th>Icon</th>
-                                        <th>类型</th>
-                                        <th>控制器/方法</th>
-                                        <th>操作</th>
-                                    </tr>
+                                <tr>
+                                    <th>#</th>
+                                    <th>菜单名称</th>
+                                    <th>上级菜单</th>
+                                    <th>Icon</th>
+                                    <th>类型</th>
+                                    <th>控制器/方法</th>
+                                    <th>操作</th>
+                                </tr>
                                 </thead>
                                 <tbody>
                                 <?php foreach ($dataSet as $item): ?>
@@ -86,60 +75,3 @@
         </div>
     </div>
 </div>
-
-
-<?=\bengbeng\admin\widgets\tools\PostformWidget::widget([
-    'modalID' => 'add-menu1',
-    'modalText' => '添加菜单',
-    'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
-    'submitUrl' => \yii\helpers\Url::to(['/system/menu/save']),
-    'control' => [[
-        'menuName' => [
-            'model' => 'menu_name',
-            'label' => '菜单名称',
-            'placeholder' => '后台菜单(Menu)',
-            'tip' => '菜单名称不能小于2位',
-            'type' => 'input.text',
-        ]
-    ],[
-        'controller' => [
-            'model' => 'controller',
-            'label' => '控制器名称',
-            'placeholder' => 'controller',
-            'tip' => '开发人员提供的控制器名称',
-            'type' => 'input.text',
-        ],
-        'action' => [
-            'model' => 'action',
-            'label' => '方法名称',
-            'placeholder' => 'action',
-            'tip' => '开发人员提供的方法名称',
-            'type' => 'input.text',
-        ]
-    ],[
-        'menu_icon' => [
-            'model' => 'menu_icon',
-            'label' => 'Icon',
-            'placeholder' => 'icon-user',
-            'tip' => '写入系统提供的icon图标',
-            'type' => 'input.text',
-            'no_validate' => true
-        ],
-        'initials' => [
-            'model' => 'initials',
-            'label' => '首字母',
-            'placeholder' => 'Szm',
-            'tip' => '菜单的英文首字母',
-            'type' => 'input.text',
-        ]
-    ],[
-        'parentMenu' => [
-            'model' => 'parent_id',
-            'label' => '选择上级菜单',
-            'tip' => '请选择对应的上一级菜单',
-            'type' => 'select',
-            'dataSet' => $dropdown
-        ]
-    ]]
-
-])?>

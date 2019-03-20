@@ -1,6 +1,5 @@
 <?php
 use yii\helpers\Url;
-use bengbeng\admin\components\handles\TemplateHandle;
 ?>
 
 <?php foreach ($menus as $menu): ?>
@@ -9,7 +8,7 @@ use bengbeng\admin\components\handles\TemplateHandle;
         <?php if(!empty($menu['parent'])): ?>
         <ul aria-expanded="false" class="collapse">
             <?php foreach ($menu['parent'] as $parent): ?>
-            <li><a href="<?= Url::to([$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a></li>
+            <li><a href="<?= Url::to(['/'.$parent['module'].'/'.$parent['controller'].'/'.$parent['action']]) ?>"><?=$parent['menu_name']?></a></li>
             <?php endforeach;?>
         </ul>
         <?php endif;?>

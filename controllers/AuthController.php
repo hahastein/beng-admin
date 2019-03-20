@@ -15,6 +15,7 @@ use bengbeng\framework\base\data\ActiveOperate;
 use Yii;
 use bengbeng\admin\models\form\AdminLogin;
 use bengbeng\framework\base\Enum;
+use yii\db\ActiveQuery;
 
 class AuthController extends BaseController
 {
@@ -27,6 +28,20 @@ class AuthController extends BaseController
 
     public function actionLogin()
     {
+
+        $cache_name = 'template_'.md5('auth/login');
+        $cache = \Yii::$app->cache;
+        if(!$cache->exists($cache_name)){
+            $settingPage = new ARSettingPage();
+            $pageData = $settingPage->dataOne(function (ActiveQuery $query){
+                $query->select(['title', 'template_id', 'last_time', 'resource_file', 'css_order']);
+                $query->where([
+                    'router' => 'auth/login'
+                ]);
+                $query->asArray();
+            });
+            $cache->add($cache_name, $pageData);
+        }
 
         if (!Yii::$app->getUser()->isGuest) {
             return $this->goHome();

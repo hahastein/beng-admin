@@ -33,4 +33,11 @@ class TemplateHandle
         list(,$url) = \Yii::$app->assetManager->publish('@bengbeng/admin/assets/' . self::getTheme());
         return $url . DIRECTORY_SEPARATOR . $name;
     }
+
+    public static function formatPageResource($data){
+
+        $unData = unserialize($data);
+
+
+    }
 }

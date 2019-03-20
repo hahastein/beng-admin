@@ -9,12 +9,14 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\BaseController;
+use bengbeng\admin\components\handles\Test;
 use bengbeng\framework\base\Enum;
 
 class HomeController extends BaseController
 {
 
     public function actionMain(){
+
 //        \Yii::$app->Beng->outHtml('main');
         $orderData[] = [
             'order_id' => 3,

@@ -3,6 +3,7 @@ namespace bengbeng\admin\widgets\chart;
 
 use bengbeng\admin\components\assets\plugins\SparklineAsset;
 use yii\base\Widget;
+use yii\helpers\Html;
 use yii\helpers\Json;
 
 class SparklineWidget extends Widget{

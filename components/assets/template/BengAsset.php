@@ -20,8 +20,7 @@ class BengAsset extends AssetBundle
 
     public $js = [
         'plugins/popper.min.js',
-        'plugins/bootstrap.min.js',
-        'pages/common.js'
+        'plugins/bootstrap.min.js'
     ];
 
     public $depends = [
@@ -60,7 +59,8 @@ class BengAsset extends AssetBundle
         $this->sourcePath = '@bengbeng/admin/assets' . DIRECTORY_SEPARATOR . TemplateHandle::getTheme() . DIRECTORY_SEPARATOR;
 
         //非登录页面加载公共内容
-        if($routerUrl != 'auth/login'){
+        if($routerUrl != 'auth/login') {
+            $this->js[] = 'pages/common.js';
             $includeJs = [
                 'pages/sidebarmenu.js',
                 'pages/perfect-scrollbar.jquery.min.js',

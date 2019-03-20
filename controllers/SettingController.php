@@ -9,6 +9,7 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\BaseController;
+use bengbeng\admin\components\handles\Test;
 use bengbeng\admin\models\setting\ARSettingPage;
 use bengbeng\framework\base\data\ActiveOperate;
 use yii\db\ActiveQuery;
@@ -22,11 +23,14 @@ class SettingController extends BaseController
      */
     public function actionSysBase(){
 
+
+
         return $this->render('sys-base');
     }
 
     public function actionTemplate(){
-//        \Yii::$app->r
+
+
     }
 
     public function actionPage(){
@@ -108,7 +112,7 @@ class SettingController extends BaseController
     public function behaviors()
     {
         self::setActions([
-            'sys-base', 'page'
+            'sys-base', 'page', 'template'
         ]);
         return parent::behaviors();
     }

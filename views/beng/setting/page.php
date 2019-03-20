@@ -1,6 +1,7 @@
 <?php
 use \yii\helpers\Url;
 ?>
+
 <div class="pcoded-content">
     <div class="page-header">
         <div class="page-block">
