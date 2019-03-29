@@ -8,7 +8,9 @@
 
 namespace bengbeng\admin\models;
 
-class AdminARModel extends \bengbeng\framework\models\admin\AdminARModel
+use \bengbeng\framework\models\admin\AdminARModel as BaseAdminModel;
+
+class AdminARModel extends BaseAdminModel
 {
 
 }

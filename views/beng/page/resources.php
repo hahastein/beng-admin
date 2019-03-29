@@ -1,17 +1,14 @@
-<div class="row page-titles">
-    <div class="col-md-5 align-self-center">
-        <h4 class="text-themecolor">页面资源文件管理</h4>
-    </div>
-    <div class="col-md-7 align-self-center text-right">
-        <div class="d-flex justify-content-end align-items-center">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="<?= \yii\helpers\Url::to(['/'])?>">首页</a></li>
-                <li class="breadcrumb-item active">页面资源管理</li>
-            </ol>
-            <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#add-menu"><i class="fa fa-plus-circle"></i> 创建资源</button>
-        </div>
-    </div>
-</div>
+<?=\bengbeng\admin\widgets\tools\BreadcrumbWidget::widget([
+    'title' => '页面资源文件管理',
+    'menu' => ['页面资源管理' => ''],
+    'rightButtons' => [
+        'btn' => [
+            'title' => '创建资源',
+            'target' => 'add-resource'
+        ]
+    ]
+]) ?>
+
 <div class="row">
     <div class="col-md-12">
         <div class="card">

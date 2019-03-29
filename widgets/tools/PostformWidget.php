@@ -46,6 +46,8 @@ class PostformWidget extends BaseWidget
             $controlReset[] = $this->setFormItem($row);
         }
 
+
+
         //注册ajax脚本
         /*
         $this->getView()->registerJs('

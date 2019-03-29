@@ -55,10 +55,21 @@ class BreadcrumbWidget extends BaseWidget
 
     public function run()
     {
+
+        $modelView = '';
+        foreach ($this->rightButtons as $key => $button){
+            if(isset($button['modalParams'])){
+                $button['modalParams']['modalID'] = $button['target'];
+                $button['modalParams']['modalText'] = $button['title'];
+
+                $modelView .= PostformWidget::widget($button['modalParams']);
+            }
+        }
+
         return $this->render('tools/breadcrumb', [
             'title'  => $this->title,
             'menu' => $this->menu,
             'rightBtn' => $this->rightButtons
-        ]);
+        ]) . $modelView;
     }
 }

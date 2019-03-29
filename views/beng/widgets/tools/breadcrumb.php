@@ -1,6 +1,6 @@
 <div class="row page-titles">
     <div class="col-md-5 align-self-center">
-        <h4 class="text-themecolor"><?=$title?></h4>
+        <h4 class="text-themecolor"><strong><?=$title?></strong></h4>
     </div>
     <div class="col-md-7 align-self-center text-right">
         <div class="d-flex justify-content-end align-items-center">
@@ -17,7 +17,7 @@
                 <?php if($key == 'a'):?>
                 <a class="btn btn-info d-none d-lg-block m-l-15" href="<?=$item['href']?>"> <?=$item['title']?></a>
                 <?php else: ?>
-                <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
+                <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
                 <?php endif; ?>
             <?php endforeach; ?>
         </div>

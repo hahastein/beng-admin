@@ -18,7 +18,7 @@ class CmsController extends BaseController
      */
     public function actionAll(){
 
-        $this->render('all');
+        return $this->render('all');
     }
 
     /**
@@ -26,6 +26,7 @@ class CmsController extends BaseController
      */
     public function actionCategory(){
 
+        return $this->render('category');
     }
 
     public function actionCreate(){
