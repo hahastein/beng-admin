@@ -6,7 +6,7 @@
             'title' => '创建菜单',
             'target' => 'add-menu1',
             'modalParams' => [
-                'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
+                'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_POST,
                 'submitUrl' => \yii\helpers\Url::to(['/system/menu/save']),
                 'control' => [[
                     'menuName' => [
