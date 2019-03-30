@@ -22,13 +22,9 @@ class MenuController extends AdminBaseController
 
     public function actionAll(){
 
-        $arMenu = new ARMenu();
-        $dataSet = $arMenu->findByMenuType(10);
+        $returnData = $this->getLogicLayer('menu.MenuBLL')->getData();
 
-        $dropDownData = ArrayHelper::map($dataSet, 'menu_id', 'menu_name');
-
-        return $this->render('all', ['dataSet' => $dataSet, 'dropdown' => $dropDownData]);
-
+        return $this->render('all', $returnData);
     }
 
     public function actionSave(){

@@ -30,6 +30,14 @@ class AdminBaseController extends BaseController
         }
     }
 
+    protected function getLogicLayer($logicName, $namespace = '')
+    {
+        if(empty($namespace)){
+            $namespace = '\\bengbeng\\admin\\';
+        }
+        return parent::getLogicLayer($logicName, $namespace);
+    }
+
     /**
      * 成功提示
      * @param string $code 错误代码
