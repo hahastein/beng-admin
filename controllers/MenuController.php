@@ -74,7 +74,7 @@ class MenuController extends AdminBaseController
                 throw new Exception('添加失败');
             }
         }catch (Exception $ex){
-            $this->error($ex);
+            return $this->error($ex);
         }
 
     }
