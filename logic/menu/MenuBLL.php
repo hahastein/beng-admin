@@ -11,10 +11,11 @@
 
 namespace bengbeng\admin\logic\menu;
 
+use bengbeng\admin\logic\LogicLayerInterface;
 use bengbeng\admin\models\menu\ARMenu;
 use yii\helpers\ArrayHelper;
 
-class MenuBLL
+class MenuBLL implements LogicLayerInterface
 {
     public function __construct()
     {
