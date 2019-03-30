@@ -29,40 +29,39 @@ class MenuController extends AdminBaseController
 
     public function actionSave(){
 
-        $menuModel = new MenuARModel();
-
-        $postData = \Yii::$app->Beng->PostData([
-            'menu_name' => 'menuName',
-            'controller','action','menu_icon','initials',
-            'parent_id' => 'parentMenu'
-        ]);
-
-        if(empty($postData['parent_id'])){
-            \Yii::$app->Beng->outHtml('请选择父级菜单');
-        }
-
-        $menuData = $menuModel->dataOne(function (ActiveQuery $query) use($postData){
-            $query->where(['menu_name' => $postData['menu_name']]);
-        });
-
-        if($menuData){
-            \Yii::$app->Beng->outHtml('菜单存在');
-        }
-
-        $parentData = $menuModel->dataOne(function (ActiveQuery $query) use($postData){
-            $query->where(['menu_id' => $postData['parent_id']]);
-        });
-
-        if(!$parentData){
-            \Yii::$app->Beng->outHtml('父级菜单不存在');
-        }
-
-        $postData['module'] = Yii::$app->controller->module->id;
-        $postData['menu_cate'] = $parentData['menu_cate'];
-        $postData['addtime'] = time();
-        $postData['admin_id'] = Yii::$app->user->identity->admin_id;
-
         try {
+            $menuModel = new MenuARModel();
+
+            $postData = \Yii::$app->Beng->PostData([
+                'menu_name' => 'menuName',
+                'controller','action','menu_icon','initials',
+                'parent_id' => 'parentMenu'
+            ]);
+
+            if(empty($postData['parent_id'])){
+                throw new Exception('选择父级菜单');
+            }
+
+            $menuData = $menuModel->dataOne(function (ActiveQuery $query) use($postData){
+                $query->where(['menu_name' => $postData['menu_name']]);
+            });
+
+            if($menuData){
+                throw new Exception('菜单存在');
+            }
+
+            $parentData = $menuModel->dataOne(function (ActiveQuery $query) use($postData){
+                $query->where(['menu_id' => $postData['parent_id']]);
+            });
+
+            if(!$parentData){
+                throw new Exception('父级菜单不存在');
+            }
+
+            $postData['module'] = Yii::$app->controller->module->id;
+            $postData['menu_cate'] = $parentData['menu_cate'];
+            $postData['addtime'] = time();
+            $postData['admin_id'] = Yii::$app->user->identity->admin_id;
 
             $menuModel->setAttributes($postData, false);
             if ($menuModel->validate() && $menuModel->save()) {
@@ -72,13 +71,10 @@ class MenuController extends AdminBaseController
                 \Yii::$app->Beng->outHtml('添加成功');
 
             } else {
-                \Yii::$app->Beng->outHtml('添加失败');
-
+                throw new Exception('添加失败');
             }
         }catch (Exception $ex){
-            Yii::$app->Beng->outHtml($ex);
-            \Yii::$app->Beng->outHtml('添加失败11');
-
+            $this->error('测试错误信息');
         }
 
     }

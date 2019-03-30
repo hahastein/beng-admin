@@ -40,26 +40,28 @@ class AdminBaseController extends BaseController
 
     /**
      * 成功提示
-     * @param string $code 错误代码
-     * @param string $msg 自定义输出内容，配合$code为0时使用
+     * @param string $msg 输出内容，当输入内容为纯数字，则为定义好的信息输出
      * @param string $url 跳转url
      * @return string
      */
-    public function success($code, $msg = '', $url = ''){
-        $content = $code == SuccessEnum::SUCCESS_CUSTOMER ?$msg:SuccessEnum::infoChange($code);
-        return $this->_jump('成功提示', $content, $url, 3, 1);
+    public function success($msg = '', $url = ''){
+        if(is_int($msg)) {
+            $msg = SuccessEnum::infoChange($msg);
+        }
+        return $this->_jump('成功提示', $msg, $url, 3, 1);
     }
 
     /**
      * 错误提示
-     * @param string $code 错误代码
-     * @param string $msg 自定义输出内容，配合$code为0时使用
+     * @param string $msg 输出内容，当输入内容为纯数字，则为定义好的信息输出
      * @param string $url 跳转url
      * @return string
      */
-    public function error($code, $msg = '' ,$url = ''){
-        $content = $code == ErrorEnum::ERROR_CUSTOMER ?$msg:ErrorEnum::infoChange($code);
-        return $this->_jump('温馨提示', $content, $url, 3);
+    public function error($msg = '' ,$url = ''){
+        if(is_int($msg)) {
+            $msg = ErrorEnum::infoChange($msg);
+        }
+        return $this->_jump('温馨提示', $msg, $url, 3);
     }
 
     /**
