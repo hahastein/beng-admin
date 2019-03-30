@@ -58,6 +58,9 @@ class AdminBaseController extends BaseController
      * @return string
      */
     public function error($msg = '' ,$url = ''){
+
+        print_r(gettype($msg));
+
         if(is_int($msg)) {
             $msg = ErrorEnum::infoChange($msg);
         }
