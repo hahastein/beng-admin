@@ -59,12 +59,15 @@ class AdminBaseController extends BaseController
      */
     public function error($msg = '' ,$url = ''){
 
-        print_r(gettype($msg));
-
-        if(is_int($msg)) {
-            $msg = ErrorEnum::infoChange($msg);
+        if(is_object($msg)){
+            return $this->_jumpEx('温馨提示',$msg);
+        }else{
+            if(is_int($msg)) {
+                $msg = ErrorEnum::infoChange($msg);
+            }
+            return $this->_jump('温馨提示', $msg, $url, 3);
         }
-        return $this->_jump('温馨提示', $msg, $url, 3);
+
     }
 
     /**
@@ -78,23 +81,27 @@ class AdminBaseController extends BaseController
      */
     private function _jump($title, $content, $url='', $wait=3, $type = 0){
 
-        if($type){
-            $returnData = [
-                'title' => $title,
-                'content' => $content,
-                'url' => $url,
-                'wait' => $wait,
-                'type' => $type
-            ];
+        $returnData = [
+            'title' => $title,
+            'content' => $content,
+            'url' => $url,
+            'wait' => $wait,
+            'type' => $type
+        ];
 
-            if(empty($url)){
+        if(empty($url)){
 //            $data['jumpurl']=isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:"javascript:window.close();";
-                $returnData['url'] = "javascript:history.go(-1);";
-            }
+            $returnData['url'] = "javascript:history.go(-1);";
+        }
 
+        if($type){
             return $this->render("success", $returnData);
         }else{
-            return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', ['name' => 'asdasdasd', 'exception' => $content]);
+            return $this->render("error", $returnData);
         }
+    }
+
+    private function _jumpEx($title, $ex){
+        return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', ['name' => $title, 'exception' => $ex]);
     }
 }
