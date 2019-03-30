@@ -91,7 +91,7 @@ class AdminBaseController extends BaseController
 
             return $this->render("success", $returnData);
         }else{
-            return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', ['exception' => $content]);
+            return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', ['name' => 'asdasdasd', 'exception' => $content]);
         }
     }
 }
