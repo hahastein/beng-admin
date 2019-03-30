@@ -75,23 +75,23 @@ class AdminBaseController extends BaseController
      */
     private function _jump($title, $content, $url='', $wait=3, $type = 0){
 
-        $returnData = [
-            'title' => $title,
-            'content' => $content,
-            'url' => $url,
-            'wait' => $wait,
-            'type' => $type
-        ];
-
-        if(empty($url)){
-//            $data['jumpurl']=isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:"javascript:window.close();";
-            $returnData['url'] = "javascript:history.go(-1);";
-        }
-
         if($type){
+            $returnData = [
+                'title' => $title,
+                'content' => $content,
+                'url' => $url,
+                'wait' => $wait,
+                'type' => $type
+            ];
+
+            if(empty($url)){
+//            $data['jumpurl']=isset($_SERVER['HTTP_REFERER'])?$_SERVER['HTTP_REFERER']:"javascript:window.close();";
+                $returnData['url'] = "javascript:history.go(-1);";
+            }
+
             return $this->render("success", $returnData);
         }else{
-            return $this->render("error", $returnData);
+            return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', $content);
         }
     }
 }
