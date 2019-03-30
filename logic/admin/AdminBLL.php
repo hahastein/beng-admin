@@ -32,4 +32,9 @@ class AdminBLL implements LogicLayerInterface
 
         return ['dataSet' => $adminData];
     }
+
+    public function save()
+    {
+        // TODO: Implement save() method.
+    }
 }

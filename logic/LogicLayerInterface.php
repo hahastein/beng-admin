@@ -15,4 +15,6 @@ namespace bengbeng\admin\logic;
 interface LogicLayerInterface
 {
     public function getData();
+
+    public function save();
 }
