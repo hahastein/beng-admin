@@ -1,9 +1,10 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: hahastein
- * Date: 2018/11/6
- * Time: 23:02
+ * Copyright    : BengBeng Framework Inc.
+ * Author       : hahastein(146119@qq.com)
+ * Url          : http://www.52beng.com
+ * CreateTime   : 2018/11/6 23:02
+ * Description  : 资源公共类
  */
 
 namespace bengbeng\admin;
