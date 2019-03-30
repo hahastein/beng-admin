@@ -1,16 +1,21 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: gameg
- * Date: 2019/3/13
- * Time: 23:57
+ * Copyright    : BengBeng Framework Inc.
+ * Author       : hahastein(146119@qq.com)
+ * Url          : http://www.52beng.com
+ * CreateTime   : 2019/3/13 23:57
+ * Description  : Cms系统
  */
 
 namespace bengbeng\admin\controllers;
 
-
 use bengbeng\admin\base\BaseController;
 
+/**
+ * Class CmsController
+ * @author hahastein
+ * @package bengbeng\admin\controllers
+ */
 class CmsController extends BaseController
 {
     /**
