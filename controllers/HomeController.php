@@ -8,11 +8,9 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
-use bengbeng\admin\components\handles\Test;
-use bengbeng\framework\base\Enum;
+use bengbeng\admin\base\AdminBaseController;
 
-class HomeController extends BaseController
+class HomeController extends AdminBaseController
 {
 
     public function actionMain(){

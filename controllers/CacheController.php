@@ -9,14 +9,14 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 
 /**
  * Class CacheController
  * @author hahastein
  * @package bengbeng\admin\controllers
  */
-class CacheController extends BaseController
+class CacheController extends AdminBaseController
 {
 
     public function actionAll(){

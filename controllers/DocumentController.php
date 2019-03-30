@@ -8,9 +8,9 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 
-class DocumentController extends BaseController
+class DocumentController extends AdminBaseController
 {
     public function actionMain(){
 

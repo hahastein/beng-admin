@@ -8,10 +8,9 @@
 
 namespace bengbeng\admin\controllers;
 
+use bengbeng\admin\base\AdminBaseController;
 
-use bengbeng\framework\controllers\base\FactoryController;
-
-class GoodsController extends FactoryController
+class GoodsController extends AdminBaseController
 {
 //    public function
 }

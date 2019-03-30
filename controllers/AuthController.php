@@ -9,7 +9,7 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 use bengbeng\admin\components\handles\TemplateHandle;
 use bengbeng\admin\models\setting\ARSettingPage;
 use bengbeng\admin\models\form\AdminLogin;
@@ -22,7 +22,7 @@ use yii\db\ActiveQuery;
  * @author hahastein
  * @package bengbeng\admin\controllers
  */
-class AuthController extends BaseController
+class AuthController extends AdminBaseController
 {
 
     /**

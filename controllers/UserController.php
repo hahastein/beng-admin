@@ -2,8 +2,7 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\framework\base\Enum;
-use bengbeng\framework\controllers\base\FactoryController;
+use bengbeng\admin\base\AdminBaseController;
 use Yii;
 
 /**
@@ -12,7 +11,7 @@ use Yii;
  * @author hahastein <146119@qq.com>
  * @since 1.0
  */
-class UserController extends FactoryController
+class UserController extends AdminBaseController
 {
 
     /**

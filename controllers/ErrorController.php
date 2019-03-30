@@ -9,9 +9,9 @@
 namespace bengbeng\admin\controllers;
 
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 
-class ErrorController extends BaseController
+class ErrorController extends AdminBaseController
 {
 
 //    public function actionMain(){

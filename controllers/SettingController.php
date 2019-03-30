@@ -8,13 +8,12 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
-use bengbeng\admin\components\handles\Test;
+use bengbeng\admin\base\AdminBaseController;
 use bengbeng\admin\models\setting\ARSettingPage;
 use bengbeng\framework\base\data\ActiveOperate;
 use yii\db\ActiveQuery;
 
-class SettingController extends BaseController
+class SettingController extends AdminBaseController
 {
 
     /**

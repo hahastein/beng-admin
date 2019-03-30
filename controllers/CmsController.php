@@ -9,14 +9,14 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 
 /**
  * Class CmsController
  * @author hahastein
  * @package bengbeng\admin\controllers
  */
-class CmsController extends BaseController
+class CmsController extends AdminBaseController
 {
     /**
      * 所有文章

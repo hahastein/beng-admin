@@ -1,24 +1,27 @@
 <?php
 /**
- * Copyright    : BengBeng Framework Inc.
- * Author       : hahastein(146119@qq.com)
- * Url          : http://www.52beng.com
- * CreateTime   : 2019/3/21 1:28
- * Description  : 管理员系统(管理员维护，创建、删除、修改，分配权限)
+ * 52Beng Framework Admin
+ *
+ * @link http://www.52beng.com
+ * @copyright Copyright © 2019 52Beng Framework. All rights reserved.
+ * @author hahastein <146119@qq.com>
+ * @license http://www.52beng.com/license
+ * @date 2019/3/21 1:28
  */
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 use bengbeng\admin\models\AdminARModel;
 use yii\db\ActiveQuery;
 
 /**
  * Class AdminController
- * @author hahastein
+ * @author hahastein <146119@qq.com>
+ * @since 1.0
  * @package bengbeng\admin\controllers
  */
-class AdminController extends BaseController
+class AdminController extends AdminBaseController
 {
     /**
      * 管理员列表

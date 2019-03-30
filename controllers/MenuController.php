@@ -2,7 +2,7 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 use bengbeng\admin\models\menu\ARMenu;
 use bengbeng\framework\base\Enum;
 use bengbeng\framework\models\platform\MenuARModel;
@@ -17,7 +17,7 @@ use yii\helpers\ArrayHelper;
  * @author hahastein <146119@qq.com>
  * @since 1.0
  */
-class MenuController extends BaseController
+class MenuController extends AdminBaseController
 {
 
     public function actionAll(){

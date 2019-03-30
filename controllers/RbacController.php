@@ -9,14 +9,14 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 
 /**
  * Class RbacController
  * @author hahastein
  * @package bengbeng\admin\controllers
  */
-class RbacController extends BaseController
+class RbacController extends AdminBaseController
 {
 
     /**

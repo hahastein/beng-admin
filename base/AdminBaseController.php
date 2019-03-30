@@ -1,18 +1,21 @@
 <?php
 /**
- * Created by BengBengFramework.
- * User: hahastein
- * Date: 2018-09-12
- * Time: 15:20
+ * 52Beng Framework Admin
+ *
+ * @link http://www.52beng.com
+ * @copyright Copyright © 2019 52Beng Framework. All rights reserved.
+ * @author hahastein <146119@qq.com>
+ * @license http://www.52beng.com/license
+ * @date 2018/9/12 15:20
  */
 
 namespace bengbeng\admin\base;
 
 
 use bengbeng\admin\components\handles\TemplateHandle;
-use bengbeng\framework\controllers\base\FactoryController;
+use bengbeng\framework\controllers\base\BaseController;
 
-class BaseController extends FactoryController
+class AdminBaseController extends BaseController
 {
     public function init()
     {

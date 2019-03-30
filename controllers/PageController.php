@@ -2,7 +2,7 @@
 
 namespace bengbeng\admin\controllers;
 
-use bengbeng\admin\base\BaseController;
+use bengbeng\admin\base\AdminBaseController;
 use bengbeng\admin\models\setting\ARSettingPage;
 use Yii;
 
@@ -12,7 +12,7 @@ use Yii;
  * @author hahastein <146119@qq.com>
  * @since 1.0
  */
-class PageController extends BaseController
+class PageController extends AdminBaseController
 {
 
     public function actionResources(){
