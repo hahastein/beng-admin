@@ -12,8 +12,6 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
-use bengbeng\admin\models\AdminARModel;
-use yii\db\ActiveQuery;
 
 /**
  * Class AdminController
@@ -29,13 +27,8 @@ class AdminController extends AdminBaseController
      */
     public function actionAll(){
 
-        $adminModel = new AdminARModel();
+        $returnData = $this->getLogicLayer('admin.AdminBLL')->getData();
 
-        $adminData = $adminModel->dataSet(function (ActiveQuery $query){
-            $query->orderBy(['created_at' => SORT_DESC]);
-            $query->asArray();
-        });
-
-        return $this->render('all', ['dataSet' => $adminData]);
+        return $this->render('all', $returnData);
     }
 }
