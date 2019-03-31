@@ -10,7 +10,11 @@ namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
 
+/**
+ * Class GoodsController
+ * @package bengbeng\admin\controllers
+ */
 class GoodsController extends AdminBaseController
 {
-//    public function
+
 }

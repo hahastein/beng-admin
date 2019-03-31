@@ -12,10 +12,11 @@
 namespace bengbeng\admin\logic\menu;
 
 use bengbeng\admin\logic\LogicLayerInterface;
+use bengbeng\admin\logic\LogicOperateInterface;
 use bengbeng\admin\models\menu\ARMenu;
 use yii\helpers\ArrayHelper;
 
-class MenuBLL implements LogicLayerInterface
+class MenuBLL implements LogicLayerInterface, LogicOperateInterface
 {
     public function __construct()
     {
@@ -29,5 +30,10 @@ class MenuBLL implements LogicLayerInterface
         $dropDownData = ArrayHelper::map($dataSet, 'menu_id', 'menu_name');
 
         return ['dataSet' => $dataSet, 'dropdown' => $dropDownData];
+    }
+
+    public function save()
+    {
+        // TODO: Implement save() method.
     }
 }
