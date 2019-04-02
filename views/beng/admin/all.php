@@ -7,7 +7,7 @@
             'target' => 'add-admin',
             'modalParams' => [
                 'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
-                'submitUrl' => \yii\helpers\Url::to(['/system/admin/save']),
+                'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to(['admin/save']),
                 'control' => [[
                     'adminName' => [
                         'model' => 'admin-name',
@@ -78,7 +78,10 @@
                                 <td><?=$item['admin_level']; ?></td>
                                 <td><?=$item['updated_at']?date('Y-m-d', $item['updated_at']):'未登录'; ?></td>
                                 <td>
-                                    <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">删除</button>
+                                    <?php if($item['isDel']): ?>
+                                        <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">删除</button>
+                                        <a href="<?=\bengbeng\framework\components\helpers\UrlHelper::to('rbac/setting')?>" class="btn waves-effect waves-light btn-rounded btn-info">设置权限</a>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
