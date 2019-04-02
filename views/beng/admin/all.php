@@ -7,7 +7,7 @@
             'target' => 'add-admin',
             'modalParams' => [
                 'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
-                'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to(['admin/save']),
+                'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to('admin/save'),
                 'control' => [[
                     'adminName' => [
                         'model' => 'admin-name',
