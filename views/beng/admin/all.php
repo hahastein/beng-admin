@@ -82,6 +82,8 @@
                                         <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">删除</button>
                                         <a href="<?=\bengbeng\framework\components\helpers\UrlHelper::to('rbac/setting')?>" class="btn waves-effect waves-light btn-rounded btn-info">设置权限</a>
                                     <?php endif; ?>
+                                    <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">重置密码</button>
+
                                 </td>
                             </tr>
                         <?php endforeach; ?>

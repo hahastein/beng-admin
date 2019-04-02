@@ -27,7 +27,7 @@ class AdminController extends AdminBaseController
      */
     public function actionAll(){
 
-        $returnData = $this->getLogicLayer('admin.AdminBLL')->getData();
+        $returnData = $this->getLogicLayer('admin.AdminBLL')->getList();
 
         return $this->render('all', $returnData);
     }

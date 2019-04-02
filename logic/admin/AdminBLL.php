@@ -21,7 +21,7 @@ class AdminBLL implements LogicLayerInterface
     {
     }
 
-    public function getData(){
+    public function getList(){
 
         $adminModel = new AdminARModel();
 
@@ -33,5 +33,9 @@ class AdminBLL implements LogicLayerInterface
         return ['dataSet' => $adminData];
     }
 
+    public function getOne()
+    {
+        // TODO: Implement getOne() method.
+    }
 
 }

@@ -11,8 +11,22 @@
 
 namespace bengbeng\admin\logic;
 
-
+/**
+ * Interface LogicLayerInterface
+ * @author hahastein <146119@qq.com>
+ * @package bengbeng\admin\logic
+ */
 interface LogicLayerInterface
 {
-    public function getData();
+    /**
+     * 获取数据集
+     * @return mixed
+     */
+    public function getList();
+
+    /**
+     * 获取单条数据
+     * @return mixed
+     */
+    public function getOne();
 }

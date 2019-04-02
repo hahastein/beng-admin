@@ -16,13 +16,18 @@ use bengbeng\admin\logic\LogicOperateInterface;
 use bengbeng\admin\models\menu\ARMenu;
 use yii\helpers\ArrayHelper;
 
+/**
+ * Class MenuBLL
+ * @author hahastein <146119@qq.com>
+ * @package bengbeng\admin\logic\menu
+ */
 class MenuBLL implements LogicLayerInterface, LogicOperateInterface
 {
     public function __construct()
     {
     }
 
-    public function getData(){
+    public function getList(){
 
         $arMenu = new ARMenu();
         $dataSet = $arMenu->findByMenuType(10);
@@ -32,8 +37,18 @@ class MenuBLL implements LogicLayerInterface, LogicOperateInterface
         return ['dataSet' => $dataSet, 'dropdown' => $dropDownData];
     }
 
+    public function getOne()
+    {
+        // TODO: Implement getOne() method.
+    }
+
     public function save()
     {
         // TODO: Implement save() method.
+    }
+
+    public function delete()
+    {
+        // TODO: Implement delete() method.
     }
 }

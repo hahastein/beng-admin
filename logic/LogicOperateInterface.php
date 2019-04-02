@@ -11,8 +11,22 @@
 
 namespace bengbeng\admin\logic;
 
-
+/**
+ * Interface LogicOperateInterface
+ * @author hahastein <146119@qq.com>
+ * @package bengbeng\admin\logic
+ */
 interface LogicOperateInterface
 {
+    /**
+     * 保存数据
+     * @return mixed
+     */
     public function save();
+
+    /**
+     * 删除单条数据
+     * @return mixed
+     */
+    public function delete();
 }
