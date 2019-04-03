@@ -12,11 +12,11 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
-//use bengbeng\framework\components\ifc\ControllerInterface;
+use bengbeng\framework\components\ifc\ControllerInterface;
 
-class StoreController extends AdminBaseController
+class StoreController extends AdminBaseController implements ControllerInterface
 {
-    public function all()
+    public function actionAll()
     {
         $returnData = $this->getLogicLayer('storeBLL', '\\bengbeng\\store\\')->getList();
 
