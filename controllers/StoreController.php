@@ -16,9 +16,10 @@ use bengbeng\framework\components\ifc\ControllerInterface;
 
 class StoreController extends AdminBaseController implements ControllerInterface
 {
+
     public function actionAll()
     {
-        $returnData = $this->getLogicLayer('storeBLL', '\\bengbeng\\store\\')->getList();
+        $returnData = $this->getLogicLayer('StoreBLL', '\\bengbeng\\store\\')->getList();
 
         return $this->render('all', $returnData);
     }
