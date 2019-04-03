@@ -12,9 +12,9 @@
 namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
-use bengbeng\framework\components\ifc\ControllerInterface;
+//use bengbeng\framework\components\ifc\ControllerInterface;
 
-class StoreController extends AdminBaseController implements ControllerInterface
+class StoreController extends AdminBaseController
 {
     public function all()
     {
