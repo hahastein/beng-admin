@@ -11,9 +11,9 @@
 
 namespace bengbeng\admin\logic\menu;
 
-use bengbeng\admin\logic\LogicLayerInterface;
-use bengbeng\admin\logic\LogicOperateInterface;
 use bengbeng\admin\models\menu\ARMenu;
+use bengbeng\framework\components\ifc\LogicLayerInterface;
+use bengbeng\framework\components\ifc\LogicOperateInterface;
 use yii\helpers\ArrayHelper;
 
 /**

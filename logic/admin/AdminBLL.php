@@ -11,8 +11,8 @@
 
 namespace bengbeng\admin\logic\admin;
 
-use bengbeng\admin\logic\LogicLayerInterface;
 use bengbeng\admin\models\AdminARModel;
+use bengbeng\framework\components\ifc\LogicLayerInterface;
 use yii\db\ActiveQuery;
 
 class AdminBLL implements LogicLayerInterface
