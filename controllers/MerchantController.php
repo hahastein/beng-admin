@@ -13,15 +13,21 @@ namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
 use bengbeng\framework\base\Enum;
-use bengbeng\framework\components\ifc\ControllerInterface;
 
-class MerchantController extends AdminBaseController implements ControllerInterface
+class MerchantController extends AdminBaseController
 {
 
-    public function actionAll()
+    public function actionStore()
     {
         $returnData = $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->getList();
 
-        return $this->render('all', $returnData);
+        return $this->render('store', $returnData);
+    }
+
+    public function actionShops()
+    {
+        $returnData = $this->getLogicLayer('ShopsBLL', Enum::NAMESPACE_MERCHANT)->getList();
+
+        return $this->render('shops', $returnData);
     }
 }
