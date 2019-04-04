@@ -15,7 +15,7 @@ use bengbeng\admin\base\AdminBaseController;
 use bengbeng\framework\base\Enum;
 use bengbeng\framework\components\ifc\ControllerInterface;
 
-class StoreController extends AdminBaseController implements ControllerInterface
+class MerchantController extends AdminBaseController implements ControllerInterface
 {
 
     public function actionAll()
