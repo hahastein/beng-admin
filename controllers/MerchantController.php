@@ -30,4 +30,12 @@ class MerchantController extends AdminBaseController
 
         return $this->render('shops', $returnData);
     }
+
+    public function behaviors()
+    {
+        self::setActions([
+            'store', 'shops'
+        ]);
+        return parent::behaviors();
+    }
 }
