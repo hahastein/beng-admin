@@ -35,7 +35,7 @@ class MerchantController extends AdminBaseController
     public function behaviors()
     {
         self::setActions([
-            'store', 'shops'
+            'store', 'store-save', 'shops'
         ]);
         return parent::behaviors();
     }
