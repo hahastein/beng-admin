@@ -17,17 +17,18 @@ use bengbeng\framework\base\Enum;
 class MerchantController extends AdminBaseController
 {
 
-    public function actionStore()
-    {
+    public function actionStore(){
         $returnData = $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->getList();
-
         return $this->render('store', $returnData);
+    }
+
+    public function actionStoreSave(){
+        $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->save(\Yii::$app->request->post());
     }
 
     public function actionShops()
     {
         $returnData = $this->getLogicLayer('ShopsBLL', Enum::NAMESPACE_MERCHANT)->getList();
-
         return $this->render('shops', $returnData);
     }
 
