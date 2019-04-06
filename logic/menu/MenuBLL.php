@@ -37,17 +37,17 @@ class MenuBLL implements LogicLayerInterface, LogicOperateInterface
         return ['dataSet' => $dataSet, 'dropdown' => $dropDownData];
     }
 
-    public function getOne()
+    public function getOne($id)
     {
         // TODO: Implement getOne() method.
     }
 
-    public function save()
+    public function save($dataParam = null)
     {
         // TODO: Implement save() method.
     }
 
-    public function delete()
+    public function delete($id)
     {
         // TODO: Implement delete() method.
     }
