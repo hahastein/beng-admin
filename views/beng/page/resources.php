@@ -83,7 +83,7 @@
                                     <?php if($item['isCache']): ?>
                                         <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">更新缓存</button>
                                     <?php else: ?>
-                                        <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">添加缓存</button>
+                                        <a href="<?=\bengbeng\framework\components\helpers\UrlHelper::to(['page/add-cache', 'id'=>$item['page_id']]) ?>" class="btn waves-effect waves-light btn-rounded btn-info">添加缓存</a>
                                     <?php endif; ?>
                                     <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">删除</button>
                                 </td>

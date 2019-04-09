@@ -22,6 +22,11 @@ class MerchantController extends AdminBaseController
         return $this->render('store', $returnData);
     }
 
+    public function actionAddStore(){
+//        $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->add();
+        return $this->render('add-store');
+    }
+
     public function actionStoreSave(){
         $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->save(\Yii::$app->request->post());
     }
