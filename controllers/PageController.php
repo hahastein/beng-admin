@@ -70,7 +70,7 @@ class PageController extends AdminBaseController
     public function behaviors()
     {
         self::setActions([
-            'resources'
+            'resources', 'add-cache'
         ]);
         return parent::behaviors();
     }
