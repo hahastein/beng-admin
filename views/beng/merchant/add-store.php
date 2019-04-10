@@ -71,6 +71,9 @@
                     <!-- Step 2 -->
                     <h6>店铺信息</h6>
                     <section>
+                        <div class="card-body">
+                            <h4 class="card-title">Person Info</h4>
+                        </div>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
