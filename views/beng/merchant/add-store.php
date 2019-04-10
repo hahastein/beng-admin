@@ -9,11 +9,11 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body wizard-content">
-                <h4 class="card-title">Step wizard</h4>
-                <h6 class="card-subtitle">You can find the <a href="http://www.jquery-steps.com" target="_blank">offical website</a></h6>
+                <h4 class="card-title">添加店铺</h4>
+                <h6 class="card-subtitle">添加店铺，请先填写一个账号，如果有分店，请在设置分店</h6>
                 <form action="#" class="tab-wizard wizard-circle">
                     <!-- Step 1 -->
-                    <h6>Personal Info</h6>
+                    <h6>账号设置</h6>
                     <section>
                         <div class="row">
                             <div class="col-md-6">
@@ -59,7 +59,7 @@
                         </div>
                     </section>
                     <!-- Step 2 -->
-                    <h6>Job Status</h6>
+                    <h6>店铺信息</h6>
                     <section>
                         <div class="row">
                             <div class="col-md-6">
@@ -82,7 +82,7 @@
                         </div>
                     </section>
                     <!-- Step 3 -->
-                    <h6>Interview</h6>
+                    <h6>分店设置</h6>
                     <section>
                         <div class="row">
                             <div class="col-md-6">
@@ -125,7 +125,7 @@
                         </div>
                     </section>
                     <!-- Step 4 -->
-                    <h6>Remark</h6>
+                    <h6>财务信息</h6>
                     <section>
                         <div class="row">
                             <div class="col-md-6">
