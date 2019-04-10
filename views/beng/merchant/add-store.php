@@ -75,15 +75,9 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="jobTitle1">所属分类 :</label>
-                                    <input type="text" class="form-control" id="jobTitle1">
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
                                     <label for="storeType">商户类型 :</label>
                                     <select class="form-control" id="storeType">
-                                        <option value="">请选择</option>
+                                        <option value="" selected="selected">--个人或者公司--</option>
                                         <option value="personal">个人</option>
                                         <option value="company">公司</option>
                                     </select>
@@ -91,8 +85,22 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="videoUrl1">所在地 :</label>
-                                    <input type="text" class="form-control" id="videoUrl1">
+                                    <label for="storeCate">所属分类 :</label>
+                                    <select class="form-control" id="storeCate">
+                                        <option value="" selected="selected">--请选择--</option>
+                                        <option value="1">A1</option>
+                                        <option value="2">A2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="storeCity">所在地 :</label>
+                                    <select class="form-control" id="storeCity">
+                                        <option value="" selected="selected">--请选择--</option>
+                                        <option value="bj">北京</option>
+                                        <option value="sh">上海</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
