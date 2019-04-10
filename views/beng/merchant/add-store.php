@@ -19,7 +19,9 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="firstName1">店铺名称 :</label>
-                                    <input type="text" class="form-control" id="firstName1"> </div>
+                                    <input type="text" class="form-control" id="firstName1">
+                                    <span>asdasd</span>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
