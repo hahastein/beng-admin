@@ -93,35 +93,39 @@
                             </div>
                         </div>
                         <!--个人信息-->
-                        <div class="card-body">
-                            <h4 class="card-title">联系人设置</h4>
+                        <div id="personal">
+                            <h4 class="card-title">个人信息</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact_name">联系人姓名 :</label>
+                                        <input type="text" class="form-control" id="contact_name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="contact_phone">联系人电话 :</label>
+                                        <input type="text" class="form-control" id="contact_phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="shortDescription1">详细地址 :</label>
+                                        <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="contact_name">联系人姓名 :</label>
-                                    <input type="text" class="form-control" id="contact_name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="contact_phone">联系人电话 :</label>
-                                    <input type="text" class="form-control" id="contact_phone">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="shortDescription1">详细地址 :</label>
-                                    <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
-                                </div>
-                            </div>
-                        </div>
+
                         <!--公司信息-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label for="shortDescription1">详细地址 :</label>
-                                    <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                        <div id="company">
+                            <h4 class="card-title">公司信息</h4>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="shortDescription1">详细地址 :</label>
+                                        <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                    </div>
                                 </div>
                             </div>
                         </div>
