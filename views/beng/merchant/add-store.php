@@ -82,7 +82,7 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label for="storeType">商户类型 :</label>
-                                    <select class="form-control custom-select" id="storeType">
+                                    <select class="form-control" id="storeType">
                                         <option value="">请选择</option>
                                         <option value="personal">个人</option>
                                         <option value="company">公司</option>
