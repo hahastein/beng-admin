@@ -81,8 +81,12 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <label for="videoUrl1">商户类型 :</label>
-                                    <input type="text" class="form-control" id="videoUrl1">
+                                    <label for="storeType">商户类型 :</label>
+                                    <select class="form-group" id="storeType">
+                                        <option value="">请选择</option>
+                                        <option value="personal">个人</option>
+                                        <option value="company">公司</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -93,7 +97,7 @@
                             </div>
                         </div>
                         <!--个人信息-->
-                        <div id="personal">
+                        <div id="personal" group="storeInfoGroup" class="hide">
                             <h4 class="card-title">个人信息</h4>
                             <div class="row">
                                 <div class="col-md-6">
@@ -118,7 +122,7 @@
                         </div>
 
                         <!--公司信息-->
-                        <div id="company">
+                        <div id="company" group="storeInfoGroup" class="hide">
                             <h4 class="card-title">公司信息</h4>
                             <div class="row">
                                 <div class="col-md-12">

@@ -102,4 +102,15 @@ $(function () {
         });
     }
 
+    if($("#storeType")){
+        $("#storeType").change(function () {
+            var content = $(this).children('option:selected').val();
+            if(content != ""){
+                $('div[group="storeInfoGroup"][id='+content+']').show();
+            }else{
+                $('div[group="storeInfoGroup"]').hide();
+            }
+        });
+    }
+
 });
