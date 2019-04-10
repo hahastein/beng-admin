@@ -71,28 +71,24 @@
                     <!-- Step 2 -->
                     <h6>店铺信息</h6>
                     <section>
-                        <div class="card-body">
-                            <h4 class="card-title">基础设置</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="jobTitle1">所属分类 :</label>
-                                        <input type="text" class="form-control" id="jobTitle1">
-                                    </div>
+                        <h4 class="card-title">基础设置</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="jobTitle1">所属分类 :</label>
+                                    <input type="text" class="form-control" id="jobTitle1">
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="videoUrl1">商户类型 :</label>
-                                        <input type="text" class="form-control" id="videoUrl1">
-                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="videoUrl1">商户类型 :</label>
+                                    <input type="text" class="form-control" id="videoUrl1">
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label for="videoUrl1">所在地 :</label>
-                                        <input type="text" class="form-control" id="videoUrl1">
-                                    </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="videoUrl1">所在地 :</label>
+                                    <input type="text" class="form-control" id="videoUrl1">
                                 </div>
                             </div>
                         </div>
@@ -100,25 +96,23 @@
                         <div class="card-body">
                             <h4 class="card-title">联系人设置</h4>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="contact_name">联系人姓名 :</label>
-                                        <input type="text" class="form-control" id="contact_name">
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="contact_name">联系人姓名 :</label>
+                                    <input type="text" class="form-control" id="contact_name">
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="contact_phone">联系人电话 :</label>
-                                        <input type="text" class="form-control" id="contact_phone">
-                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="contact_phone">联系人电话 :</label>
+                                    <input type="text" class="form-control" id="contact_phone">
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="shortDescription1">详细地址 :</label>
-                                        <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
-                                    </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="shortDescription1">详细地址 :</label>
+                                    <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>
