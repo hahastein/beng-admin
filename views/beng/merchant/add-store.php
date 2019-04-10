@@ -9,7 +9,7 @@
     <div class="col-12">
         <div class="card">
             <div class="card-body wizard-content">
-                <h4 class="card-title">添加店铺</h4>
+                <h4 class="card-title">添加商户</h4>
                 <h6 class="card-subtitle">添加店铺，请先填写一个账号，如果有分店，请在设置分店</h6>
                 <form action="#" class="tab-wizard wizard-circle">
                     <!-- Step 1 -->
@@ -18,27 +18,33 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="firstName1">店铺名称 :</label>
+                                    <label for="firstName1">商户名称 :</label>
                                     <input type="text" class="form-control" id="firstName1">
-                                    <span>asdasd</span>
+                                    <small>商户名称</small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="lastName1">会员账号 :</label>
-                                    <input type="text" class="form-control" id="lastName1"> </div>
+                                    <input type="text" class="form-control" id="lastName1">
+                                    <small>用户会员登录使用，不填写则不跟前台会员绑定</small>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="emailAddress1">店铺账号 :</label>
-                                    <input type="email" class="form-control" id="emailAddress1"> </div>
+                                    <input type="email" class="form-control" id="emailAddress1">
+                                    <small>用户商户后台登录使用</small>
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1">登录密码 :</label>
-                                    <input type="tel" class="form-control" id="phoneNumber1"> </div>
+                                    <input type="tel" class="form-control" id="phoneNumber1">
+                                    <small>用户前台后台的登录密码</small>
+                                </div>
                             </div>
                         </div>
                         <!--
@@ -66,21 +72,52 @@
                     <h6>店铺信息</h6>
                     <section>
                         <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="jobTitle1">所属分类 :</label>
+                                    <input type="text" class="form-control" id="jobTitle1">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="videoUrl1">商户类型 :</label>
+                                    <input type="text" class="form-control" id="videoUrl1">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="videoUrl1">所在地 :</label>
+                                    <input type="text" class="form-control" id="videoUrl1">
+                                </div>
+                            </div>
+                        </div>
+                        <!--个人信息-->
+                        <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="jobTitle1">Job Title :</label>
-                                    <input type="text" class="form-control" id="jobTitle1"> </div>
+                                    <label for="contact_name">联系人姓名 :</label>
+                                    <input type="text" class="form-control" id="contact_name">
+                                </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="videoUrl1">Company Name :</label>
-                                    <input type="text" class="form-control" id="videoUrl1">
+                                    <label for="contact_phone">联系人电话 :</label>
+                                    <input type="text" class="form-control" id="contact_phone">
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <label for="shortDescription1">Job Description :</label>
-                                    <textarea name="shortDescription" id="shortDescription1" rows="6" class="form-control"></textarea>
+                                    <label for="shortDescription1">详细地址 :</label>
+                                    <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!--公司信息-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="shortDescription1">详细地址 :</label>
+                                    <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
                                 </div>
                             </div>
                         </div>

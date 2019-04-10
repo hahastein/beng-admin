@@ -89,9 +89,11 @@ $(function () {
             headerTag: "h6",
             bodyTag: "section",
             transitionEffect: "fade",
-            titleTemplate: '<span class="step">#index#</span> #title#',
+            // titleTemplate: '<span class="step">#index#</span> #title#',
             labels: {
-                finish: "Submit"
+                previous:"上一步",
+                next:"下一步",
+                finish: "完成"
             },
             onFinished: function (event, currentIndex) {
                 swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
