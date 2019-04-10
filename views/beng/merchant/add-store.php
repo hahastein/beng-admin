@@ -18,27 +18,28 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="firstName1">First Name :</label>
+                                    <label for="firstName1">店铺名称 :</label>
                                     <input type="text" class="form-control" id="firstName1"> </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="lastName1">Last Name :</label>
+                                    <label for="lastName1">会员账号 :</label>
                                     <input type="text" class="form-control" id="lastName1"> </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="emailAddress1">Email Address :</label>
+                                    <label for="emailAddress1">店铺账号 :</label>
                                     <input type="email" class="form-control" id="emailAddress1"> </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="phoneNumber1">Phone Number :</label>
+                                    <label for="phoneNumber1">登录密码 :</label>
                                     <input type="tel" class="form-control" id="phoneNumber1"> </div>
                             </div>
                         </div>
+                        <!--
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -57,6 +58,7 @@
                                     <input type="date" class="form-control" id="date1"> </div>
                             </div>
                         </div>
+                        -->
                     </section>
                     <!-- Step 2 -->
                     <h6>店铺信息</h6>
