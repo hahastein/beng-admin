@@ -81,7 +81,7 @@
                                 </td>
                                 <td>
                                     <?php if($item['isCache']): ?>
-                                        <button type="button" class="btn waves-effect waves-light btn-rounded btn-success">更新缓存</button>
+                                        <a href="<?=\yii\helpers\Url::to(['/'.Yii::$app->controller->module->id.'/page/update-cache', 'id'=>$item['page_id']]) ?>" class="btn waves-effect waves-light btn-rounded btn-success">更新缓存</a>
                                     <?php else: ?>
                                         <a href="<?=\yii\helpers\Url::to(['/'.Yii::$app->controller->module->id.'/page/add-cache', 'id'=>$item['page_id']]) ?>" class="btn waves-effect waves-light btn-rounded btn-info">添加缓存</a>
                                     <?php endif; ?>
