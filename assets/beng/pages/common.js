@@ -104,7 +104,9 @@ $(function () {
 
     if($("#storeType")){
         $("#storeType").change(function () {
+
             var content = $(this).children('option:selected').val();
+            console.log(content);
             if(content != ""){
                 $('div[group="storeInfoGroup"][id='+content+']').show();
             }else{
