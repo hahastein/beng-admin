@@ -160,7 +160,7 @@
                                     <div class="form-group">
                                         <label for="contact_name">联系人姓名 :</label>
                                         <input type="text" class="form-control" id="contact_name">
-                                        <small>请填写身份证上的真实姓名</small>
+                                        <small class="text-info">请填写身份证上的真实姓名</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
