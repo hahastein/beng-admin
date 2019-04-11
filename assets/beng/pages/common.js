@@ -114,4 +114,8 @@ $(function () {
         });
     }
 
+    if($('.dropify')){
+        $('.dropify').dropify();
+    }
+
 });
