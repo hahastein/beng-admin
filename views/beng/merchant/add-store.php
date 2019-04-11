@@ -83,6 +83,7 @@
                                             <option value="personal">个人</option>
                                             <option value="company">公司</option>
                                         </select>
+                                        <small>店铺的所属类型，仅支持个人与公司</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -93,6 +94,7 @@
                                             <option value="1">A1</option>
                                             <option value="2">A2</option>
                                         </select>
+                                        <small>店铺的经营类型，不影响实际售卖类型</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -103,6 +105,7 @@
                                             <option value="bj">北京</option>
                                             <option value="sh">上海</option>
                                         </select>
+                                        <small>店铺所在地，如是企业，请选择企业注册所在地</small>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +144,7 @@
                                     <div class="custom-control custom-checkbox bg-white radius">
                                         <div class="p-l-10 p-t-10 p-b-5">
                                             <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="finance">
-                                            <label class="custom-control-label" for="finance">默认支持,可使用财务结算功能</label>
+                                             <label class="custom-control-label" for="finance">默认支持,可使用财务结算功能</label>
                                         </div>
                                     </div>
                                 </div>
@@ -152,22 +155,39 @@
                         <div id="personal" group="storeInfoGroup" class="hide">
                             <h4 class="card-title">个人信息</h4>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="contact_name">联系人姓名 :</label>
                                         <input type="text" class="form-control" id="contact_name">
+                                        <small>请填写身份证上的真实姓名</small>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="contact_phone">联系人电话 :</label>
                                         <input type="text" class="form-control" id="contact_phone">
+                                        <small>请填写有效的联系人电话，否则会影响审核结果</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="contact_phone">邮箱地址 :</label>
+                                        <input type="text" class="form-control" id="contact_email">
+                                        <small>请填写有效的邮箱地址，验证所使用</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="input-file-now-custom-1">上传身份证 :</label>
+                                        <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz.png')?>" />
+                                        <small>请上传清晰有效的身份证正反面，复印件、手机拍照均可</small>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="shortDescription1">详细地址 :</label>
                                         <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                        <small>个人请填写住址，企业请填写公司所在地址</small>
                                     </div>
                                 </div>
                             </div>
