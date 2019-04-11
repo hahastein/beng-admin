@@ -180,14 +180,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="sfz-zm">上传身份证-正面 (复印件、手机拍照均可):</label>
-                                        <input type="file" id="sfz-zm" class="dropify" />
+                                        <input type="file" id="sfz-zm" class="dropify" data-beng-default="请上传身份证正面图片" data-beng-replace="请重新上传身份证正面图片" />
                                         <small class="text-primary">请上传清晰有效的身份证正面</small>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="sfz-fm">上传身份证反面 (复印件、手机拍照均可):</label>
-                                        <input type="file" id="sfz-fm" class="dropify" />
+                                        <input type="file" id="sfz-fm" class="dropify" data-beng-default="请上传身份证反面图片" data-beng-replace="请重新上传身份证反面图片" />
                                         <small class="text-primary">请上传清晰有效的身份证反面</small>
                                     </div>
                                 </div>
