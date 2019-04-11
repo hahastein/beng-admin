@@ -110,11 +110,14 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="storeType">支持功能 :</label>
-                                        <select class="form-control" id="storeType">
-                                            <option value="" selected="selected">--个人或者公司--</option>
-                                            <option value="personal">个人</option>
-                                            <option value="company">公司</option>
-                                        </select>
+                                        <input type="checkbox" class="custom-control-input" id="shop">
+                                        <label class="custom-control-label" for="shop">电商</label>
+                                        <input type="checkbox" class="custom-control-input" id="o2o">
+                                        <label class="custom-control-label" for="o2o">外卖</label>
+                                        <input type="checkbox" class="custom-control-input" id="cms">
+                                        <label class="custom-control-label" for="cms">CMS</label>
+                                        <input type="checkbox" class="custom-control-input" id="finance">
+                                        <label class="custom-control-label" for="finance">财务</label>
                                     </div>
                                 </div>
                             </div>
