@@ -176,11 +176,18 @@
                                         <small>请填写有效的邮箱地址，验证所使用</small>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="input-file-now-custom-1">上传身份证 :</label>
-                                        <input type="file" id="input-file-now-custom-1" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz.png')?>" />
-                                        <small>请上传清晰有效的身份证正反面，复印件、手机拍照均可</small>
+                                        <label for="sfz-zm">上传身份证-正面 (复印件、手机拍照均可):</label>
+                                        <input type="file" id="sfz-zm" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz-zm.png')?>" />
+                                        <small>请上传清晰有效的身份证正面</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="sfz-fm">上传身份证反面 (复印件、手机拍照均可):</label>
+                                        <input type="file" id="sfz-fm" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz-fm.png')?>" />
+                                        <small>请上传清晰有效的身份证反面</small>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
