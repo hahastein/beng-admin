@@ -116,6 +116,7 @@ $(function () {
 
     if($('.dropify')){
         $('.dropify').dropify({
+            radius: true,
             messages: {
                 remove: '删除图片'
             }
