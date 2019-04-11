@@ -282,6 +282,29 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sfz-zm">营业执照副本电子版:</label>
+                                        <input type="file" id="business_img" class="dropify" />
+                                        <small class="text-primary">请上传清晰有效的营业执照副本</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sfz-zm">组织机构代码电子版:</label>
+                                        <input type="file" id="business_code_img" class="dropify" />
+                                        <small class="text-primary">请上传清晰有效的组织机构代码</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="sfz-zm">一般纳税人证明:</label>
+                                        <input type="file" id="general_taxpayer" class="dropify" />
+                                        <small class="text-primary">请上传清晰有效的一般纳税人证明</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <!-- Step 3 -->
