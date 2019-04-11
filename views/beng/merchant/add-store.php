@@ -194,7 +194,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="sfznum">身份证号 :</label>
-                                        <input type="file" name="sfznum" id="sfznum" class="form-control" />
+                                        <input type="text" name="sfznum" id="sfznum" class="form-control" />
                                         <small>身份证号上传后可自动获取，如果有误，请手动更改</small>
                                     </div>
                                 </div>
