@@ -111,22 +111,26 @@
                                     <div class="form-group">
                                         <h5>支持功能 <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                            <fieldset>
-                                                <input type="checkbox" name="support-tools" class="custom-control-input" id="shop">
-                                                <label class="custom-control-label" for="shop">电商</label>
-                                            </fieldset>
-                                            <fieldset>
-                                                <input type="checkbox" name="support-tools" class="custom-control-input" id="o2o">
-                                                <label class="custom-control-label" for="o2o">外卖</label>
-                                            </fieldset>
-                                            <fieldset>
+                                            <div class="custom-control custom-checkbox">
+
+                                                <label class="custom-control-label" for="shop">
+                                                    <input type="checkbox" name="support-tools" class="custom-control-input" id="shop" value="电商">
+                                                </label>
+
+                                                <label class="custom-control-label" for="o2o">
+                                                    <input type="checkbox" name="support-tools" class="custom-control-input" id="o2o" value="外卖">
+                                                </label>
+
+                                            </div>
+
+                                            <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" name="support-tools" class="custom-control-input" id="cms">
                                                 <label class="custom-control-label" for="cms">CMS</label>
-                                            </fieldset>
-                                            <fieldset>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
                                                 <input type="checkbox" name="support-tools" class="custom-control-input" id="finance">
                                                 <label class="custom-control-label" for="finance">财务</label>
-                                            </fieldset>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
