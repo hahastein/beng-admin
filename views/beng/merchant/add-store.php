@@ -106,31 +106,15 @@
                                     </div>
                                 </div>
                             </div>
+                            <h3 class="box-title">支持功能</h3>
+                            <hr class="m-t-0 m-b-20">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <h5>支持功能 <span class="text-danger">*</span></h5>
-                                        <div class="controls">
-                                            <div class="custom-control custom-checkbox">
-
-                                                <label class="custom-control-label" for="shop">
-                                                    <input type="checkbox" name="support-tools" class="custom-control-input" id="shop" value="电商">
-                                                </label>
-
-                                                <label class="custom-control-label" for="o2o">
-                                                    <input type="checkbox" name="support-tools" class="custom-control-input" id="o2o" value="外卖">
-                                                </label>
-
-                                            </div>
-
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="support-tools" class="custom-control-input" id="cms">
-                                                <label class="custom-control-label" for="cms">CMS</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" name="support-tools" class="custom-control-input" id="finance">
-                                                <label class="custom-control-label" for="finance">财务</label>
-                                            </div>
+                                        <label>电商</label>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="shop">
+                                            <label class="custom-control-label" for="shop">默认支持</label>
                                         </div>
                                     </div>
                                 </div>
