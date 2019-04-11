@@ -286,21 +286,21 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="sfz-zm">营业执照副本电子版:</label>
-                                        <input type="file" id="business_img" class="dropify" />
+                                        <input type="file" id="business_img" class="dropify" data-beng-default="请上传营业执照图片" data-beng-replace="请重新上传营业执照图片" />
                                         <small class="text-primary">请上传清晰有效的营业执照副本</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="sfz-zm">组织机构代码电子版:</label>
-                                        <input type="file" id="business_code_img" class="dropify" />
+                                        <input type="file" id="business_code_img" class="dropify" data-beng-default="请上传组织机构代码图片" data-beng-replace="请重新上传组织机构代码图片" />
                                         <small class="text-primary">请上传清晰有效的组织机构代码</small>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="sfz-zm">一般纳税人证明:</label>
-                                        <input type="file" id="general_taxpayer" class="dropify" />
+                                        <input type="file" id="general_taxpayer" class="dropify" data-beng-default="请上传一般纳税人证明图片" data-beng-replace="请重新上传一般纳税人证明图片" />
                                         <small class="text-primary">请上传清晰有效的一般纳税人证明</small>
                                     </div>
                                 </div>
