@@ -71,39 +71,55 @@
                     <!-- Step 2 -->
                     <h6>店铺信息</h6>
                     <section>
-                        <h4 class="card-title">基础设置</h4>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="storeType">商户类型 :</label>
-                                    <select class="form-control" id="storeType">
-                                        <option value="" selected="selected">--个人或者公司--</option>
-                                        <option value="personal">个人</option>
-                                        <option value="company">公司</option>
-                                    </select>
+                        <div class="form-group">
+                            <h3 class="box-title">基础设置</h3>
+                            <hr class="m-t-0 m-b-40">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="storeType">商户类型 :</label>
+                                        <select class="form-control" id="storeType">
+                                            <option value="" selected="selected">--个人或者公司--</option>
+                                            <option value="personal">个人</option>
+                                            <option value="company">公司</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="storeCate">所属分类 :</label>
+                                        <select class="form-control" id="storeCate">
+                                            <option value="" selected="selected">--请选择--</option>
+                                            <option value="1">A1</option>
+                                            <option value="2">A2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="storeCity">所在地 :</label>
+                                        <select class="form-control" id="storeCity">
+                                            <option value="" selected="selected">--请选择--</option>
+                                            <option value="bj">北京</option>
+                                            <option value="sh">上海</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="storeCate">所属分类 :</label>
-                                    <select class="form-control" id="storeCate">
-                                        <option value="" selected="selected">--请选择--</option>
-                                        <option value="1">A1</option>
-                                        <option value="2">A2</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <label for="storeCity">所在地 :</label>
-                                    <select class="form-control" id="storeCity">
-                                        <option value="" selected="selected">--请选择--</option>
-                                        <option value="bj">北京</option>
-                                        <option value="sh">上海</option>
-                                    </select>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="storeType">支持功能 :</label>
+                                        <select class="form-control" id="storeType">
+                                            <option value="" selected="selected">--个人或者公司--</option>
+                                            <option value="personal">个人</option>
+                                            <option value="company">公司</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                         <!--个人信息-->
                         <div id="personal" group="storeInfoGroup" class="hide">
                             <h4 class="card-title">个人信息</h4>
