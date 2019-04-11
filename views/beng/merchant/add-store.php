@@ -193,8 +193,15 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <label for="shortDescription1">详细地址 :</label>
-                                        <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                        <label for="sfznum">身份证号 :</label>
+                                        <input type="file" name="sfznum" id="sfznum" class="form-control" />
+                                        <small>身份证号上传后可自动获取，如果有误，请手动更改</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="address">详细地址 :</label>
+                                        <textarea name="address" id="address" rows="2" class="form-control"></textarea>
                                         <small>个人请填写住址，企业请填写公司所在地址</small>
                                     </div>
                                 </div>
