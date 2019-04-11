@@ -73,7 +73,7 @@
                     <section>
                         <div class="form-group">
                             <h3 class="box-title">基础设置</h3>
-                            <hr class="m-t-0 m-b-40">
+                            <hr class="m-t-0 m-b-20">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
