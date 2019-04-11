@@ -115,7 +115,14 @@ $(function () {
     }
 
     if($('.dropify')){
-        $('.dropify').dropify();
+        $('.dropify').dropify({
+            messages: {
+                default: '请上传身份证正面图片',
+                replace: '请重新上传身份证正面图片',
+                remove: '删除图片'
+            }
+        });
     }
+
 
 });
