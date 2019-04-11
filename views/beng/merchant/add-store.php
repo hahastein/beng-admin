@@ -270,7 +270,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>营业执照有效期 :</label>
-                                        <input type="text" class="form-control w-50" id="business_licence_start"> - <input type="text" class="form-control w-50" id="business_licence_end">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control w-50" id="business_licence_start">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control w-50" id="business_licence_end">
+                                            </div>
+                                        </div>
                                         <small class="text-primary">请填写营业执照有效期，与营业执照上相同</small>
                                     </div>
                                 </div>
