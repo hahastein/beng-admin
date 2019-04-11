@@ -111,14 +111,14 @@
                                     <div class="form-group">
                                         <h5>支持功能 <span class="text-danger">*</span></h5>
                                         <div class="controls">
-                                            <input type="checkbox" class="form-control-input" id="shop">
-                                            <label class="form-control-label" for="shop">电商</label>
-                                            <input type="checkbox" class="form-control-input" id="o2o">
-                                            <label class="form-control-label" for="o2o">外卖</label>
-                                            <input type="checkbox" class="form-control-input" id="cms">
-                                            <label class="form-control-label" for="cms">CMS</label>
-                                            <input type="checkbox" class="form-control-input" id="finance">
-                                            <label class="form-control-label" for="finance">财务</label>
+                                            <input type="checkbox" class="custom-control-input" id="shop">
+                                            <label class="custom-control-label" for="shop">电商</label>
+                                            <input type="checkbox" class="custom-control-input" id="o2o">
+                                            <label class="custom-control-label" for="o2o">外卖</label>
+                                            <input type="checkbox" class="custom-control-input" id="cms">
+                                            <label class="custom-control-label" for="cms">CMS</label>
+                                            <input type="checkbox" class="custom-control-input" id="finance">
+                                            <label class="custom-control-label" for="finance">财务</label>
                                         </div>
                                     </div>
                                 </div>
