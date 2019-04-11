@@ -153,7 +153,8 @@
 
                         <!--个人信息-->
                         <div id="personal" group="storeInfoGroup" class="hide">
-                            <h4 class="card-title">个人信息</h4>
+                            <h3 class="box-title">个人信息</h3>
+                            <hr class="m-t-0 m-b-20">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
