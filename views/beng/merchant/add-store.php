@@ -112,7 +112,7 @@
                             <h3 class="box-title">支持功能</h3>
                             <hr class="m-t-0 m-b-20">
                             <div class="row">
-                                <div class="col-md-3 form-group">
+                                <div class="col-md-4 form-group">
                                     <label>电商:</label>
                                     <div class="custom-control custom-checkbox bg-white radius">
                                         <div class="p-l-10 p-t-10 p-b-5">
@@ -121,7 +121,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 form-group">
+                                <div class="col-md-4 form-group">
                                     <label>外卖:</label>
                                     <div class="custom-control custom-checkbox bg-white radius">
                                         <div class="p-l-10 p-t-10 p-b-5">
@@ -130,7 +130,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 form-group">
+                                <div class="col-md-4 form-group">
                                     <label>CMS:</label>
                                     <div class="custom-control custom-checkbox bg-white radius">
                                         <div class="p-l-10 p-t-10 p-b-5">
@@ -139,7 +139,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3 form-group">
+                                <div class="col-md-4 form-group">
                                     <label>财务:</label>
                                     <div class="custom-control custom-checkbox bg-white radius">
                                         <div class="p-l-10 p-t-10 p-b-5">
