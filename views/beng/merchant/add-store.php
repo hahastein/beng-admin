@@ -179,14 +179,14 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="sfz-zm">上传身份证-正面 (复印件、手机拍照均可):</label>
-                                        <input type="file" id="sfz-zm" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz-zm.png')?>" />
+                                        <input type="file" id="sfz-zm" class="dropify" />
                                         <small>请上传清晰有效的身份证正面</small>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="sfz-fm">上传身份证反面 (复印件、手机拍照均可):</label>
-                                        <input type="file" id="sfz-fm" class="dropify" data-default-file="<?=\bengbeng\admin\components\handles\TemplateHandle::getImgToTheme('sfz-fm.png')?>" />
+                                        <input type="file" id="sfz-fm" class="dropify" />
                                         <small>请上传清晰有效的身份证反面</small>
                                     </div>
                                 </div>
