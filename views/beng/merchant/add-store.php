@@ -210,12 +210,68 @@
 
                         <!--公司信息-->
                         <div id="company" group="storeInfoGroup" class="hide">
-                            <h4 class="card-title">公司信息</h4>
+                            <h3 class="box-title">公司及联系人信息</h3>
+                            <hr class="m-t-0 m-b-20">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="shortDescription1">详细地址 :</label>
-                                        <textarea name="shortDescription" id="shortDescription1" rows="2" class="form-control"></textarea>
+                                        <label for="company_name">公司名称 :</label>
+                                        <input type="text" class="form-control" id="company_name">
+                                        <small class="text-primary">请填写公司信息，与营业执照上相同</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="company_city">公司所在地 :</label>
+                                        <select class="form-control" id="company_city">
+                                            <option value="" selected="selected">--请选择--</option>
+                                            <option value="bj">北京</option>
+                                            <option value="sh">上海</option>
+                                        </select>
+                                        <small class="text-primary">请选择公司注册地，与营业执照上相同</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="company_phone">公司电话 :</label>
+                                        <input type="text" class="form-control" id="company_phone">
+                                        <small class="text-primary">填写公司联系电话</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="box-title">营业执照信息（副本）</h3>
+                            <hr class="m-t-0 m-b-20">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="business_num">营业执照号 :</label>
+                                        <input type="text" class="form-control" id="business_num">
+                                        <small class="text-primary">请填写营业执照号，与营业执照上相同</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="business_code">组织机构代码 :</label>
+                                        <input type="text" class="form-control" id="business_code">
+                                        <small class="text-primary">请填写组织机构代码，与营业执照上相同</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="business_city">营业执照所在地 :</label>
+                                        <select class="form-control" id="business_city">
+                                            <option value="" selected="selected">--请选择--</option>
+                                            <option value="bj">北京</option>
+                                            <option value="sh">上海</option>
+                                        </select>
+                                        <small class="text-primary">请填写营业执照所在地，与营业执照上相同</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>营业执照有效期 :</label>
+                                        <input type="text" class="form-control" id="business_licence_start"> - <input type="text" class="form-control" id="business_licence_end">
+                                        <small class="text-primary">请填写营业执照有效期，与营业执照上相同</small>
                                     </div>
                                 </div>
                             </div>
