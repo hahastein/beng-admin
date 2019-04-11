@@ -20,14 +20,14 @@
                                 <div class="form-group">
                                     <label for="firstName1">商户名称 :</label>
                                     <input type="text" class="form-control" id="firstName1">
-                                    <small>商户名称</small>
+                                    <small class="text-primary">商户名称</small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="lastName1">会员账号 :</label>
                                     <input type="text" class="form-control" id="lastName1">
-                                    <small>用户会员登录使用，不填写则不跟前台会员绑定</small>
+                                    <small class="text-primary">用户会员登录使用，不填写则不跟前台会员绑定</small>
                                 </div>
                             </div>
                         </div>
@@ -36,14 +36,14 @@
                                 <div class="form-group">
                                     <label for="emailAddress1">店铺账号 :</label>
                                     <input type="email" class="form-control" id="emailAddress1">
-                                    <small>用户商户后台登录使用</small>
+                                    <small class="text-primary">用户商户后台登录使用</small>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="phoneNumber1">登录密码 :</label>
                                     <input type="tel" class="form-control" id="phoneNumber1">
-                                    <small>用户前台后台的登录密码</small>
+                                    <small class="text-primary">用户前台后台的登录密码</small>
                                 </div>
                             </div>
                         </div>
