@@ -109,13 +109,32 @@
                             <h3 class="box-title">支持功能</h3>
                             <hr class="m-t-0 m-b-20">
                             <div class="row">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>电商</label>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="shop">
-                                            <label class="custom-control-label" for="shop">默认支持</label>
-                                        </div>
+                                <div class="col-md-4 form-group">
+                                    <label>电商:</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="shop">
+                                        <label class="custom-control-label" for="shop">默认支持,开通后可管理电商</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label>外卖:</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" name="support-tools" class="custom-control-input" id="o2o">
+                                        <label class="custom-control-label" for="o2o">开通后可管理外卖</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label>CMS:</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="cms">
+                                        <label class="custom-control-label" for="cms">默认支持,可对内容进行管理</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 form-group">
+                                    <label>财务:</label>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" checked="checked" name="support-tools" class="custom-control-input" id="finance">
+                                        <label class="custom-control-label" for="finance">默认支持,可使用财务结算功能</label>
                                     </div>
                                 </div>
                             </div>
