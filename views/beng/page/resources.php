@@ -69,7 +69,7 @@
                                     <div class="hide">
                                         <div id="r_css">
                                             <?php foreach ($item['css_resource'] as $key => $css): ?>
-                                                <?= $key>0?'<hr>':'' ?><h5><?=$css?></h5>
+                                                <?= $key>0?'<hr>':'' ?><h5><?=$css?></h5><span class="right" >删除</span>
                                             <?php endforeach;?>
                                         </div>
                                         <div id="r_js">
@@ -109,7 +109,8 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">添加一行</button>
+                <button type="button" class="btn btn-info waves-effect" data-dismiss="modal">关闭</button>
             </div>
         </div>
         <!-- /.modal-content -->
