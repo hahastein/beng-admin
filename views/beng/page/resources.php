@@ -69,7 +69,7 @@
                                     <div class="hide">
                                         <div id="r_css">
                                             <?php foreach ($item['css_resource'] as $key => $css): ?>
-                                                <?= $key>0?'<hr>':'' ?><h5><?=$css?></h5><span class="right" >删除</span>
+                                                <?= $key>0?'<hr>':'' ?><h5><?=$css?></h5><span class="d-flex" >删除</span>
                                             <?php endforeach;?>
                                         </div>
                                         <div id="r_js">
