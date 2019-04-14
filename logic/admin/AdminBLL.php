@@ -33,7 +33,7 @@ class AdminBLL implements LogicLayerInterface
         return ['dataSet' => $adminData];
     }
 
-    public function getOne()
+    public function getOne($id)
     {
         // TODO: Implement getOne() method.
     }
