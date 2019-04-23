@@ -18,13 +18,12 @@
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "yiisoft/yii2-bootstrap": "~2.0.0",
-    "bengbengsoft/beng-framework": "^2.0@dev"
+    "bengbengsoft/beng-framework": "^0.9.1",
+    "bengbengsoft/beng-tools-upload": "^0.9.0",
+    "upyun/sdk": "dev-master"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "~2.0"
-  },
-  "suggest": {
-    "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
   },
   "autoload": {
     "psr-4": {
@@ -32,9 +31,6 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "2.x-dev"
-    },
     "asset-installer-paths": {
       "npm-asset-library": "vendor/npm",
       "bower-asset-library": "vendor/bower"

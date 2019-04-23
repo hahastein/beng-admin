@@ -16,7 +16,6 @@
                 <h4 class="card-title">页面资源管理</h4>
                 <h6 class="card-subtitle">菜单管理及菜单分类管理 </h6>
 
-
                 <div class="right-page-header">
                     <div class="d-flex">
                         <div class="align-self-center">
@@ -33,7 +32,8 @@
 
                         </div>
                         <div class="ml-auto">
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button> </div>
+                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新缓存</button>
+                        </div>
                     </div>
                 </div>
 
