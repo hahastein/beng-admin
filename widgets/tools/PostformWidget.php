@@ -91,7 +91,9 @@ class PostformWidget extends BaseWidget
 
             $controlReset[$key]['label'] = $control['label'];
             $controlReset[$key]['tip'] = $control['tip'];
-            $controlReset[$key]['row'] = $control['row'];
+            if(isset($control['row'])){
+                $controlReset[$key]['row'] = $control['row'];
+            }
             $controlReset[$key]['control'] = $this->setFormControl($key, $control);
 
         }
