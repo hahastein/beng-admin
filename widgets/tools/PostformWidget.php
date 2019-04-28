@@ -122,8 +122,11 @@ class PostformWidget extends BaseWidget
                 if(isset($control['placeholder'])){
                     $controlOptions = array_merge($controlOptions, ['placeholder' => $control['placeholder']]);
                 }
-
-                return Html::input($controlType, $key, '', $controlOptions);
+                $controlValue = '';
+                if(isset($control['value'])) {
+                    $controlValue = $control['value'];
+                }
+                return Html::input($controlType, $key, $controlValue, $controlOptions);
 
             case 'select':
 

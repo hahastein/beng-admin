@@ -12,7 +12,7 @@
                         <?php foreach ($controls as $index => $row): ?>
                         <div class="row<?=$index==0?' p-t-20':''?>">
                             <?php foreach ($row as $key => $control): ?>
-                                <div class="col-md-<?=12/count($row)?>">
+                                <div class="col-md-<?=isset($control['row'])?$control['row']:12/count($row)?>">
                                     <div class="form-group has-success">
                                         <label class="control-label"><?=$control['label']?></label>
                                         <?=$control['control']?><small class="form-control-feedback"> <?=$control['tip']?> </small> </div>
