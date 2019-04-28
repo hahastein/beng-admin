@@ -89,7 +89,16 @@ class PostformWidget extends BaseWidget
 
         foreach ($row as $key => $control) {
 
-            $controlReset[$key]['label'] = $control['label'];
+            if(isset($control['label'])){
+                $controlReset[$key]['label'] = $control['label'];
+            }else{
+                $controlReset[$key]['label'] = '';
+            }
+            if(isset($control['tip'])){
+                $controlReset[$key]['tip'] = $control['tip'];
+            }else{
+                $controlReset[$key]['tip'] = '';
+            }
             $controlReset[$key]['tip'] = $control['tip'];
             if(isset($control['row'])){
                 $controlReset[$key]['row'] = $control['row'];
