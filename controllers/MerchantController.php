@@ -17,14 +17,19 @@ use bengbeng\framework\base\Enum;
 class MerchantController extends AdminBaseController
 {
 
+    public function init()
+    {
+        $this->actionPower = ['store', 'store-save', 'shops', 'add-store'];
+        parent::init();
+    }
+
     public function actionStore(){
-        $returnData = $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->getList();
-        return $this->render('store', $returnData);
+        $this->renderData = $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->getList();
     }
 
     public function actionAddStore(){
 //        $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->add();
-        return $this->render('add-store');
+//        return $this->render('add-store');
     }
 
     public function actionStoreSave(){
@@ -33,15 +38,8 @@ class MerchantController extends AdminBaseController
 
     public function actionShops()
     {
-        $returnData = $this->getLogicLayer('ShopsBLL', Enum::NAMESPACE_MERCHANT)->getList();
-        return $this->render('shops', $returnData);
+        $this->renderData = $this->getLogicLayer('ShopsBLL', Enum::NAMESPACE_MERCHANT)->getList();
+//        return $this->render('shops', $returnData);
     }
 
-    public function behaviors()
-    {
-        self::setActions([
-            'store', 'store-save', 'shops', 'add-store'
-        ]);
-        return parent::behaviors();
-    }
 }

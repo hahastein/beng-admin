@@ -26,9 +26,6 @@ class AdminController extends AdminBaseController
      * @return string 返回模板内容
      */
     public function actionAll(){
-
-        $returnData = $this->getLogicLayer('admin.AdminBLL')->getList();
-
-        return $this->render('all', $returnData);
+        $this->renderData = $this->getLogicLayer('admin.AdminBLL')->getList();
     }
 }
