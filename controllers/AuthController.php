@@ -73,6 +73,7 @@ class AuthController extends AdminBaseController
                 ]);
             }
         } else {
+            var_dump(11);
             return $this->render('login', ['model' => $model]);
         }
     }
