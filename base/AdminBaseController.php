@@ -69,20 +69,20 @@ class AdminBaseController extends BaseController
      * @param mixed $result
      * @return mixed|string
      */
-//    public function afterAction($action, $result)
-//    {
-//        var_dump($action->controller->viewPath);die;
-//        if($this->autoLogic){
-//            $action->id;
-//            if($this->renderData){
-//                return $this->render($action->id, $this->renderData);
-//            }else{
-//                return $this->render($action->id);
-//            }
-//        }else{
-//            return parent::afterAction($action, $result);
-//        }
-//    }
+    public function afterAction($action, $result)
+    {
+        var_dump($action->controller->view);die;
+        if($this->autoLogic){
+            $action->id;
+            if($this->renderData){
+                return $this->render($action->id, $this->renderData);
+            }else{
+                return $this->render($action->id);
+            }
+        }else{
+            return parent::afterAction($action, $result);
+        }
+    }
 
     public function behaviors()
     {
