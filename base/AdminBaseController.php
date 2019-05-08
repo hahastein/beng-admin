@@ -72,7 +72,7 @@ class AdminBaseController extends BaseController
     public function afterAction($action, $result)
     {
         var_dump($result);
-        var_dump($action->controller->getViewPath());die;
+        var_dump('123123'.$action->controller->getViewPath());die;
         if($this->autoLogic){
             $action->id;
             if($this->renderData){
