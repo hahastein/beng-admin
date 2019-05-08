@@ -25,6 +25,7 @@ use yii\db\ActiveQuery;
 class AuthController extends AdminBaseController
 {
 
+    protected $autoLogic = false;
     /**
      * 重写init方法，改变使用登录系统的layout路径
      * @author hahastein
