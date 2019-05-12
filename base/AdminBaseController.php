@@ -78,7 +78,8 @@ class AdminBaseController extends BaseController
      */
     public function afterAction($action, $result)
     {
-        if($this->autoLogic){
+
+        if(empty($result) && $this->autoLogic){
             $action->id;
             if($this->renderData){
                 return $this->render($action->id, $this->renderData);

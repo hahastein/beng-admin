@@ -23,7 +23,6 @@ class MenuController extends AdminBaseController
     public function actionAll(){
 
         $returnData = $this->getLogicLayer('menu.MenuBLL')->getList();
-
         return $this->render('all', $returnData);
     }
 
