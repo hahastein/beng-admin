@@ -63,6 +63,13 @@ class AdminBaseController extends BaseController
         return parent::getLogicLayer($logicName, $namespace);
     }
 
+    protected function getAutoLogicLayer($namespace){
+        $logicName = $this->id . 'Logic';
+
+        var_dump($logicName);die;
+        return $this->getLogicLayer($logicName, $namespace);
+    }
+
     /**
      * 重写处理action之后的流程，针对按需加载逻辑处理流程
      * @param \yii\base\Action $action
