@@ -64,7 +64,7 @@ class AdminBaseController extends BaseController
     }
 
     protected function getAutoLogicLayer($namespace){
-        $logicName = $this->id . 'Logic';
+        $logicName = ucfirst($this->id) . 'Logic';
 
         var_dump($logicName);die;
         return $this->getLogicLayer($logicName, $namespace);
