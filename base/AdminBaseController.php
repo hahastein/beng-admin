@@ -63,10 +63,13 @@ class AdminBaseController extends BaseController
         return parent::getLogicLayer($logicName, $namespace);
     }
 
+    /**
+     * 自动获取当前Controller的Bll类
+     * @param string $namespace 所用命名空间
+     * @return mixed 返回 Bll Class
+     */
     protected function getAutoLogicLayer($namespace){
         $logicName = ucfirst($this->id) . 'Logic';
-
-        var_dump($logicName);die;
         return $this->getLogicLayer($logicName, $namespace);
     }
 
