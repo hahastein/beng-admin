@@ -47,6 +47,12 @@ $(function () {
         }
     });
 
+    $(".nav-toggler").click(function () {
+        $("body").toggleClass("show-sidebar");
+        $(".nav-toggler i").toggleClass("ti-menu");
+        $(".nav-toggler i").addClass("ti-close");
+    });
+
     var mySkins = [
         "skin-default",
         "skin-green",
