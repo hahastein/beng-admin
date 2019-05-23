@@ -11,9 +11,14 @@
 
 namespace bengbeng\admin\logic\menu;
 
+use bengbeng\framework\base\BaseLogic;
+use bengbeng\framework\base\Enum;
+use Yii;
 use bengbeng\admin\models\menu\ARMenu;
 use bengbeng\framework\components\ifc\LogicLayerInterface;
 use bengbeng\framework\components\ifc\LogicOperateInterface;
+use yii\db\ActiveQuery;
+use yii\db\Exception;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -21,16 +26,19 @@ use yii\helpers\ArrayHelper;
  * @author hahastein <146119@qq.com>
  * @package bengbeng\admin\logic\menu
  */
-class MenuBLL implements LogicLayerInterface, LogicOperateInterface
+class MenuBLL extends BaseLogic implements LogicLayerInterface, LogicOperateInterface
 {
+
+    private $arMenu;
+
     public function __construct()
     {
+        $this->arMenu = new ARMenu();
     }
 
     public function getList(){
 
-        $arMenu = new ARMenu();
-        $dataSet = $arMenu->findByMenuType(10);
+        $dataSet = $this->arMenu->findByMenuType(10);
 
         $dropDownData = ArrayHelper::map($dataSet, 'menu_id', 'menu_name');
 
@@ -42,9 +50,56 @@ class MenuBLL implements LogicLayerInterface, LogicOperateInterface
         // TODO: Implement getOne() method.
     }
 
+    /**
+     * @param null $dataParam
+     * @return bool|mixed
+     */
     public function save($dataParam = null)
     {
-        // TODO: Implement save() method.
+        try{
+            if(!$dataParam){
+                throw new Exception('参数异常');
+            }
+
+            if(empty($dataParam['parent_id'])){
+                throw new Exception('选择父级菜单');
+            }
+
+            $menuData = $this->arMenu->dataOne(function (ActiveQuery $query) use($dataParam){
+                $query->where(['menu_name' => $dataParam['menu_name']]);
+            });
+
+            if($menuData){
+                throw new Exception('菜单存在');
+            }
+
+            $parentData = $this->arMenu->dataOne(function (ActiveQuery $query) use($dataParam){
+                $query->where(['menu_id' => $dataParam['parent_id']]);
+            });
+
+            if(!$parentData){
+                throw new Exception('父级菜单不存在');
+            }
+
+            $dataParam['module'] = Yii::$app->controller->module->id;
+            $dataParam['menu_cate'] = $parentData['menu_cate'];
+            $dataParam['addtime'] = time();
+            $dataParam['admin_id'] = Yii::$app->user->identity->admin_id;
+
+            $this->arMenu->setAttributes($dataParam, false);
+            if ($this->arMenu->validate() && $this->arMenu->save()) {
+
+                Yii::$app->cache->delete(Enum::CACHE_MENU_DATA);
+
+                return true;
+
+            } else {
+                throw new Exception('添加失败');
+            }
+        }catch (Exception $ex){
+            $this->error = $ex->getMessage();
+            return false;
+        }
     }
 
     public function delete($id)

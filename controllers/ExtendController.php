@@ -13,13 +13,16 @@ namespace bengbeng\admin\controllers;
 
 
 use bengbeng\admin\base\AdminBaseController;
+use bengbeng\framework\models\ExtendARModel;
 
 class ExtendController extends AdminBaseController
 {
 
-    protected $actionPower = [''];
+    protected $actionPower = ['plug'];
 
-    public function actionAll(){
-
+    public function actionPlug(){
+        $this->renderData = [
+            'dataSet' => (new ExtendARModel())->findByAll()
+        ];
     }
 }
