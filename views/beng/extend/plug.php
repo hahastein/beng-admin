@@ -66,7 +66,10 @@
                         <?php foreach ($dataSet as $item): ?>
                             <tr>
                                 <td><?=$item['extend_id']; ?></td>
-                                <td><?=$item['extend_name']; ?></td>
+                                <td>
+                                    <?=$item['show_name']; ?>
+                                    <span><?=$item['extend_name']; ?></span>
+                                </td>
                                 <td>
                                     <?=$item['extend_namespace']; ?>
                                 </td>
