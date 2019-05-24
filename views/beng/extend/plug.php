@@ -78,9 +78,9 @@
                                 <td></td>
                                 <td>
                                     <?php if($item['isSetup']): ?>
-                                    <a class="btn waves-effect waves-light btn-rounded btn-info">安装</a>
+                                    <a class="btn btn-sm waves-effect waves-light btn-rounded btn-info">安装</a>
                                     <?php else: ?>
-                                    <a class="btn btn-primary btn-rounded waves-effect waves-light">已安装</a>
+                                    <a class="btn btn-sm btn-secondary btn-rounded waves-effect waves-light">已安装</a>
                                     <?php endif; ?>
                                 </td>
                             </tr>
