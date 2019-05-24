@@ -13,7 +13,7 @@ namespace bengbeng\admin\controllers;
 
 
 use bengbeng\admin\base\AdminBaseController;
-use bengbeng\framework\models\ExtendARModel;
+use bengbeng\admin\logic\ExtendBLL;
 
 class ExtendController extends AdminBaseController
 {
@@ -22,7 +22,7 @@ class ExtendController extends AdminBaseController
 
     public function actionPlug(){
         $this->renderData = [
-            'dataSet' => (new ExtendARModel())->findByAll()
+            'dataSet' => (new ExtendBLL())->getList()
         ];
     }
 }

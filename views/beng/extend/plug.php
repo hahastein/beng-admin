@@ -68,6 +68,7 @@
                                 <td><?=$item['extend_id']; ?></td>
                                 <td>
                                     <?=$item['show_name']; ?>
+                                    <br>
                                     <small><?=$item['extend_name']; ?></small>
                                 </td>
                                 <td>
@@ -76,9 +77,11 @@
                                 <td><?=$item['extend_version']; ?></td>
                                 <td></td>
                                 <td>
-
-                                    <button type="button" class="btn waves-effect waves-light btn-rounded btn-info">下载</button>
-
+                                    <?php if($item['isSetup']): ?>
+                                    <a class="btn waves-effect waves-light btn-rounded btn-info">安装</a>
+                                    <?php else: ?>
+                                    <a class="btn btn-primary btn-rounded waves-effect waves-light">已安装</a>
+                                    <?php endif; ?>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
