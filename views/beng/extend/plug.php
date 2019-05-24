@@ -9,11 +9,32 @@
                 'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
                 'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to('extend/save'),
                 'control' => [[
-                    'adminName' => [
+                    'showName' => [
+                        'model' => 'show_name',
+                        'label' => '扩展名称(显示使用)',
+                        'placeholder' => '请填写扩展的显示名称',
+                        'tip' => '只作为显示使用的名字',
+                        'type' => 'input.text',
+                    ],
+                    'extendName' => [
                         'model' => 'extend_name',
-                        'label' => '管理员账号',
-                        'placeholder' => '请填写管理员账号',
-                        'tip' => '作为登录系统的名字，字符串+数字组成，开头不能为数字',
+                        'label' => '扩展名称',
+                        'placeholder' => '请填写扩展的名称',
+                        'tip' => '格式为：beng-extend-xxx(xxx为您的名称)',
+                        'type' => 'input.text',
+                    ],
+                    'extendNamespace' => [
+                        'model' => 'extend_namespace',
+                        'label' => '扩展的命名空间',
+                        'placeholder' => '请填写扩展的命名空间',
+                        'tip' => '格式为：bengbeng/extend/xxx(xxx为您项目的名称)',
+                        'type' => 'input.text',
+                    ],
+                    'extendVendorPath' => [
+                        'model' => 'extend_vendor_path',
+                        'label' => '扩展所放的路径',
+                        'placeholder' => '请填写扩展所放路径',
+                        'tip' => '不填写则为系统匹配。如填写，格式为：beng-extend-xxx(xxx为您的名称)',
                         'type' => 'input.text',
                     ]
                 ]]
@@ -37,10 +58,8 @@
                             <div class="btn-toolbar mb-3">
                                 <div class="btn-group mr-2">
                                     <a class="btn btn-secondary">全部</a>
-                                    <a class="btn btn-secondary">模板B</a>
-                                    <a class="btn btn-secondary">模板C</a>
-                                    <a class="btn btn-secondary">模板D</a>
-                                    <a class="btn btn-secondary">更多>></a>
+                                    <a class="btn btn-secondary">系统扩展</a>
+                                    <a class="btn btn-secondary">第三方扩展</a>
                                 </div>
                             </div>
 
