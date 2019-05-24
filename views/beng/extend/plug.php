@@ -8,35 +8,35 @@
             'modalParams' => [
                 'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
                 'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to('extend/save'),
-                'control' => [
+                'control' => [[
                     'showName' => [
                         'model' => 'show_name',
                         'label' => '扩展名称(显示使用)',
                         'placeholder' => '请填写扩展的显示名称',
                         'tip' => '只作为显示使用的名字',
                         'type' => 'input.text',
-                    ],
-                    'extendName' => [
+                    ]],
+                    ['extendName' => [
                         'model' => 'extend_name',
                         'label' => '扩展名称',
                         'placeholder' => '请填写扩展的名称',
                         'tip' => '格式为：beng-extend-xxx(xxx为您的名称)',
                         'type' => 'input.text',
-                    ],
-                    'extendNamespace' => [
+                    ]],
+                    ['extendNamespace' => [
                         'model' => 'extend_namespace',
                         'label' => '扩展的命名空间',
                         'placeholder' => '请填写扩展的命名空间',
                         'tip' => '格式为：bengbeng/extend/xxx(xxx为您项目的名称)',
                         'type' => 'input.text',
-                    ],
-                    'extendVendorPath' => [
+                    ]],
+                    ['extendVendorPath' => [
                         'model' => 'extend_vendor_path',
                         'label' => '扩展所放的路径',
                         'placeholder' => '请填写扩展所放路径',
                         'tip' => '不填写则为系统匹配。如填写，格式为：beng-extend-xxx(xxx为您的名称)',
                         'type' => 'input.text',
-                    ]
+                    ]]
                 ]
             ]
         ]
