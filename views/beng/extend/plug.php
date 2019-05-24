@@ -80,9 +80,9 @@
                                 </td>
                                 <td>
                                     <?php if($item['isSetup']): ?>
-                                    <a class="btn btn-sm btn-info">安装</a>
+                                    <a class="btn btn-info" href="#" >安装</a>
                                     <?php else: ?>
-                                    <a class="btn btn-sm btn-danger">卸载</a>
+                                    <a class="btn btn-danger" href="#" >卸载</a>
                                     <?php endif; ?>
                                 </td>
                             </tr>
