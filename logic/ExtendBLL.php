@@ -29,7 +29,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface
         $dataSet = $this->model->findByAll();
 
         foreach ($dataSet as $key => $item){
-            if(is_file(\Yii::getAlias('@verdor/bengbeng-extend/'.$item['extend_name'].'/bengextend.lock'))){
+            if(is_file(\Yii::getAlias('@verdor').'/bengbeng-extend/'.$item['extend_name'].'/bengextend.lock')){
                 $dataSet[$key]['isSetup'] = true;
             }else{
                 $dataSet[$key]['isSetup'] = false;
