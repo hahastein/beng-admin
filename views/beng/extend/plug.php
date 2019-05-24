@@ -68,7 +68,7 @@
                                 <td><?=$item['extend_id']; ?></td>
                                 <td>
                                     <?=$item['show_name']; ?>
-                                    <span><?=$item['extend_name']; ?></span>
+                                    <small><?=$item['extend_name']; ?></small>
                                 </td>
                                 <td>
                                     <?=$item['extend_namespace']; ?>
