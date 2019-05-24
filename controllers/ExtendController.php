@@ -17,12 +17,25 @@ use bengbeng\admin\logic\ExtendBLL;
 
 class ExtendController extends AdminBaseController
 {
+    /**
+     * @var ExtendBLL
+     */
+    private $Bll;
+    protected $actionPower = ['plug', 'save'];
 
-    protected $actionPower = ['plug'];
+    public function init()
+    {
+        $this->Bll = new ExtendBLL();
+        parent::init();
+    }
 
     public function actionPlug(){
         $this->renderData = [
-            'dataSet' => (new ExtendBLL())->getList()
+            'dataSet' => $this->Bll->getList()
         ];
+    }
+
+    public function actionSave(){
+        $this->Bll->save();
     }
 }
