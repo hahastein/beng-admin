@@ -8,7 +8,7 @@
             'modalParams' => [
                 'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
                 'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to('extend/save'),
-                'control' => [[
+                'control' => [
                     'showName' => [
                         'model' => 'show_name',
                         'label' => '扩展名称(显示使用)',
@@ -37,7 +37,7 @@
                         'tip' => '不填写则为系统匹配。如填写，格式为：beng-extend-xxx(xxx为您的名称)',
                         'type' => 'input.text',
                     ]
-                ]]
+                ]
             ]
         ]
     ]
