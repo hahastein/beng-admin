@@ -1,6 +1,22 @@
 <?php
-use yii\helpers\Html;
-
+$this->registerJs(
+    '$(function(){
+        var href=$("#href").attr("href");
+        setTimeout(function(){
+            location.href=href;
+        },3000);
+        after();
+    });
+    var i=3;
+    //自动刷新页面上的时间
+    function after(){
+        $("#wait").empty().append(i);
+        i=i-1;
+        setTimeout(function(){
+            after();
+        },1000);
+    }'
+);
 ?>
 
 <?=\bengbeng\admin\widgets\tools\BreadcrumbWidget::widget([
@@ -42,7 +58,7 @@ use yii\helpers\Html;
 
                     <div class="alert alert-success alert-rounded">
                         <i class="ti-time"></i>
-                        页面自动 <a id="href" href="<?=$url?>">跳转</a> 等待时间： <b id="wait"><?=$wait.'秒' ?></b>
+                        页面自动 <a id="href" href="<?=$url?>">跳转</a> 等待时间： <b id="wait"><?=$wait?></b>秒
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                     </div>
 
