@@ -1,26 +1,32 @@
 <?php
 $this->registerJs(
     '$(function(){
-        var href=$("#href").attr("href");
-        setTimeout(function(){
-            location.href=href;
-        },'.($wait*1000).');
-        
        $("#waitBtn").click(function(){
             if($("#waitBtn i").attr("class") == "ti-control-pause"){
                 $("#waitBtn i").attr("class","ti-control-play");
+                doPause();
             }else{
                 $("#waitBtn i").attr("class","ti-control-pause");
+                after();
             }
        });
-//        after();
+       after();
     });
-    var i=3;
-    //自动刷新页面上的时间
+    var href=$("#href").attr("href");
+    var i='.$wait.';
+    var waitTime = null;
+    function doPause(){
+        if(waitTime!=null){
+            clearTimeout(waitTime);waitTime=null;
+        }
+    }
     function after(){
+        if(i==0){
+            location.href=href;
+        }
         $("#wait").empty().append(i);
         i=i-1;
-        setTimeout(function(){
+        waitTime = setTimeout(function(){
             after();
         },1000);
     }'
