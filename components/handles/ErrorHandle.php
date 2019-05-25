@@ -25,7 +25,7 @@ class ErrorHandle extends BaseErrorHandle
         }else{
             //将500的代码，发送监控预警
 
-            echo \Yii::$app->getView()->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main',['exception' => $exception,],$this);
+            echo \Yii::$app->getView()->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/system-error',['exception' => $exception,],$this);
         }
 
     }
