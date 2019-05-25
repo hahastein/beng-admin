@@ -7,7 +7,11 @@ $this->registerJs(
         },'.($wait*1000).');
         
        $("#waitBtn").click(function(){
-            $("#waitBtn i").attr("class","ti-control-play");
+            if($("#waitBtn i").attr() == "ti-control-pause"){
+                $("#waitBtn i").attr("class","ti-control-play");
+            }else{
+                $("#waitBtn i").attr("class","ti-control-pause");
+            }
        });
         after();
     });
