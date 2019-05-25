@@ -4,7 +4,11 @@ $this->registerJs(
         var href=$("#href").attr("href");
         setTimeout(function(){
             location.href=href;
-        },3000);
+        },'.($wait*1000).');
+        
+       $("#waitBtn").click(function(){
+            $("#waitBtn i").attr("class","ti-control-play");
+       });
         after();
     });
     var i=3;
@@ -59,7 +63,7 @@ $this->registerJs(
                     <div class="alert alert-success alert-rounded">
                         <i class="ti-time"></i>
                         页面自动 <a id="href" href="<?=$url?>">跳转</a> 等待时间： <b id="wait"><?=$wait?></b>秒
-                        <button type="button" class="close"> <i class="ti-control-pause"></i> </button>
+                        <button type="button" class="close" id="waitBtn"> <i class="ti-control-pause"></i> </button>
                     </div>
 
                     <a class="btn btn-primary" href="/" role="button">返回首页</a>
