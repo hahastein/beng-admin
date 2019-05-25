@@ -30,7 +30,9 @@ use yii\helpers\Html;
                             <i class="fa fa-exclamation-triangle"></i> 温馨提示
                         </h3>
 
-                        <?=$content?>
+                        <p class="ml-4">
+                            <?=$content?>
+                        </p>
 
                     </div>
 

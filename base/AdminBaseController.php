@@ -158,14 +158,7 @@ class AdminBaseController extends BaseController
      */
     private function _jump($title, $content, $url='', $wait=3, $type = 0){
 
-//        $content = str_replace('\n', '<br>', $content);
-
-        $contents = explode('\n', $content);
-        $content = '';
-
-        foreach ($contents as $item){
-            $content .= '<span class="ml-4">'.$item.'</span>';
-        }
+        $content = str_replace('\n', '<br>', $content);
 
         $returnData = [
             'title' => $title,
