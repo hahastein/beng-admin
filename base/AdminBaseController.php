@@ -160,7 +160,10 @@ class AdminBaseController extends BaseController
 
 //        $content = str_replace('\n', '<br>', $content);
 
-        foreach (explode('\n', $content) as $item){
+        $contents = explode('\n', $content);
+        $content = '';
+
+        foreach ($contents as $item){
             $content .= '<p class="ml-4">'.$item.'</p>';
         }
 
