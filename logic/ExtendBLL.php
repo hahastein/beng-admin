@@ -53,7 +53,9 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
     {
         try{
             if(empty($dataParam)){
-                throw new Exception('参数异常');
+                throw new Exception('1、没有填写相关数据
+                2、直接访问了不该访问的地址
+                3、非法访问，请使用正确来源访问');
             }
 
             $data = $this->model->dataOne(function (ActiveQuery $query) use($dataParam){
