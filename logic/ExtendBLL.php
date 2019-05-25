@@ -70,7 +70,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
 
             $dataParam['createtime'] = time();
             $dataParam['admin_id'] = Yii::$app->user->identity->admin_id;
-            $dataParam['extend_hash'] = hash_hmac('sha1', $dataParam['extend_name'].'|'.$dataParam['admin_id'].'|'.$dataParam['createtime'], 'bengbeng2018', true);
+            $dataParam['extend_hash'] = base64_encode(hash_hmac('sha1', $dataParam['extend_name'].'|'.$dataParam['admin_id'].'|'.$dataParam['createtime'], 'bengbeng2018', true));
             $dataParam['extend_version'] = '1.0.0';
 
             $this->model->setAttributes($dataParam, false);
