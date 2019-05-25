@@ -27,14 +27,16 @@ use yii\helpers\Html;
                             <span aria-hidden="true">&times;</span>
                         </button>
                         <h3 class="text-warning">
-                            <i class="fa fa-exclamation-triangle"></i> Warning
+                            <i class="fa fa-exclamation-triangle"></i> 温馨提示
                         </h3>
-                        This is an example top alert. You can edit what u wish. Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
+
+                        <?=$content?>
+
                     </div>
 
                     <a class="btn btn-primary btn-lg" href="/" role="button">返回首页</a>
-
                     <a class="btn btn-primary btn-lg" href="/system/document/main" role="button">查看文档</a>
+                    页面自动 <a id="href" href="<?php echo($url); ?>">跳转</a> 等待时间： <b id="wait"><?='3秒' ?></b>
                 </div>
 
 
