@@ -10,6 +10,7 @@ namespace bengbeng\admin\controllers;
 
 
 use bengbeng\admin\base\AdminBaseController;
+use bengbeng\admin\components\handles\TemplateHandle;
 
 class ErrorController extends AdminBaseController
 {
@@ -25,18 +26,13 @@ class ErrorController extends AdminBaseController
 //
 //    }
 
-    public function behaviors()
-    {
-        self::setActions([
-            'main'
-        ]);
-        return parent::behaviors();
-    }
+    protected $actionPower = ['main'];
 
     public function actions(){
         return [
             'main' => [
                 'class' => 'yii\web\ErrorAction',
+                'view' => '@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/system-error'
             ],
         ];
     }
