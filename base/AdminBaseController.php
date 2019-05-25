@@ -174,11 +174,11 @@ class AdminBaseController extends BaseController
         if($type){
             return $this->render("success", $returnData);
         }else{
-            return $this->render("error", $returnData);
+            return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
         }
     }
 
     private function _jumpEx($title, $ex){
-        return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/error/main', ['name' => $title, 'exception' => $ex]);
+        return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/system-error', ['name' => $title, 'exception' => $ex]);
     }
 }
