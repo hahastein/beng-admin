@@ -44,10 +44,10 @@ class ExtendController extends AdminBaseController
             'extend_vendor_path' => 'extendVendorPath',
         ]);
 
-        if($this->Bll->save($postData)){
-            \Yii::$app->Beng->outHtml('写入成功');
-        }else{
-            \Yii::$app->Beng->outHtml($this->Bll->getError());
-        }
+
+        $this->renderType = $this->Bll->save($postData);
+        $this->renderData = $this->Bll->getMessage();
+
+
     }
 }

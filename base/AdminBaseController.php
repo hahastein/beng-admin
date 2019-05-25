@@ -25,6 +25,12 @@ class AdminBaseController extends BaseController
 {
 
     /**
+     * 页面类型
+     * @var null|bool
+     */
+    protected $renderType = null;
+
+    /**
      * 逻辑数据，显示在页面的数据
      * @var array
      */
@@ -83,12 +89,19 @@ class AdminBaseController extends BaseController
     {
 
         if(empty($result) && $this->autoLogic){
-            $action->id;
-            if($this->renderData){
-                return $this->render($action->id, $this->renderData);
+            if($this->renderType === true){
+                $this->success($this->renderData);
+            }else if($this->renderType === false){
+                $this->error($this->renderData);
             }else{
-                return $this->render($action->id);
+                $action->id;
+                if($this->renderData){
+                    return $this->render($action->id, $this->renderData);
+                }else{
+                    return $this->render($action->id);
+                }
             }
+
         }else{
             return parent::afterAction($action, $result);
         }
