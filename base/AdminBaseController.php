@@ -164,7 +164,7 @@ class AdminBaseController extends BaseController
         $content = '';
 
         foreach ($contents as $item){
-            $content .= '<p class="ml-4">'.$item.'</p>';
+            $content .= '<span class="ml-4">'.$item.'</span>';
         }
 
         $returnData = [
