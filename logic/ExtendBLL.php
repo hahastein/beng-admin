@@ -51,6 +51,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
 
     public function save($dataParam = null)
     {
+        Yii::$app->Beng->outHtml($dataParam);
         try{
             if(empty($dataParam)){
                 throw new Exception('参数异常');
