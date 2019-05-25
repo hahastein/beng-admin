@@ -64,6 +64,10 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
                 throw new Exception('扩展存在');
             }
 
+            if(empty($data['extend_vendor_path'])){
+                $data['extend_vendor_path'] = $data['extend_name'];
+            }
+
             $data['createtime'] = time();
             $data['extend_hash'] = hash_hmac('sha1', $data['extend_name'].'|'.$data['extend_id'].'|'.$data['createtime'], 'bengbeng2018', true);
             $data['extend_version'] = '1.0.0';
