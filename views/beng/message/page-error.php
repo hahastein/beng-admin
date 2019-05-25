@@ -39,9 +39,9 @@ $this->registerJs(
                     </h6>
 
                     <div class="alert alert-warning">
-                        <button type="button" class="close" data-dismiss="close" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+<!--                        <button type="button" class="close" data-dismiss="close" aria-label="Close">-->
+<!--                            <span aria-hidden="true">&times;</span>-->
+<!--                        </button>-->
                         <h3 class="text-warning">
                             <i class="fa fa-exclamation-triangle"></i> 温馨提示
                         </h3>
@@ -59,7 +59,7 @@ $this->registerJs(
                     <div class="alert alert-success alert-rounded">
                         <i class="ti-time"></i>
                         页面自动 <a id="href" href="<?=$url?>">跳转</a> 等待时间： <b id="wait"><?=$wait?></b>秒
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                        <button type="button" class="close" data-dismiss="close" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
                     </div>
 
                     <a class="btn btn-primary" href="/" role="button">返回首页</a>
