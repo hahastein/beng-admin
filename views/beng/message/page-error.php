@@ -34,9 +34,15 @@ use yii\helpers\Html;
 
                     </div>
 
+                    <div class="alert alert-success alert-rounded">
+                        <i class="ti-time"></i>
+                        页面自动 <a id="href" href="<?php echo($url); ?>">跳转</a> 等待时间： <b id="wait"><?='3秒' ?></b>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+                    </div>
+
                     <a class="btn btn-primary btn-lg" href="/" role="button">返回首页</a>
                     <a class="btn btn-primary btn-lg" href="/system/document/main" role="button">查看文档</a>
-                    页面自动 <a id="href" href="<?php echo($url); ?>">跳转</a> 等待时间： <b id="wait"><?='3秒' ?></b>
+
                 </div>
 
 
