@@ -37,7 +37,12 @@ class ExtendController extends AdminBaseController
 
     public function actionSave(){
 
-        $postData = \Yii::$app->Beng->PostData();
+        $postData = \Yii::$app->Beng->PostData([
+            'show_name' => 'showName',
+            'extend_name' => 'extendName',
+            'extend_namespace' => 'extendNamespace',
+            'extend_vendor_path' => 'extendVendorPath',
+        ]);
 
         if($this->Bll->save($postData)){
             \Yii::$app->Beng->outHtml('写入成功');
