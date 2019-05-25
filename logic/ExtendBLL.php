@@ -65,7 +65,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
             }
 
             if(!array_key_exists('extend_vendor_path', $dataParam) || empty($dataParam['extend_vendor_path'])){
-                $data['extend_vendor_path'] = $data['extend_name'];
+                $dataParam['extend_vendor_path'] = $dataParam['extend_name'];
             }
 
             $dataParam['createtime'] = time();
