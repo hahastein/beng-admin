@@ -36,6 +36,13 @@ class ExtendController extends AdminBaseController
     }
 
     public function actionSave(){
-        $this->Bll->save();
+
+        $postData = \Yii::$app->Beng->PostData();
+
+        if($this->Bll->save($postData)){
+            \Yii::$app->Beng->outHtml('写入成功');
+        }else{
+            \Yii::$app->Beng->outHtml($this->Bll->getError());
+        }
     }
 }

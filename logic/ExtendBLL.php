@@ -11,6 +11,8 @@
 
 namespace bengbeng\admin\logic;
 
+use bengbeng\framework\base\Enum;
+use bengbeng\framework\components\handles\ExtendHandle;
 use Yii;
 use bengbeng\framework\base\BaseLogic;
 use bengbeng\framework\components\ifc\LogicLayerInterface;
@@ -59,17 +61,20 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
             });
 
             if($data){
-                throw new Exception('菜单存在');
+                throw new Exception('扩展存在');
             }
 
-            $dataParam['module'] = Yii::$app->controller->module->id;
-            $dataParam['addtime'] = time();
-            $dataParam['admin_id'] = Yii::$app->user->identity->admin_id;
+            $data['createtime'] = time();
+            $data['extend_hash'] = hash_hmac('sha1', $data['extend_name'].'|'.$data['extend_id'].'|'.$data['createtime'], 'bengbeng2018', true);
+            $data['extend_version'] = '1.0.0';
+            $data['admin_id'] = Yii::$app->user->identity->admin_id;
 
-            $this->arMenu->setAttributes($dataParam, false);
-            if ($this->arMenu->validate() && $this->arMenu->save()) {
+            $this->model->setAttributes($dataParam, false);
+            if ($this->model->validate() && $this->model->save()) {
 
-                Yii::$app->cache->delete(Enum::CACHE_MENU_DATA);
+                //重新生成扩展文件
+                $extendHandle = new ExtendHandle();
+                $extendHandle->appendFile($data);
 
                 return true;
 
