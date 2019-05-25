@@ -90,9 +90,9 @@ class AdminBaseController extends BaseController
 
         if(empty($result) && $this->autoLogic){
             if($this->renderType === true){
-                $this->success($this->renderData);
+                return $this->success($this->renderData);
             }else if($this->renderType === false){
-                $this->error($this->renderData);
+                return $this->error($this->renderData);
             }else{
                 $action->id;
                 if($this->renderData){
