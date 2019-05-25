@@ -52,7 +52,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
     public function save($dataParam = null)
     {
         try{
-            if(!$dataParam){
+            if(empty($dataParam)){
                 throw new Exception('参数异常');
             }
 
