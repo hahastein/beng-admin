@@ -6,7 +6,7 @@
             'title' => '添加扩展',
             'target' => 'add-extend',
             'modalParams' => [
-                'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_AJAX,
+                'submitType' => \bengbeng\admin\components\enum\AdminEnum::ADMIN_SUBMIT_TYPE_POST,
                 'submitUrl' => \bengbeng\framework\components\helpers\UrlHelper::to('extend/save'),
                 'control' => [[
                     'showName' => [
