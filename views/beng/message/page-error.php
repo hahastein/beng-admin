@@ -22,13 +22,14 @@ $this->registerJs(
     }
     function after(){
         if(i==0){
-            location.href=href;
+            location.href=href;clearTimeout(waitTime);waitTime=null;
+        }else{
+            $("#wait").empty().append(i);
+            i=i-1;
+            waitTime = setTimeout(function(){
+                after();
+            },1000);
         }
-        $("#wait").empty().append(i);
-        i=i-1;
-        waitTime = setTimeout(function(){
-            after();
-        },1000);
     }'
 );
 ?>
