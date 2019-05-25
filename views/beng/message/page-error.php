@@ -30,7 +30,7 @@ use yii\helpers\Html;
                             <i class="fa fa-exclamation-triangle"></i> 温馨提示
                         </h3>
 
-                        <div class="ml-4 mb-0">
+                        <div class="ml-2 mb-0">
                             <ul>
                                 <?php foreach (explode('\n',$content) as $item):?>
                                 <li><?=$item?></li>
