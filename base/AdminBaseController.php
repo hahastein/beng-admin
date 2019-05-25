@@ -158,6 +158,8 @@ class AdminBaseController extends BaseController
      */
     private function _jump($title, $content, $url='', $wait=3, $type = 0){
 
+        $content = str_replace('\r\n', '<br>', $content);
+
         $returnData = [
             'title' => $title,
             'content' => $content,
