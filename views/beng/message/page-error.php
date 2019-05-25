@@ -7,13 +7,13 @@ $this->registerJs(
         },'.($wait*1000).');
         
        $("#waitBtn").click(function(){
-            if($("#waitBtn i").attr() == "ti-control-pause"){
+            if($("#waitBtn i").attr("class") == "ti-control-pause"){
                 $("#waitBtn i").attr("class","ti-control-play");
             }else{
                 $("#waitBtn i").attr("class","ti-control-pause");
             }
        });
-        after();
+//        after();
     });
     var i=3;
     //自动刷新页面上的时间
