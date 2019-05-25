@@ -68,17 +68,17 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
                 $data['extend_vendor_path'] = $data['extend_name'];
             }
 
-            $data['createtime'] = time();
-            $data['extend_hash'] = hash_hmac('sha1', $data['extend_name'].'|'.$data['extend_id'].'|'.$data['createtime'], 'bengbeng2018', true);
-            $data['extend_version'] = '1.0.0';
-            $data['admin_id'] = Yii::$app->user->identity->admin_id;
+            $dataParam['createtime'] = time();
+            $dataParam['extend_hash'] = hash_hmac('sha1', $dataParam['extend_name'].'|'.$dataParam['extend_id'].'|'.$dataParam['createtime'], 'bengbeng2018', true);
+            $dataParam['extend_version'] = '1.0.0';
+            $dataParam['admin_id'] = Yii::$app->user->identity->admin_id;
 
-            $this->model->setAttributes($data, false);
+            $this->model->setAttributes($dataParam, false);
             if ($this->model->validate() && $this->model->save()) {
 
                 //重新生成扩展文件
                 $extendHandle = new ExtendHandle();
-                $extendHandle->appendFile($data);
+                $extendHandle->appendFile($dataParam);
 
                 return true;
 
