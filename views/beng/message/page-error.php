@@ -1,22 +1,5 @@
 <?php
-$this->registerJs(
-    '$(function(){
-        var href=$("#href").attr("href");
-        setTimeout(function(){
-            location.href=href;
-        },3000);
-        after();
-    });
-    var i=3;
-    //自动刷新页面上的时间
-    function after(){
-        $("#wait").empty().append(i);
-        i=i-1;
-        setTimeout(function(){
-            after();
-        },1000);
-    }'
-);
+
 ?>
 
 <?=\bengbeng\admin\widgets\tools\BreadcrumbWidget::widget([
