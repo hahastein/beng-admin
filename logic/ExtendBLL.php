@@ -64,7 +64,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
                 throw new Exception('扩展存在');
             }
 
-            if(!array_key_exists('extend_vendor_path', $data) || empty($data['extend_vendor_path'])){
+            if(!array_key_exists('extend_vendor_path', $dataParam) || empty($dataParam['extend_vendor_path'])){
                 $data['extend_vendor_path'] = $data['extend_name'];
             }
 
@@ -73,7 +73,7 @@ class ExtendBLL extends BaseLogic implements LogicLayerInterface, LogicOperateIn
             $data['extend_version'] = '1.0.0';
             $data['admin_id'] = Yii::$app->user->identity->admin_id;
 
-            $this->model->setAttributes($dataParam, false);
+            $this->model->setAttributes($data, false);
             if ($this->model->validate() && $this->model->save()) {
 
                 //重新生成扩展文件
