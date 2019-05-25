@@ -34,6 +34,11 @@ use yii\helpers\Html;
                             <?=$content?>
                         </p>
 
+                        <ul>
+                            <li>asdasd</li>
+                            <li>213414</li>
+                        </ul>
+
                     </div>
 
                     <div class="alert alert-success alert-rounded">
