@@ -58,8 +58,8 @@
                             <div class="btn-toolbar mb-3">
                                 <div class="btn-group mr-2">
                                     <a href="<?=\yii\helpers\Url::to(['extend/plug'])?>" class="btn btn-secondary">全部</a>
-                                    <a class="btn btn-secondary">系统扩展</a>
-                                    <a class="btn btn-secondary">第三方扩展</a>
+                                    <a href="<?=\yii\helpers\Url::to(['extend/plug', 't' => 'system'])?>" class="btn btn-secondary">系统扩展</a>
+                                    <a href="<?=\yii\helpers\Url::to(['extend/plug', 't' => 'third'])?>" class="btn btn-secondary">第三方扩展</a>
                                 </div>
                             </div>
 
