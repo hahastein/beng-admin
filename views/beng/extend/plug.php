@@ -57,7 +57,7 @@
 
                             <div class="btn-toolbar mb-3">
                                 <div class="btn-group mr-2">
-                                    <a class="btn btn-secondary">全部1111</a>
+                                    <a href="<?=\yii\helpers\Url::to(['extend/plug'])?>" class="btn btn-secondary">全部</a>
                                     <a class="btn btn-secondary">系统扩展</a>
                                     <a class="btn btn-secondary">第三方扩展</a>
                                 </div>
