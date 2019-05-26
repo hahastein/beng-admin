@@ -12,13 +12,13 @@
         </ol>
     </div>
     <div class="col-6 align-self-center text-right">
-        <div class="d-block justify-content-end align-items-center">
+        <div class="d-block float-right justify-content-end align-items-center">
 
             <?php foreach ($rightBtn as $key => $item): ?>
                 <?php if($key == 'a'):?>
-                    <a class="btn btn-info d-lg-block m-l-15 float-right" href="<?=$item['href']?>"> <?=$item['title']?></a>
+                    <a class="btn btn-info m-l-15" href="<?=$item['href']?>"> <?=$item['title']?></a>
                 <?php else: ?>
-                    <button type="button" class="btn btn-info d-lg-block m-l-15 float-right" data-toggle="modal" data-target="#<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
+                    <button type="button" class="btn btn-info m-l-15" data-toggle="modal" data-target="#<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
                 <?php endif; ?>
             <?php endforeach; ?>
 
