@@ -52,9 +52,11 @@
 
 
                 <div class="right-page-header">
-                    <div class="d-flex">
-                        <div class="align-self-center">
+                    <div class="d-block">
 
+                        <button type="button" class="btn btn-info d-lg-block m-l-15 float-right"><i class="fas fa-sync-alt"></i> 更新扩展文件</button>
+
+                        <div class="align-self-center">
                             <div class="btn-toolbar mb-3">
                                 <div class="btn-group mr-2">
                                     <a href="<?=\yii\helpers\Url::to(['extend/plug'])?>" class="btn btn-secondary">全部</a>
@@ -62,10 +64,8 @@
                                     <a href="<?=\yii\helpers\Url::to(['extend/plug', 't' => 'third'])?>" class="btn btn-secondary">第三方扩展</a>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="ml-auto">
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-sync-alt"></i> 更新扩展文件</button> </div>
+
                     </div>
                 </div>
 
