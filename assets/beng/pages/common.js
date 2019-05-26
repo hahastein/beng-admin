@@ -81,29 +81,33 @@ $(function () {
     
     function loadControl() {
         var tabcontrol = $(".tab-wizard");
-        if(tabcontrol.length>0)
+        if(tabcontrol.length>0){
             tabcontrol.steps({
-            headerTag: "h6",
-            bodyTag: "section",
-            transitionEffect: "fade",
-            // titleTemplate: '<span class="step">#index#</span> #title#',
-            labels: {
-                previous:"上一步",
-                next:"下一步",
-                finish: "完成"
-            },
-            onFinished: function (event, currentIndex) {
-                swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
+                headerTag: "h6",
+                bodyTag: "section",
+                transitionEffect: "fade",
+                // titleTemplate: '<span class="step">#index#</span> #title#',
+                labels: {
+                    previous:"上一步",
+                    next:"下一步",
+                    finish: "完成"
+                },
+                onFinished: function (event, currentIndex) {
+                    swal("Form Submitted!", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lorem erat eleifend ex semper, lobortis purus sed.");
 
-            }
-        });
+                }
+            });
+        }
 
-        $('.dropify').dropify({
-            radius: true,
-            messages: {
-                remove: '删除图片'
-            }
-        });
+        var dropify = $(".dropify");
+        if(dropify.length>0){
+            dropify.dropify({
+                radius: true,
+                messages: {
+                    remove: '删除图片'
+                }
+            });
+        }
     }
 
     function setupListener() {
