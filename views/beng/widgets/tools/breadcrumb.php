@@ -3,7 +3,16 @@
         <h4 class="text-themecolor"><strong><?=$title?></strong></h4>
     </div>
     <div class="col-md-7 align-self-center text-right">
-        <div class="d-flex justify-content-end align-items-center">
+        <div class="d-block justify-content-end align-items-center">
+
+            <?php foreach ($rightBtn as $key => $item): ?>
+                <?php if($key == 'a'):?>
+                    <a class="btn btn-info d-lg-block m-l-15 float-right" href="<?=$item['href']?>"> <?=$item['title']?></a>
+                <?php else: ?>
+                    <button type="button" class="btn btn-info d-lg-block m-l-15 float-right" data-toggle="modal" data-target="#<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
             <ol class="breadcrumb">
                 <?php foreach ($menu as $key => $item): ?>
                     <?php if(empty($item)):?>
@@ -13,13 +22,7 @@
                     <?php endif; ?>
                 <?php endforeach; ?>
             </ol>
-            <?php foreach ($rightBtn as $key => $item): ?>
-                <?php if($key == 'a'):?>
-                <a class="btn btn-info d-none d-lg-block m-l-15" href="<?=$item['href']?>"> <?=$item['title']?></a>
-                <?php else: ?>
-                <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#<?=$item['target']?>"><i class="fa fa-plus-circle"></i> <?=$item['title']?></button>
-                <?php endif; ?>
-            <?php endforeach; ?>
+
         </div>
     </div>
 </div>
