@@ -80,7 +80,9 @@ $(function () {
     }
     
     function loadControl() {
-        $(".tab-wizard").steps({
+        var tabcontrol = $(".tab-wizard");
+        if(tabcontrol.length>0)
+            tabcontrol.steps({
             headerTag: "h6",
             bodyTag: "section",
             transitionEffect: "fade",
