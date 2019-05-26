@@ -1,6 +1,15 @@
 <div class="row page-titles">
     <div class="col-xs-6 align-self-center">
         <h4 class="text-themecolor"><strong><?=$title?></strong></h4>
+        <ol class="breadcrumb">
+            <?php foreach ($menu as $key => $item): ?>
+                <?php if(empty($item)):?>
+                    <li class="breadcrumb-item active"><?=$key?></li>
+                <?php else: ?>
+                    <li class="breadcrumb-item"><a href="<?=$item?>"><?=$key?></a></li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </ol>
     </div>
     <div class="col-xs-6 align-self-center text-right">
         <div class="d-block justify-content-end align-items-center">
@@ -13,15 +22,7 @@
                 <?php endif; ?>
             <?php endforeach; ?>
 
-            <ol class="breadcrumb">
-                <?php foreach ($menu as $key => $item): ?>
-                    <?php if(empty($item)):?>
-                        <li class="breadcrumb-item active"><?=$key?></li>
-                    <?php else: ?>
-                        <li class="breadcrumb-item"><a href="<?=$item?>"><?=$key?></a></li>
-                    <?php endif; ?>
-                <?php endforeach; ?>
-            </ol>
+
 
         </div>
     </div>
