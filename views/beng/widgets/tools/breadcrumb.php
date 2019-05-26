@@ -1,8 +1,8 @@
 <div class="row page-titles">
-    <div class="col-md-5 align-self-center">
+    <div class="col-xs-5 align-self-center">
         <h4 class="text-themecolor"><strong><?=$title?></strong></h4>
     </div>
-    <div class="col-md-7 align-self-center text-right">
+    <div class="col-xs-7 align-self-center text-right">
         <div class="d-block justify-content-end align-items-center">
 
             <?php foreach ($rightBtn as $key => $item): ?>
