@@ -82,6 +82,7 @@ class AdminBaseController extends BaseController
     public function beforeAction($action)
     {
         if($beforeAction = parent::beforeAction($action)){
+            var_dump($this->logic);die;
             if($this->logic === false){
                 $returnData = [
                     'title' => '未开通此扩展',
