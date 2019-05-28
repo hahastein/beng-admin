@@ -17,11 +17,9 @@ use bengbeng\framework\base\Enum;
 class MerchantController extends AdminBaseController
 {
 
-
-    public $logic = Enum::NAMESPACE_MERCHANT.'\\StoreBLL';
-
     public function init()
     {
+        $this->logic = Enum::NAMESPACE_MERCHANT.'\\StoreBLL';
         $this->actionPower = ['store', 'store-save', 'shops', 'add-store'];
         parent::init();
     }
