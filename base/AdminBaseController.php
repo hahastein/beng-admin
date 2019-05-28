@@ -79,6 +79,26 @@ class AdminBaseController extends BaseController
         return $this->getLogicLayer($logicName, $namespace);
     }
 
+    public function beforeAction($action)
+    {
+        if($beforeAction = parent::beforeAction($action)){
+            if($this->logic === false){
+                $returnData = [
+                    'title' => '未开通此扩展',
+                    'content' => '未安装此类型扩展\n请到系统-扩展功能进行购买安装\n成功后即可使用此功能',
+                    'url' => '/',
+                    'wait' => 5,
+                    'type' => 0
+                ];
+                return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
+            }else{
+                return $beforeAction;
+            }
+        }else{
+            return false;
+        }
+    }
+
     /**
      * 重写处理action之后的流程，针对按需加载逻辑处理流程
      * @param \yii\base\Action $action
