@@ -18,8 +18,8 @@
   "require": {
     "yiisoft/yii2": "~2.0.6",
     "yiisoft/yii2-bootstrap": "~2.0.0",
-    "bengbengsoft/beng-framework": "^0.9.1",
-    "bengbengsoft/beng-tools-upload": "^0.9.0",
+    "bengbengsoft/beng-framework": "dev-master",
+    "bengbengsoft/beng-tools-upload": "dev-master",
     "upyun/sdk": "dev-master"
   },
   "require-dev": {
