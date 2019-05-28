@@ -82,7 +82,6 @@ class AdminBaseController extends BaseController
     public function beforeAction($action)
     {
         if($beforeAction = parent::beforeAction($action)){
-            var_dump($this->logic);die;
             if($this->logic === false){
                 $returnData = [
                     'title' => '未开通此扩展',
@@ -91,6 +90,8 @@ class AdminBaseController extends BaseController
                     'wait' => 5,
                     'type' => 0
                 ];
+                var_dump($returnData);die;
+
                 return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
             }else{
                 return $beforeAction;
