@@ -19,7 +19,7 @@ class MerchantController extends AdminBaseController
 
     public function init()
     {
-        $this->logic = '\\bengbeng\\extend\\merchant\\logic\\StoreBLL';
+        $this->setLogic('\\bengbeng\\extend\\merchant\\logic\\StoreBLL');
 
         $this->actionPower = ['store', 'store-save', 'shops', 'add-store'];
         parent::init();
