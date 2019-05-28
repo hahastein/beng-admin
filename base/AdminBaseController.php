@@ -90,9 +90,9 @@ class AdminBaseController extends BaseController
                     'wait' => 5,
                     'type' => 0
                 ];
-                var_dump($returnData);die;
 
-                return $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
+                echo $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
+                return false;
             }else{
                 return $beforeAction;
             }
