@@ -28,12 +28,6 @@ class MerchantController extends AdminBaseController
 
     public function actionStore(){
 
-$ss = '\\bengbeng\\extend\\merchant\\StoreBLL';
-        var_dump(new $ss);
-
-        var_dump(class_exists('bengbeng\extend\merchant\StoreBLL'));
-
-
         var_dump($this->logic);die;
         $this->renderData = $this->logic->getList();
     }
