@@ -17,6 +17,9 @@ use bengbeng\framework\base\Enum;
 class MerchantController extends AdminBaseController
 {
 
+
+    protected $logic = Enum::NAMESPACE_MERCHANT.'\\StoreBLL';
+
     public function init()
     {
         $this->logic = Enum::NAMESPACE_MERCHANT.'\\StoreBLL';
