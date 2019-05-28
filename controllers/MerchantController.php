@@ -17,11 +17,12 @@ use bengbeng\framework\base\Enum;
 class MerchantController extends AdminBaseController
 {
 
+    protected $actionPower = ['store', 'store-save', 'shops', 'add-store'];
+
     public function init()
     {
         $this->setLogic('\\bengbeng\\extend\\merchant\\logic\\StoreBLL');
 
-        $this->actionPower = ['store', 'store-save', 'shops', 'add-store'];
         parent::init();
     }
 
