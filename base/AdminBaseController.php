@@ -91,7 +91,9 @@ class AdminBaseController extends BaseController
                     'type' => 0
                 ];
 
-                echo $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
+                $renderPage = $this->render('@bengbeng/admin/views/'.TemplateHandle::getTheme().'/message/page-error', $returnData);
+                \Yii::$app->response->data = $renderPage;
+
                 return false;
             }else{
                 return $beforeAction;
