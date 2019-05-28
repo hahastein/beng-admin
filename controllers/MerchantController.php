@@ -13,6 +13,7 @@ namespace bengbeng\admin\controllers;
 
 use bengbeng\admin\base\AdminBaseController;
 use bengbeng\framework\base\Enum;
+use bengbeng\framework\components\helpers\ClassHelper;
 
 class MerchantController extends AdminBaseController
 {
@@ -21,8 +22,7 @@ class MerchantController extends AdminBaseController
 
     public function init()
     {
-        $this->setLogic('\\bengbeng\\extend\\merchant\\logic\\StoreBLL');
-
+        $this->setLogic(ClassHelper::extendNamespaceSplicing('merchant', 'StoreBLL'));
         parent::init();
     }
 
@@ -37,12 +37,12 @@ class MerchantController extends AdminBaseController
     }
 
     public function actionStoreSave(){
-        $this->getLogicLayer('StoreBLL', Enum::NAMESPACE_MERCHANT)->save(\Yii::$app->request->post());
+        $this->logic->save(\Yii::$app->request->post());
     }
 
     public function actionShops()
     {
-        $this->renderData = $this->getLogicLayer('ShopsBLL', Enum::NAMESPACE_MERCHANT)->getList();
+        $this->renderData = $this->logic->getList();
 //        return $this->render('shops', $returnData);
     }
 
