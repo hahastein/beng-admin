@@ -28,7 +28,8 @@ class MerchantController extends AdminBaseController
 
 
     public function actionStore(){
-        $this->renderData = $this->logic->store->getList();
+        var_dump($this->logic);
+        $this->renderData = $this->logic->$store->getList();
     }
 
     public function actionAddStore(){
