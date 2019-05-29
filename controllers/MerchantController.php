@@ -22,7 +22,7 @@ class MerchantController extends AdminBaseController
 
     public function init()
     {
-        $this->setLogic(ClassHelper::extendNamespaceSplicing('merchant', 'StoreBLL'));
+        $this->setLogic(ClassHelper::extendSplicing(Enum::EXTEND_TOOLS_MERCHANT, 'StoreBLL'));
         parent::init();
     }
 
@@ -37,13 +37,12 @@ class MerchantController extends AdminBaseController
     }
 
     public function actionStoreSave(){
-        $this->logic->save(\Yii::$app->request->post());
+        $this->logic->save(\Yii::$app->Beng->PostData());
     }
 
     public function actionShops()
     {
         $this->renderData = $this->logic->getList();
-//        return $this->render('shops', $returnData);
     }
 
 }
