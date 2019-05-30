@@ -25,7 +25,10 @@ class AdminController extends AdminBaseController
 
     public function init()
     {
-        $this->setLogic(ClassHelper::adminSplicing(['ccc.AdminBLL', 'admin.AdminBLL']));
+        $this->setLogic([
+            ClassHelper::adminSplicing('ccc.AdminBLL'),
+            ClassHelper::adminSplicing('admin.AdminBLL')
+        ]);
         parent::init();
     }
 
