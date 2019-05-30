@@ -29,6 +29,8 @@ class AdminController extends AdminBaseController
             ClassHelper::adminSplicing('ccc.AdminBLL'),
             ClassHelper::adminSplicing('admin.AdminBLL')
         ]);
+
+        var_dump($this->logic);die;
         parent::init();
     }
 
