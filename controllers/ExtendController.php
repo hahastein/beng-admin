@@ -47,7 +47,5 @@ class ExtendController extends AdminBaseController
 
         $this->renderType = $this->Bll->save($postData);
         $this->renderData = $this->Bll->getMessage();
-
-
     }
 }
