@@ -38,6 +38,6 @@ class AdminController extends AdminBaseController
      * @return string 返回模板内容
      */
     public function actionAll(){
-        $this->renderData = $this->logic->_admin->getList();
+        $this->renderData = $this->logic->admin_admin->getList();
     }
 }
