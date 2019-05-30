@@ -30,7 +30,6 @@ class AdminController extends AdminBaseController
             ClassHelper::adminSplicing('admin.AdminBLL')
         ]);
 
-        var_dump($this->logic);die;
         parent::init();
     }
 
